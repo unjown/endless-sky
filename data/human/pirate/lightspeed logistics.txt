@@ -102,7 +102,12 @@ ship "Cargo Drone"
 	description `Cargo drones are the inevitable result of finding an answer to the question "How can we move modest amounts of cargo at minimal cost?" Consisting of little more than a frame, control computer, a cargo container, solar collection panels and a drive unit, more or less the only flexibility in this minimalistic design is that the designers left enough room to precariously bolt on a hyperdrive.`
 	description "Almost hilariously vulnerable to piracy, cargo drones are seldom deployed solo, instead gathering in gaggles to follow a control ship like ducklings after their mother."
 
+ship "Cargo Drone" "Cargo Drone (Hyperdrive)"
+	outfits
+		Hyperdrive
+
 ship "Merchantman"
+	plural "Merchantmen"
 	sprite "ship/freighter"
 	thumbnail "thumbnail/freighter"
 	attributes
@@ -184,6 +189,11 @@ ship "Fluyt"
 		
 	outfits
 		"Proton Turret"
+
+		"nGVF-CC Fuel Cell"
+		"LP036a Battery Pack"
+		"D23-QP Shield Generator"
+		"Large Radar Jammer"
 			
 		"X2700 Ion Thruster"
 		"X2200 Ion Steering"
@@ -610,7 +620,7 @@ fleet "Large Cartel"
 		"Protector"
 	
 planet "Lightspeed Logistics HQ"
-	attributes syndicate station capitol
+	attributes syndicate station capitol lightspeed
 	landscape land/corporate0
 	description `The headquarters of Lightspeed Logistic Solutions appear architecturally disjointed, two incongruous designs welded together into a functional, if aesthetically incompatible station-hull. One side of the station is a massive shipment processing center, drab, utilitarian, and boasting a constant stream of cargo vessels coming and going. The other half, hosting corporate administration and headquarters, is the sort of fever-dream construction only available to spaceborne architects: soaring, gleaming structures built more for function than form, and clearly designed to impress upon any onlookers the importance of whatever business may happen within. Gone here are the swarms of freighters and cargo drones that throng the processing center, replaced instead by luxury shuttles that flit between small hangars studding the twisted, gleaming towers.`
 	spaceport `WIP`
