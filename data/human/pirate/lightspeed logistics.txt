@@ -213,7 +213,7 @@ ship "Fluyt"
 	explode "medium explosion" 25
 	explode "large explosion" 10
 	description "As it turns out, long-range exploration vessels from the early days of space travel make for rather good cargo vessels. Harkening from an era where one had to worry more about unmapped spacelanes and less about pirates, the Fluyt sports thick armor, capacious fuel tanks, and a rather pathetic shielding array. Perhaps more notably is the assortment of drone bays, making it a popular option for routine shipping operations where landing is either infeasible or simply not efficient - which happens more often than many captains would like."
-	description "The fluyt is a monumentally sluggish vessel, built far more for endurance and reliability than maneuverability. 
+	description "The Fluyt is a monumentally sluggish vessel, built far more for endurance and reliability than maneuverability."
 
 ship "Galleon"
 	sprite "ship/bulk freighter"
@@ -273,7 +273,9 @@ ship "Galleon"
 	explode "huge explosion" 20
 	"final explode" "final explosion large"
 	description "The Bulk Freighter is the ultimate cargo ship, able to carry as much cargo as four ordinary Syndicate Freighters. It is also, however, an incredibly slow ship and difficult to maneuver, especially when loaded down with cargo. Some freight caravans use ordinary freighters instead of bulk freighters just to avoid the hassle of constantly having to wait for the Bulk Freighter to properly align itself for hyperspace travel."
-		
+
+ship "Bounder" "Bounder (Escort)"
+	
 ship "Quicksilver" "Quicksilver (Long-haul)"
 	outfits
 		"Javelin Pod" 2
@@ -290,7 +292,7 @@ ship "Quicksilver" "Quicksilver (Long-haul)"
 		"X2200 Ion Steering"
 	gun "Javelin Pod"
 	gun "Javelin Pod"
-	
+
 ship "Cargo Drone" "Cargo Drone (Hyperdrive)"
 	outfits		
 		"KP-6 Photovoltaic Panel" 2
@@ -313,7 +315,7 @@ ship "Cargo Drone" "Cargo Drone (Lightspeed)"
 
 fleet "Small Lightspeed"
 	government "Lightspeed"
-	names "Lightspeed"
+	names "lightspeed"
 	cargo 2
 	personality
 		confusion 30
@@ -496,8 +498,9 @@ fleet "Large Lightspeed"
 		
 fleet "Elite Lightspeed"
 	government "Lightspeed"
-	names "Lightspeed"
+	names "lightspeed"
 	cargo 2
+	personality
 	variant 1
 		"Merchantman" 2
 	variant 1
@@ -727,16 +730,25 @@ trade
 		"paperwork"
 		"GPUs"
 
+phrase "lightspeed"	
+	phrase
+		"civilian"
+
 phrase "lightspeed low value item delivery"
+	word
+		"Placeholder"
 
 phrase "lightspeed single item delivery"
-	"Delivery of the precious cargo plays out like loading in reverse. An armored truck is already waiting for you at the spaceport landing pad. Once you arrive the team disembarks, rapidly load the item, and sign for delivery. Whatever happens from here is no longer your problem."
+	word
+		"Delivery of the precious cargo plays out like loading in reverse. An armored truck is already waiting for you at the spaceport landing pad. Once you arrive the team disembarks, rapidly load the item, and sign for delivery. Whatever happens from here is no longer your problem."
 
 phrase "lightspeed low volume delivery"
-	"Placeholder"
+	word
+		"Placeholder"
 
 phrase "lightspeed bulk delivery"
-	"Placeholder"
+	word
+		"Placeholder"
 
 phrase "friendly lightspeed"
 	word
@@ -798,13 +810,21 @@ phrase "friendly lightspeed elite"
 		" Our headquarters will knock you head-over-heels.  Visit Scheat today!"
 		" If you can fly, you can fly Lightspeed! Lightspeed Logistic Solutions!"
 
+phrase "hostile lightspeed"
+	word
+		"Placeholder"
+
+phrase "hostile lightspeed elite"
+	word
+		"Placeholder"
+
 government "LLS Elite"
 	"display name" "Lightspeed Logistics Solutions"
 	swizzle 1
 	
 	"player reputation" 10
 	"attitude toward"
-		"LLS" 1
+		"Lightspeed" 1
 		"Pirate" -.2
 		"Korath" -.2
 		"Syndicate" .1
@@ -891,16 +911,14 @@ mission "LLS Long-haul [high value, single]"
 		personality nemesis unconstrained waiting harvests plunders
 			confusion 20
 		system destination
-		fleet
-			"pirate raid"
+		fleet "pirate raid"
 	npc
 		government "Pirate"
 		personality nemesis unconstrained harvests plunders
 			confusion 20
 		system
 			distance 2
-		fleet
-			"pirate raid"
+		fleet "pirate raid"
 		
 mission "LLS Long-haul [high value, volume]"
 	name "Long-haul armored transport to <planet>"
@@ -928,16 +946,14 @@ mission "LLS Long-haul [high value, volume]"
 		personality nemesis unconstrained waiting harvests plunders
 			confusion 20
 		system destination
-		fleet
-			"pirate raid"
+		fleet "pirate raid"
 	npc
 		government "Pirate"
 		personality nemesis unconstrained harvests plunders
 			confusion 20
 		system
 			distance 3
-		fleet
-			"pirate raid" 2
+		fleet "pirate raid" 2
 	
 mission "LLS Long-haul [high value, bulk]"
 	name "Armored transport to <planet>"
@@ -965,24 +981,21 @@ mission "LLS Long-haul [high value, bulk]"
 		personality nemesis unconstrained waiting harvests plunders
 			confusion 20
 		system destination
-		fleet
-			"pirate raid"
+		fleet "pirate raid"
 	npc
 		government "Pirate"
 		personality nemesis unconstrained harvests plunders
 			confusion 20
 		system
 			distance 3
-		fleet
-			"pirate raid" 2
+		fleet "pirate raid" 2
 	npc
 		government "Pirate"
 		personality nemesis unconstrained harvests plunders
 			confusion 20
 		system
 			distance 5
-		fleet
-			"pirate raid" 3
+		fleet "pirate raid" 3
 			
 mission "LLS Standard [high value, single]"
 	name "Armored courier to <planet>"
@@ -1010,16 +1023,14 @@ mission "LLS Standard [high value, single]"
 		personality nemesis unconstrained waiting harvests plunders
 			confusion 20
 		system destination
-		fleet
-			"pirate raid"
+		fleet "pirate raid"
 	npc
 		government "Pirate"
 		personality nemesis unconstrained harvests plunders
 			confusion 20
 		system
 			distance 3
-		fleet
-			"pirate raid"
+		fleet "pirate raid"
 		
 mission "LLS Standard [high value, low volume]"
 	name "Armored transport to <planet>"
@@ -1047,16 +1058,14 @@ mission "LLS Standard [high value, low volume]"
 		personality nemesis unconstrained waiting harvests plunders
 			confusion 20
 		system destination
-		fleet
-			"pirate raid"
+		fleet "pirate raid"
 	npc
 		government "Pirate"
 		personality nemesis unconstrained harvests plunders
 			confusion 20
 		system
 			distance 3
-		fleet
-			"pirate raid" 2
+		fleet "pirate raid" 2
 	
 mission "LLS Standard [high value, bulk]"
 	name "Armored transport to <planet>"
@@ -1084,22 +1093,19 @@ mission "LLS Standard [high value, bulk]"
 		personality nemesis unconstrained waiting harvests plunders
 			confusion 20
 		system destination
-		fleet
-			"pirate raid"
+		fleet "pirate raid"
 	npc
 		government "Pirate"
 		personality nemesis unconstrained harvests plunders
 			confusion 20
 		system
 			distance 3
-		fleet
-			"pirate raid" 2
+		fleet "pirate raid" 2
 	npc
 		government "Pirate"
 		personality nemesis unconstrained harvests plunders
 			confusion 20
 		system
 			distance 5
-		fleet
-			"pirate raid" 3
+		fleet "pirate raid" 3
 			
