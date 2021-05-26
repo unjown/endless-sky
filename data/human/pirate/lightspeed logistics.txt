@@ -102,10 +102,6 @@ ship "Cargo Drone"
 	description `Cargo drones are the inevitable result of finding an answer to the question "How can we move modest amounts of cargo at minimal cost?" Consisting of little more than a frame, control computer, a cargo container, solar collection panels and a drive unit, more or less the only flexibility in this minimalistic design is that the designers left enough room to precariously bolt on a hyperdrive.`
 	description "Almost hilariously vulnerable to piracy, cargo drones are seldom deployed solo, instead gathering in gaggles to follow a control ship like ducklings after their mother."
 
-ship "Cargo Drone" "Cargo Drone (Hyperdrive)"
-	outfits
-		Hyperdrive
-
 ship "Merchantman"
 	plural "Merchantmen"
 	sprite "ship/freighter"
@@ -293,7 +289,24 @@ ship "Quicksilver" "Quicksilver (Long-haul)"
 	gun "Javelin Pod"
 	gun "Javelin Pod"
 
+# TODO: Revert attributes when drones/fighters can be used in escort missions
 ship "Cargo Drone" "Cargo Drone (Hyperdrive)"
+	"uncapturable"
+	attributes
+		category "Light Freighter"
+		"automaton" 1
+		"mass" 14
+		"drag" .59
+		"heat dissipation" .9
+		"fuel capacity" 300
+		"cargo space" 20
+		"outfit space" 54
+		"engine capacity" 20
+		weapon
+			"blast radius" 2
+			"shield damage" 30
+			"hull damage" 15
+			"hit force" 55
 	outfits		
 		"KP-6 Photovoltaic Panel" 2
 		"LP036a Battery Pack"
@@ -833,279 +846,3 @@ government "LLS Elite"
 	"fine" 0
 	"friendly hail" "friendly lightspeed elite"
 	"hostile hail" "hostile lightspeed elite"
-	
-mission "LLS Long-haul [low value]"
-	name "Long-haul courier to <planet>"
-	job
-	repeat
-	deadline 1 1.2
-	description "A client requires the delivery of <commodity> to <destination> by <date>. Payment is <payment>. There's a tight deadline on this job - ensure your fuel reserves are up to the task."
-	cargo "Low Value, Single Item" 1
-	to offer
-		random < 90
-	source
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	destination
-		distance 8 12
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	on visit
-		dialog phrase "generic cargo on visit"
-	on complete
-		payment
-		payment 75000
-		dialog phrase "lightspeed low value item delivery"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained waiting harvests plunders
-			confusion 20
-		system destination
-		fleet
-			names "pirate"
-			variant
-				"Sparrow"
-				"Sparrow"
-			variant
-				"Sparrow"
-			variant
-				"Fury"
-			variant
-				"Berserker"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained harvests plunders
-			confusion 20
-		system
-			distance 3
-		fleet
-			names "pirate"
-			variant
-				"Sparrow"
-			variant
-				"Fury"
-			variant
-				"Berserker"
-		
-mission "LLS Long-haul [high value, single]"
-	name "Long-haul armored courier to <planet>"
-	job
-	repeat
-	deadline 1 1.4
-	description "A wealthy client requires the delivery of <commodity> to <destination> by <date>. Payment is <payment>. There's a tight deadline on this job - ensure your fuel reserves are up to the task, and be wary of pirates."
-	cargo "High Value, Single Item" 1
-	to offer
-		random < 90
-		has "license: LLS Contractor"
-	source
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	destination
-		distance 8 12
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	on visit
-		dialog phrase "generic cargo on visit"
-	on complete
-		payment
-		payment 60000
-		dialog phrase "lightspeed single item delivery"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained waiting harvests plunders
-			confusion 20
-		system destination
-		fleet "pirate raid"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained harvests plunders
-			confusion 20
-		system
-			distance 2
-		fleet "pirate raid"
-		
-mission "LLS Long-haul [high value, volume]"
-	name "Long-haul armored transport to <planet>"
-	job
-	repeat
-	deadline 1 1.5
-	description "A wealthy client requires the delivery of <cargo> to <destination> by <date>. Payment is <payment>. There's a tight deadline on this job - ensure your fuel reserves are up to the task, and be wary of pirates."
-	cargo "High Value, Low Volume" 10 2 .1
-	to offer
-		random < 90
-		has "license: LLS Contractor"
-	source
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	destination
-		distance 2 8
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	on visit
-		dialog phrase "generic cargo on visit"
-	on complete
-		payment
-		payment 100000
-		dialog phrase "lightspeed low volume delivery"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained waiting harvests plunders
-			confusion 20
-		system destination
-		fleet "pirate raid"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained harvests plunders
-			confusion 20
-		system
-			distance 3
-		fleet "pirate raid" 2
-	
-mission "LLS Long-haul [high value, bulk]"
-	name "Armored transport to <planet>"
-	job
-	repeat
-	deadline 1 1.2
-	description "A wealthy client requires the delivery of <cargo> to <destination> by <date>. Payment is <payment>. There's a tight deadline on this job - ensure your fuel reserves are up to the task, and be wary of pirates."
-	cargo "High Value, Bulk" 25 2 .05
-	to offer
-		random < 90
-		has "license: LLS Contractor"
-	source
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	destination
-		distance 8 12
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	on visit
-		dialog phrase "generic cargo on visit"
-	on complete
-		payment
-		payment 100000
-		dialog phrase "lightspeed bulk delivery"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained waiting harvests plunders
-			confusion 20
-		system destination
-		fleet "pirate raid"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained harvests plunders
-			confusion 20
-		system
-			distance 3
-		fleet "pirate raid" 2
-	npc
-		government "Pirate"
-		personality nemesis unconstrained harvests plunders
-			confusion 20
-		system
-			distance 5
-		fleet "pirate raid" 3
-			
-mission "LLS Standard [high value, single]"
-	name "Armored courier to <planet>"
-	job
-	repeat
-	deadline 1 1.2
-	description "A wealthy client requires the delivery of <commodity> to <destination> by <date>. Payment is <payment>. There's a tight deadline on this job - ensure your fuel reserves are up to the task, and be wary of pirates."
-	cargo "High Value, Single Item" 1
-	to offer
-		random < 90
-		has "license: LLS Contractor"
-	source
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	destination
-		distance 2 8
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	on visit
-		dialog phrase "generic cargo on visit"
-	on complete
-		payment
-		payment 50000
-		dialog phrase "lightspeed single item delivery"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained waiting harvests plunders
-			confusion 20
-		system destination
-		fleet "pirate raid"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained harvests plunders
-			confusion 20
-		system
-			distance 3
-		fleet "pirate raid"
-		
-mission "LLS Standard [high value, low volume]"
-	name "Armored transport to <planet>"
-	job
-	repeat
-	deadline 1 1.2
-	description "A wealthy client requires the delivery of <cargo> to <destination> by <date>. Payment is <payment>. There's a tight deadline on this job - ensure your fuel reserves are up to the task, and be wary of pirates."
-	cargo "High Value, Low Volume" 10 2 .1
-	to offer
-		random < 90
-		has "license: LLS Contractor"
-	source
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	destination
-		distance 2 8
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	on visit
-		dialog phrase "generic cargo on visit"
-	on complete
-		payment
-		payment 75000
-		dialog phrase "lightspeed low volume delivery"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained waiting harvests plunders
-			confusion 20
-		system destination
-		fleet "pirate raid"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained harvests plunders
-			confusion 20
-		system
-			distance 3
-		fleet "pirate raid" 2
-	
-mission "LLS Standard [high value, bulk]"
-	name "Armored transport to <planet>"
-	job
-	repeat
-	deadline 1 1.2
-	description "A wealthy client requires the delivery of <cargo> to <destination> by <date>. Payment is <payment>. There's a tight deadline on this job - ensure your fuel reserves are up to the task, and be wary of pirates."
-	cargo "High Value, Bulk" 25 2 .05
-	to offer
-		random < 90
-		has "license: LLS Contractor"
-	source
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	destination
-		distance 2 8
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	on visit
-		dialog phrase "generic cargo on visit"
-	on complete
-		payment
-		payment 75000
-		dialog phrase "lightspeed bulk delivery"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained waiting harvests plunders
-			confusion 20
-		system destination
-		fleet "pirate raid"
-	npc
-		government "Pirate"
-		personality nemesis unconstrained harvests plunders
-			confusion 20
-		system
-			distance 3
-		fleet "pirate raid" 2
-	npc
-		government "Pirate"
-		personality nemesis unconstrained harvests plunders
-			confusion 20
-		system
-			distance 5
-		fleet "pirate raid" 3
-			
