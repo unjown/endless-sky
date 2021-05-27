@@ -21894,7 +21894,7 @@ system Scheat
 		sprite planet/ice2
 		distance 559.62
 		period 211.817
-	object "Lightspeed Logistics HQ"
+	object "Lightspeed HQ"
 		sprite planet/station11
 		distance 575
 		period 220		

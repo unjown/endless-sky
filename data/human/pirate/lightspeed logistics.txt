@@ -635,7 +635,7 @@ fleet "Large Cartel"
 	variant 1
 		"Protector"
 	
-planet "Lightspeed Logistics HQ"
+planet "Lightspeed HQ"
 	attributes syndicate station capitol lightspeed
 	landscape land/corporate0
 	description `The headquarters of Lightspeed Logistic Solutions appear architecturally disjointed, two incongruous designs welded together into a functional, if aesthetically incompatible station-hull. One side of the station is a massive shipment processing center, drab, utilitarian, and boasting a constant stream of cargo vessels coming and going. The other half, hosting corporate administration and headquarters, is the sort of fever-dream construction only available to spaceborne architects: soaring, gleaming structures built more for function than form, and clearly designed to impress upon any onlookers the importance of whatever business may happen within. Gone here are the swarms of freighters and cargo drones that throng the processing center, replaced instead by luxury shuttles that flit between small hangars studding the twisted, gleaming towers.`
