@@ -333,3 +333,55 @@ mission "LLS Standard [high value, bulk]"
 		system
 			distance 5
 		fleet "pirate raid" 3
+
+mission "LLS Unfortunate Escort"
+	name "[LLS] Escort to <planet>"
+	description "Lightspeed Logistics Solutions wishes to contract you as an escort for a merchant captain that is no longer trustworthy. Escort the target to <destination> and allow for them to be eliminated along the way."
+	repeat
+	job
+	to offer
+		random < 90
+	source
+		government "Syndicate" 
+	destination
+		distance 4 5
+		government "Syndicate"
+	npc
+		government "Pirate"
+		personality nemesis staying harvests plunders
+			confusion 40
+		system destination
+		fleet
+			names "pirate"
+			variant
+				"Protector"
+			variant
+				"Quicksilver" 4
+			variant
+				"Leviathan"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+			confusion 40
+		system destination
+		fleet
+			names "pirate"
+			variant
+				"Protector"
+			variant
+				"Quicksilver" 4
+			variant
+				"Leviathan"
+	npc kill
+		government "Merchant"
+		personality timid escort
+		ship "Freighter" "Rufio"
+	on fail
+		dialog `As you land on the planet, you realize your escort caught wise to what you were trying to do, and fled your "protection". A Lightspeed Logistics representitve fines you <payment> for not getting the ship destroyed properly.`
+		payment -100000000
+	on complete
+		dialog `The untrustworthy merchant captain has been eliminated. A few moments later, <payment> are added to your account.`
+		payment 10000000000000
+	on visit
+		fail
+	on abort
