@@ -208,7 +208,7 @@ ship "Fluyt"
 	explode "small explosion" 25
 	explode "medium explosion" 25
 	explode "large explosion" 10
-	description "As it turns out, long-range exploration vessels from the early days of space travel make for rather good cargo vessels. Harkening from an era where one had to worry more about unmapped spacelanes and less about pirates, the Fluyt sports thick armor, capacious fuel tanks, and a rather pathetic shielding array. Perhaps more notably is the assortment of drone bays, making it a popular option for routine shipping operations where landing is either infeasible or simply not efficient - which happens more often than many captains would like."
+	description "As it turns out, long-range exploration vessels from the early days of space travel make for rather good cargo vessels. Harkening from an era where one had to worry more about unmapped spacelanes and less about pirates, the Fluyt sports thick armor, capacious fuel tanks, and a rather pathetic shielding array. Perhaps more notable is the assortment of drone bays, making it a popular option for routine shipping operations where landing is either infeasible or simply not efficient - which happens more often than many captains would like."
 	description "The Fluyt is a monumentally sluggish vessel, built far more for endurance and reliability than maneuverability."
 
 ship "Galleon"
