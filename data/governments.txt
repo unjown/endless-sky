@@ -86,7 +86,6 @@ government "CCOR"
 		"Republic" -.2
 		"Militia" -.05
 		"Free Worlds" -.05
-		"Neutral"
 	"friendly hail" "friendly CCOR"
 	"hostile hail" "hostile CCOR"
 	

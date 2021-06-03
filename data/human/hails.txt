@@ -2993,8 +2993,8 @@ phrase "shakespearean insults"
 phrase "hostile CCOR"
 	word
 		"You will never crush our revolution"
-		"May your spaced corpse never rot so that your foolishness be never forgotten
-		"We will defend our homeland to the last
+		"May your spaced corpse never rot so that your foolishness be never forgotten"
+		"We will defend our homeland to the last"
 	word
 		", you counterrevolutionary worm."
 		", and your imperialist ways will only lead to downfall."
