@@ -109,7 +109,7 @@ ship "Merchantman"
 	attributes
 		category "Light Freighter"
 		licenses
-			"LLS Contractor"
+			"Lightspeed Contractor"
 		"cost" 960000
 		"shields" 2600
 		"hull" 3000
@@ -163,7 +163,7 @@ ship "Fluyt"
 	attributes
 		category "Light Freighter"
 		licenses
-			"LLS Contractor"
+			"Lightspeed Contractor"
 		"cost" 4435000
 		"shields" 2000
 		"hull" 4700
@@ -217,7 +217,7 @@ ship "Galleon"
 	attributes
 		category "Heavy Freighter"
 		licenses
-			"LLS Contractor"
+			"Lightspeed Contractor"
 		"cost" 12200000
 		"shields" 6000
 		"hull" 8200
@@ -317,7 +317,7 @@ ship "Cargo Drone" "Cargo Drone (Hyperdrive)"
 ship "Cargo Drone" "Cargo Drone (Lightspeed)"
 	attributes
 		licenses
-			"LLS Contractor"
+			"Lightspeed Contractor"
 	outfits		
 		"KP-6 Photovoltaic Panel" 2
 		"LP036a Battery Pack"
@@ -637,8 +637,8 @@ fleet "Large Cartel"
 	
 planet "Lightspeed HQ"
 	attributes syndicate station capitol lightspeed
-	landscape land/corporate0
-	description `The headquarters of Lightspeed Logistic Solutions appear architecturally disjointed, two incongruous designs welded together into a functional, if aesthetically incompatible station-hull. One side of the station is a massive shipment processing center, drab, utilitarian, and boasting a constant stream of cargo vessels coming and going. The other half, hosting corporate administration and headquarters, is the sort of fever-dream construction only available to spaceborne architects: soaring, gleaming structures built more for function than form, and clearly designed to impress upon any onlookers the importance of whatever business may happen within. Gone here are the swarms of freighters and cargo drones that throng the processing center, replaced instead by luxury shuttles that flit between small hangars studding the twisted, gleaming towers.`
+	landscape land/corporate1
+	description `The headquarters complex of Lightspeed Logistics appears architecturally disjointed, two incongruous designs welded together into a functional, if aesthetically incompatible station-hull. One side of the station is a massive shipment processing center, drab, utilitarian, and boasting a constant stream of cargo vessels coming and going. The other half, hosting corporate administration and headquarters, is the sort of fever-dream construction only available to spaceborne architects: soaring, gleaming structures built more for function than form, and clearly designed to impress upon any onlookers the importance of whatever business may happen within. Gone here are the swarms of freighters and cargo drones that throng the processing center, replaced instead by luxury shuttles that flit between small hangars studding the twisted, gleaming towers.`
 	spaceport `WIP`
 	shipyard "Lightspeed"
 	outfitter "Common Outfits"
@@ -768,7 +768,7 @@ phrase "friendly lightspeed"
 		"Efficiency, Security, Reliability:"
 	word
 		" That's the Lightspeed Logistics motto."
-		" These are the values that LLS swear by, and the qualities you can be assured of."
+		" These are the values that Lightspeed swear by, and the qualities our valued customers can be assured of."
 		" Hire Lightspeed Logistics and you know what you'll get."
 
 phrase "friendly lightspeed"
@@ -784,14 +784,14 @@ phrase "friendly lightspeed"
 		" Lightspeed Logistics is now hiring independent captains with fast, sturdy ships; inquire at our HQ in Scheat for further details."
 		" Speed on over to Scheat for the time of your life."
 		" Our headquarters will knock you head-over-heels.  Visit Scheat today!"
-		" If you can fly, you can fly Lightspeed! Lightspeed Logistic Solutions!"
+		" If you can fly, you can fly Lightspeed! Lightspeed Logistics!"
 
 phrase "friendly lightspeed elite"
 	word
 		"Efficiency, Security, Reliability:"
 	word
 		" That's the Lightspeed Logistics motto."
-		" These are the values that LLS swear by, and the qualities you can be assured of."
+		" These are the values that Lightspeed swear by, and the qualities our valued customers can be assured of."
 		" Hire Lightspeed Logistics and you know what you'll get."
 		
 phrase "friendly lightspeed elite"
@@ -821,7 +821,7 @@ phrase "friendly lightspeed elite"
 		" Lightspeed Logistics is now hiring independent captains with fast, sturdy ships; inquire at our HQ in Scheat for further details."
 		" Speed on over to Scheat for the time of your life."
 		" Our headquarters will knock you head-over-heels.  Visit Scheat today!"
-		" If you can fly, you can fly Lightspeed! Lightspeed Logistic Solutions!"
+		" If you can fly, you can fly Lightspeed! Lightspeed Logistics!"
 
 phrase "hostile lightspeed"
 	word
@@ -831,8 +831,8 @@ phrase "hostile lightspeed elite"
 	word
 		"Placeholder"
 
-government "LLS Elite"
-	"display name" "Lightspeed Logistics Solutions"
+government "Lightspeed Elite"
+	"display name" "Lightspeed Logistics"
 	swizzle 1
 	
 	"player reputation" 10
