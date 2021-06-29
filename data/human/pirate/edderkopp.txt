@@ -52,10 +52,39 @@ ship "Edderkopp"
 	explode "large explosion" 10
 	description "This vessel has exactly three things going for it: It's capacious, it can carry a complement of four drones anywhere in the galaxy, and it can mount a single colossal mining laser which spans the entire spine of the ship."
 	description "The Edderkopp is a monumentally sluggish vessel, built far more for endurance and reliability than maneuverability. Many of those in service today have been passed down through mining clan bloodlines from centuries ago, kept spaceworthy by the descendents of the same engineer that first tended to its systems during the first exodus of private citizens into the stars. With long-range mining craft being somewhat outdated in the densely-settled modern galaxy, the Edderkopp hull is an economic oddity in that more and more end up on the market every year despite there being no shipyards actually producing new ones."
+
+outfit "Mining Laser"
+	category "Guns"
+	cost 29000
+	thumbnail "outfit/laser"
+	"mass" 100
+	"outfit space" -120
+	"weapon capacity" -120
+	"gun ports" -1
+	weapon
+		sprite "projectile/mining"
+			"frame rate" 1
+		sound "laser"
+		"hit effect" "beam laser impact"
+		"velocity" 800
+		"lifetime" 1
+		"reload" 6
+		"burst count" 60
+		"burst reload" 1
+		"firing energy" .5
+		"firing heat" 100
+		"shield damage" 50
+		"hull damage" 500
+	description "In the early part of the space era, the settlements in the region of space known as the Deep developed in relative isolation from the rest of human space. One result of that isolation is that their weapons technology mostly uses beam weapons, instead of the energy projectile weapons that are more common elsewhere."
+
 	
 shipyard "Edderkopp"
 	"Edderkopp"
 	"Combat Drone"
 
+outfitter "Edderkopp"
+	"Mining Laser"
+
 planet "New Boston"
 	shipyard "Edderkopp"
+	outfitter "Edderkopp"
