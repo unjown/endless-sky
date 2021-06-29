@@ -1,0 +1,61 @@
+
+ship "Edderkopp"
+	sprite "ship/edderkopp"
+	thumbnail "thumbnail/argosy"
+	attributes
+		category "Heavy Freighter"
+		"cost" 7435000
+		"shields" 2300
+		"hull" 6000
+		"required crew" 14
+		"bunks" 18
+		"mass" 660
+		"drag" 14.5
+		"heat dissipation" .3
+		"fuel capacity" 800
+		"cargo space" 320
+		"outfit space" 235
+		"weapon capacity" 150
+		"engine capacity" 63
+		weapon
+			"blast radius" 220
+			"shield damage" 2300
+			"hull damage" 1100
+			"hit force" 3300
+		
+	outfits
+		"Mining Laser"
+
+		"nGVF-CC Fuel Cell"
+		"LP036a Battery Pack"
+		"D23-QP Shield Generator"
+		"Large Radar Jammer"
+			
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Scram Drive"
+	
+	gun 0 -125
+	engine -24 118
+	engine 24 118
+	engine 0 125
+	bay "Drone" 45 58
+	bay "Drone" 45 96
+	bay "Drone" -45 58
+	bay "Drone" -45 96
+	
+	leak "leak" 60 50
+	leak "flame" 60 80
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "medium explosion" 25
+	explode "large explosion" 10
+	description "This vessel has exactly three things going for it: It's capacious, it can carry a complement of four drones anywhere in the galaxy, and it can mount a single colossal mining laser which spans the entire spine of the ship."
+	description "The Edderkopp is a monumentally sluggish vessel, built far more for endurance and reliability than maneuverability. Many of those in service today have been passed down through mining clan bloodlines from centuries ago, kept spaceworthy by the descendents of the same engineer that first tended to its systems during the first exodus of private citizens into the stars. With long-range mining craft being somewhat outdated in the densely-settled modern galaxy, the Edderkopp hull is an economic oddity in that more and more end up on the market every year despite there being no shipyards actually producing new ones."
+	
+shipyard "Edderkopp"
+	"Edderkopp"
+	"Combat Drone"
+
+planet "New Boston"
+	shipyard "Edderkopp"
