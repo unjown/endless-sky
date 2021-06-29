@@ -14,7 +14,7 @@ ship "Edderkopp"
 		"heat dissipation" .3
 		"fuel capacity" 800
 		"cargo space" 320
-		"outfit space" 235
+		"outfit space" 360
 		"weapon capacity" 150
 		"engine capacity" 63
 		weapon
@@ -29,11 +29,11 @@ ship "Edderkopp"
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
 		"D23-QP Shield Generator"
-		"Large Radar Jammer"
+		"Asteroid Scanner" 3
 			
-		"X2700 Ion Thruster"
+		"X3700 Ion Thruster"
 		"X2200 Ion Steering"
-		"Scram Drive"
+		"Hyperdrive"
 	
 	gun 0 -125
 	engine -24 118
@@ -68,9 +68,9 @@ outfit "Mining Laser"
 		"hit effect" "beam laser impact"
 		"velocity" 800
 		"lifetime" 1
-		"reload" 6
-		"burst count" 60
-		"burst reload" 1
+		"reload" 36
+		"burst count" 15
+		"burst reload" 4
 		"firing energy" .5
 		"firing heat" 100
 		"shield damage" 50
