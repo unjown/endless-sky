@@ -16,7 +16,7 @@ ship "Edderkopp"
 		"cargo space" 320
 		"outfit space" 360
 		"weapon capacity" 150
-		"engine capacity" 63
+		"engine capacity" 67
 		weapon
 			"blast radius" 220
 			"shield damage" 2300
