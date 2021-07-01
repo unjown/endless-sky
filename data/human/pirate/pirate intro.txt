@@ -1,0 +1,110 @@
+mission "Pirate 1: Derelict"
+	landing
+	destination "Trinket"
+	name "Lightspeed Derelict"
+	description "Take contraband from a ravaged ship to its destination at <destination>."
+	to offer
+		"combat rating" > 100
+	on enter "Lurata"
+		conversation
+			`Out in the black it can be difficult to know exactly what you're looking at from sensors alone - but even on radar there's no mistaking that something savage has happened to this vessel. No longer a single contiguous piece of metal, the hull's been blown out in parts, leaving a comet-like wake of debris that scatters across the void behind the derelict freighter. The fore-end of the ship seems to've fared better than the rear, if the thin jets of atmosphere lancing out from perforations in the hull and sending the entire assembly into a gentle spin are anything to judge by - it's certainly a gentler sort of damage than the variety that would lead to immediate decompression.`
+	npc assist
+		system "Lurata"
+		personality derelict
+		government "Derelict"
+		ship "Merchantman (Derelict)" "Dead ship"
+		conversation
+			`Velocity matched and airlocks aligned, the derelict prow's rotation finally comes to an end as your ship clamps on and provides opposing thrust to halt its aimless spinning.`
+			choice
+				`	(Check if the other side still has life support.)`
+					goto lifesupport
+				`	(I'll slip into something less comfortable first. A spacesuit, for example.)`
+					goto suitup
+			label lifesupport
+			`	You lean in to inspect the airlock's computer. Just because the lights are on and there's atmosphere on the other side doesn't mean it isn't full of toxic fumes. Your first query-press prompts an electronic ping, then a dull, metallic knock. That's... Not a sound you've ever heard this particular computer make before.`
+			`	And it's certainly never produced muffled speech along the lines of "Hey! Get me out of here, open the airlock!"`
+			choice
+				`	(Inspect the porthole.)`
+					goto porthole
+			label suitup
+			`Safety first. Never board a craft that's venting into space without putting on the proper equipment. Gloves, helmet, make sure to seal the neck, and presto - you're now rated to probably-not-die during excursions outside the safety of your little metal-framed airbubble. Wonderful, no?`
+			choice
+				`	(Inspect the porthole.)`
+			label porthole
+			`	"What are you waiting for? Help me, I've sealed most of the leaks but this ship isn't long for the world!" There's somebody on the other side of the airlock! Peering through the reinforced window brings you face to face with a wild-eyed middle aged man, a burgundy-stained bandage wrapped across his brow and a makeshift sling supporting one arm. Bloody knuckles impact your airlock door, again the knock sounds - weaker this time.`
+			choice
+				`	(Cycle the airlock, your sidearm ready to spit death.)`
+					goto aim
+				`	(Cycle the airlock, an open palm ready to render aid.)`
+					goto help
+			label aim
+			`	The airlock slides open with the gentle hiss of mostly-equal atmospheres evening out, then the shuffle of fabric as the man on the other side raises his hands over his head with painstaking slowness. "Look, the last batch of pirates already cleaned me out, all I've got to bargain with is my life and the clothes on my back, so if yer' really insisting..."`
+			choice
+				`	"Relax, friend. You know it's better to be safe than sorry out here. You can put your hands down and tell me what happened here."`
+					goto help
+				`	"Not good enough. Everyone's got a last-ditch stash, and I want yours. Give me what I want and I'll consider dropping you off somewhere less..." (Gesture expansively to the wrecked ship) "About to explosively decompress."`
+			label help	
+			`	Relief flashes across the survivor's face. "Good. Let's get out of here, but there's something I need to get first. See, the pirates, I thought they were the ambush the dispatcher warned me about, but they were just in the right place at the right time, I'd just stocked up on industrial equipment to sell off at the end of this leg of the journey and they took that n' left. Left me with what I was really carrying." The man falls to his knees, a bit harder that what looks strictly comfortable, and starts prying his fingernails into a seam between deck plates. Grunts of exertion fade into an exasperated sigh. "Come on then, help me wrench this open - I'm no good with this bum arm. Aside from needing to get off this bucket before it collapses, the deadline to deliver this is ticking away - I'll give you a cut if we make it, yeah?"`
+			choice
+				`	"Not a chance. I'm not staying on this deathtrap any longer than I have to."`
+					goto offer
+				`	"What about your crew? Shouldn't we be searching for survivors instead?"`
+					goto crew
+				`	(Fetch a prybar from your ship's locker and get that deck plate open.)`
+					goto pry
+			label offer
+			`	"Half a million credits", the man blurts out. "That's your cut. All for a few seconds of risk and a small trip South. Please, consider it."`
+				goto finaldecision
+			label crew
+			`	"What about them? If we take the time for an exhaustive search we'll miss the deadline, and besides - you saw the shape of the old girl on your approach, you really think any of the other sections remained intact? Don't be stupid."`
+			label finaldecision
+			choice
+				`	"Sorry, we're leaving now. Get aboard or get left behind."`
+					goto leaving
+				`	(Fetch a prybar from your ship's locker and get that deck plate open.)`
+					goto pry
+			label leaving
+			apply
+				set "left cargo"
+			`	A steady stream of muttered profanities accompany the sole survivor as he boards your ship. You should be able to drop him off at your next stop somewhere civilized.`
+				decline
+			`[the conversation ends and boarding is completed. next time the player lands at an inhabited planet a dialog pops up]`
+			label pry
+			`	Given a long enough lever and a place to wedge it, you can evidently move... a deck plate. A cozy little smugglers' compartment is revealed beneath, a bulky handled case within. Your new acquaintance leans in to retrieve the cargo, demeanor visibly calming once the case in your grip. "It's good we're delivering this properly. You'll be well rewarded, I assure you. Now, we just need to get this to the client on Trinket." Though injury has clearly slowed him, he's nonetheless making double time to get off his stricken ship and into the airlock.`
+			choice
+				`	"Good. Get aboard and let's go."`
+					decline
+				`	"We? I'm afraid you're mistaken - your ship was lost with all hands, I've just been exercising my rights to salvage."`
+			`	The color drains out of the shipwrecked soul's face as he realizes what you're implying. Fear quickly turns to anger. "I'll haunt you through the void until the day my very soul unwravels, mark my words. You'll never known peace in this life or the next, you bastard."`
+			choice
+				`	(Shoot him.)`
+					goto shoot
+				`	[if the player is wearing a spacesuit] (Clip your suit to a safety bar and release the docking seal.)`
+					goto release
+				`	"Back up or I'll shoot. I'll give you some time alone. Who knows? Maybe you'll get lucky and the next person to board your pathetic ship'll show some mercy."`
+					goto abandon
+			label shoot
+			`	[dude dies, boarding conversation ends, mission spawns to go to Trinket and hand in the loot)`
+				decline
+			label release
+			`	[same as shooting, just different flavor text]`
+				depart
+			label abandon
+			`	[again, you now must go to Trinket to sell off the prize. Unless the ship is destroyed post-boarding, 25% chance that in one week it turns out the survivor was rescued by someone else and reported you to his higher-ups. This will not anger any factions, but may create complications in some campaign branches; apply a condition]`
+				decline
+	on complete
+		payment 500000
+		conversation
+			`Your unexpected passenger largely kept to himself over the course of the trip, sulking and muttering about what "this is going to do to my insurance premiums". It's better for everybody involved when he finally disembarks, not even stopping to present you with the rude gesture he makes over his shoulder before disappearing into the spaceport.`
+	
+
+ship "Merchantman (Derelict)"
+	sprite "ship/freighter"
+	attributes
+		category "Light Freighter"
+		hull 200
+		mass 30
+		drag 2
+		"heat dissipation" 1
+	explode "tiny explosion" 5
+	explode "small explosion" 2
