@@ -2032,7 +2032,7 @@ void Engine::DoWeather(Weather &weather)
 		// and max ranges at the hazard's origin. Any ship touching this ring takes
 		// hazard damage.
 		for(Body *body : shipCollisions.Ring(Point(), hazard->MinRange(), hazard->MaxRange()))
-			reinterpret_cast<Ship *>(body)->TakeHazardDamage(visuals, hazard, multiplier);
+			reinterpret_cast<Ship *>(body)->TakeDamage(visuals, hazard, multiplier);
 	}
 }
 
@@ -2218,7 +2218,7 @@ void Engine::AddSprites(const Ship &ship)
 		// Draw cloaked/cloaking sprites swizzled red, and overlay this solid
 		// sprite with an increasingly transparent "regular" sprite.
 		if(drawCloaked)
-			itemsToDraw.AddSwizzled(body, 7);
+			itemsToDraw.AddSwizzled(body, 27);
 		itemsToDraw.Add(body, cloak);
 	};
 	
