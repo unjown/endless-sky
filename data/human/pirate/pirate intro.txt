@@ -1,4 +1,5 @@
 mission "Pirate 1: Derelict"
+	repeat
 	landing
 	destination "Trinket"
 	name "Lightspeed Derelict"
@@ -27,6 +28,8 @@ mission "Pirate 1: Derelict"
 				`	(Inspect the porthole.)`
 					goto porthole
 			label suitup
+			apply
+				set "Pirate 1: Derelict - Suited Up"
 			`Safety first. Never board a craft that's venting into space without putting on the proper equipment. Gloves, helmet, make sure to seal the neck, and presto - you're now rated to probably-not-die during excursions outside the safety of your little metal-framed airbubble. Wonderful, no?`
 			choice
 				`	(Inspect the porthole.)`
@@ -65,7 +68,7 @@ mission "Pirate 1: Derelict"
 					goto pry
 			label leaving
 			apply
-				set "left cargo"
+				set "Pirate 1: Derelict - Left Cargo"
 			`	A steady stream of muttered profanities accompany the sole survivor as he boards your ship. You should be able to drop him off at your next stop somewhere civilized.`
 				decline
 			`[the conversation ends and boarding is completed. next time the player lands at an inhabited planet a dialog pops up]`
@@ -75,11 +78,21 @@ mission "Pirate 1: Derelict"
 				`	"Good. Get aboard and let's go."`
 					decline
 				`	"We? I'm afraid you're mistaken - your ship was lost with all hands, I've just been exercising my rights to salvage."`
+			apply
+				set "Pirate 1: Derelict - Abandoned Smuggler"
 			`	The color drains out of the shipwrecked soul's face as he realizes what you're implying. Fear quickly turns to anger. "I'll haunt you through the void until the day my very soul unwravels, mark my words. You'll never known peace in this life or the next, you bastard."`
+			branch suitedup
+				has "Pirate 1: Derelict - Suited Up"
 			choice
 				`	(Shoot him.)`
 					goto shoot
-				`	[if the player is wearing a spacesuit] (Clip your suit to a safety bar and release the docking seal.)`
+				`	"Back up or I'll shoot. I'll give you some time alone. Who knows? Maybe you'll get lucky and the next person to board your pathetic ship'll show some mercy."`
+					goto abandon
+			label suitedup
+			choice
+				`	(Shoot him.)`
+					goto shoot
+				`	(Clip your suit to a safety bar and release the docking seal.)`
 					goto release
 				`	"Back up or I'll shoot. I'll give you some time alone. Who knows? Maybe you'll get lucky and the next person to board your pathetic ship'll show some mercy."`
 					goto abandon
@@ -95,7 +108,22 @@ mission "Pirate 1: Derelict"
 	on complete
 		payment 500000
 		conversation
+			branch nosmuggler
+				has "Pirate 1: Derelict - Abandoned Smuggler"
+			branch nocargo
+				has "Pirate 1: Derelict - Left Cargo"
+			`The smuggler pays you <payment>.`
+				goto end
+			label nosmuggler
+			`You pawn off the cargo for <payment>.`
+				goto end
+			label nocargo
 			`Your unexpected passenger largely kept to himself over the course of the trip, sulking and muttering about what "this is going to do to my insurance premiums". It's better for everybody involved when he finally disembarks, not even stopping to present you with the rude gesture he makes over his shoulder before disappearing into the spaceport.`
+			label end
+			apply
+				clear "Pirate 1: Derelict - Suited Up"
+				clear "Pirate 1: Derelict - Abandoned Smuggler"
+				clear "Pirate 1: Derelict - Left Cargo"
 	
 
 ship "Merchantman (Derelict)"
