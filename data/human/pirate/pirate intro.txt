@@ -8,7 +8,7 @@ mission "Pirate 1: Derelict"
 		"combat rating" > 100
 	on enter "Lurata"
 		conversation
-			`Out in the black it can be difficult to know exactly what you're looking at from sensors alone - but even on radar there's no mistaking that something savage has happened to this vessel. No longer a single contiguous piece of metal, the hull's been blown out in parts, leaving a comet-like wake of debris that scatters across the void behind the derelict freighter. The fore-end of the ship seems to've fared better than the rear, if the thin jets of atmosphere lancing out from perforations in the hull and sending the entire assembly into a gentle spin are anything to judge by - it's certainly a gentler sort of damage than the variety that would lead to immediate decompression.`
+			`Out in the black it can be difficult to know exactly what you're looking at from sensors alone - but even on radar there's no mistaking that something savage has happened to one of the vessels on your scanner. No longer a single contiguous piece of metal, the hull's been blown out in parts, leaving a comet-like wake of debris that scatters across the void behind the derelict freighter. The fore-end of the ship seems to've fared better than the rear, if the thin jets of atmosphere lancing out from perforations in the hull and sending the entire assembly into a gentle spin are anything to judge by - it's certainly a gentler sort of damage than the variety that would lead to immediate decompression.`
 	npc assist
 		system "Lurata"
 		personality derelict
@@ -19,11 +19,11 @@ mission "Pirate 1: Derelict"
 			choice
 				`	(Check if the other side still has life support.)`
 					goto lifesupport
-				`	(I'll slip into something less comfortable first. A spacesuit, for example.)`
+				`	(I'll slip into something less comfortable first. An EVA suit, for example.)`
 					goto suitup
 			label lifesupport
 			`	You lean in to inspect the airlock's computer. Just because the lights are on and there's atmosphere on the other side doesn't mean it isn't full of toxic fumes. Your first query-press prompts an electronic ping, then a dull, metallic knock. That's... Not a sound you've ever heard this particular computer make before.`
-			`	And it's certainly never produced muffled speech along the lines of "Hey! Get me out of here, open the airlock!"`
+			`	And it's certainly never produced speech. It's muffled, but someone appears to be alive and screaming on the other side of the airlock."`
 			choice
 				`	(Inspect the porthole.)`
 					goto porthole
@@ -41,13 +41,16 @@ mission "Pirate 1: Derelict"
 				`	(Cycle the airlock, an open palm ready to render aid.)`
 					goto help
 			label aim
-			`	The airlock slides open with the gentle hiss of mostly-equal atmospheres evening out, then the shuffle of fabric as the man on the other side raises his hands over his head with painstaking slowness. "Look, the last batch of pirates already cleaned me out, all I've got to bargain with is my life and the clothes on my back, so if yer' really insisting..."`
+			`	The airlock slides open with the gentle hiss of mostly-equal atmospheres evening out, then the shuffle of fabric as the man on the other side raises his hands over his head with painstaking slowness. "Look, the last batch of pirates already cleaned me out, all I've got to bargain with is my life and the clothes on my back, so if you're really insisting..."`
 			choice
 				`	"Relax, friend. You know it's better to be safe than sorry out here. You can put your hands down and tell me what happened here."`
 					goto help
-				`	"Not good enough. Everyone's got a last-ditch stash, and I want yours. Give me what I want and I'll consider dropping you off somewhere less..." (Gesture expansively to the wrecked ship) "About to explosively decompress."`
+				`	"Not good enough. Everyone's got a stash, and I want yours. Give me what I want and I'll consider dropping you off somewhere less..." (Gesture expansively to the wrecked ship) "About to explosively decompress."`
+				goto rob
 			label help	
-			`	Relief flashes across the survivor's face. "Good. Let's get out of here, but there's something I need to get first. See, the pirates, I thought they were the ambush the dispatcher warned me about, but they were just in the right place at the right time, I'd just stocked up on industrial equipment to sell off at the end of this leg of the journey and they took that n' left. Left me with what I was really carrying." The man falls to his knees, a bit harder that what looks strictly comfortable, and starts prying his fingernails into a seam between deck plates. Grunts of exertion fade into an exasperated sigh. "Come on then, help me wrench this open - I'm no good with this bum arm. Aside from needing to get off this bucket before it collapses, the deadline to deliver this is ticking away - I'll give you a cut if we make it, yeah?"`
+			`	Relief flashes across the survivor's face. "Good. Let's get out of here, but there's something I need to get first. See, the pirates, I thought they were the ambush the dispatcher warned me about, but they were just in the right place at the right time. I'd just stocked up on industrial equipment to sell off at the end of this leg, they took that and were satisfied. Left me with what I was really carrying."`
+			`	The man falls to his knees, a bit harder than what looks strictly comfortable, and starts jamming his fingernails into a seam between deck plates. Grunts of exertion fade into an exasperated sigh. "Come on then, help me wrench this open - I'm no good with this bum arm. The deadline to deliver this is ticking away - I'll give you a cut if we make it, yeah?"`
+			label helping
 			choice
 				`	"Not a chance. I'm not staying on this deathtrap any longer than I have to."`
 					goto offer
@@ -80,7 +83,7 @@ mission "Pirate 1: Derelict"
 				`	"We? I'm afraid you're mistaken - your ship was lost with all hands, I've just been exercising my rights to salvage."`
 			apply
 				set "Pirate 1: Derelict - Abandoned Smuggler"
-			`	The color drains out of the shipwrecked soul's face as he realizes what you're implying. Fear quickly turns to anger. "I'll haunt you through the void until the day my very soul unwravels, mark my words. You'll never known peace in this life or the next, you bastard."`
+			`	The color drains out of the shipwrecked soul's face as he realizes what you're implying. Fear quickly turns to fury. "I'll haunt you through the void until the day my spirit unwravels, mark my words. You'll never known peace in this life or the next, you bastard."`
 			branch suitedup
 				has "Pirate 1: Derelict - Suited Up"
 			choice
@@ -96,6 +99,17 @@ mission "Pirate 1: Derelict"
 					goto release
 				`	"Back up or I'll shoot. I'll give you some time alone. Who knows? Maybe you'll get lucky and the next person to board your pathetic ship'll show some mercy."`
 					goto abandon
+			label rob
+			`	The captain's eyes flash downwards towards the plate he's standing on. "Fine. Fine. As if this day wasn't bad enough already. The plate I'm standing on-" The captain taps his toe on the plate firmly, creating a resonant thud. "-it's a hidden compartment. Take what you want from there and just... leave me be."
+			choice
+				`	"Step aside." (Fetch a prybar from the airlock tool cabinet and get to work.)
+				`	"Open it." (Fetch a prybar from the airlock tool cabinet and throw it at your new friend's feet.)
+			`	Given a long enough lever and a place to wedge it, you can evidently move... a deck plate. A cozy little smugglers' compartment is revealed beneath, a bulky handled case within. Your new acquaintance regards you with clear hatred, but addresses you nonetheless.`
+			`"Look - you want to get paid what this thing's worth, I want to keep my reputation as a trustworthy courier. Take this to my clients on Trikent, tell them you're me - Captain Sigmund Adams, you'll get full payment on delivery and I... Well, I get to keep my good name and nobody ever has to learn about this. I guarantee that your average fence will only pay a pittance for what's in that case."`
+				label forced
+				
+			
+			
 			label shoot
 			`	[dude dies, boarding conversation ends, mission spawns to go to Trinket and hand in the loot)`
 				decline
@@ -118,7 +132,7 @@ mission "Pirate 1: Derelict"
 			`You pawn off the cargo for <payment>.`
 				goto end
 			label nocargo
-			`Your unexpected passenger largely kept to himself over the course of the trip, sulking and muttering about what "this is going to do to my insurance premiums". It's better for everybody involved when he finally disembarks, not even stopping to present you with the rude gesture he makes over his shoulder before disappearing into the spaceport.`
+			`Your unexpected passenger largely kept to himself over the course of the trip, sulking and muttering about what "this is going to do to my insurance premiums". It's better for everybody involved when he finally disembarks, not even stopping to properly present you with the rude gesture he makes over his shoulder before disappearing into the spaceport.`
 			label end
 			apply
 				clear "Pirate 1: Derelict - Suited Up"
