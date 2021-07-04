@@ -46,7 +46,7 @@ mission "Pirate 1: Derelict"
 				`	"Relax, friend. You know it's better to be safe than sorry out here. You can put your hands down and tell me what happened here."`
 					goto help
 				`	"Not good enough. Everyone's got a stash, and I want yours. Give me what I want and I'll consider dropping you off somewhere less..." (Gesture expansively to the wrecked ship) "About to explosively decompress."`
-				goto rob
+					goto rob
 			label help	
 			`	Relief flashes across the survivor's face. "Good. Let's get out of here, but there's something I need to get first. See, the pirates, I thought they were the ambush the dispatcher warned me about, but they were just in the right place at the right time. I'd just stocked up on industrial equipment to sell off at the end of this leg, they took that and were satisfied. Left me with what I was really carrying."`
 			`	The man falls to his knees, a bit harder than what looks strictly comfortable, and starts jamming his fingernails into a seam between deck plates. Grunts of exertion fade into an exasperated sigh. "Come on then, help me wrench this open - I'm no good with this bum arm. The deadline to deliver this is ticking away - I'll give you a cut if we make it, yeah?"`
@@ -100,13 +100,14 @@ mission "Pirate 1: Derelict"
 				`	"Back up or I'll shoot. I'll give you some time alone. Who knows? Maybe you'll get lucky and the next person to board your pathetic ship'll show some mercy."`
 					goto abandon
 			label rob
-			`	The captain's eyes flash downwards towards the plate he's standing on. "Fine. Fine. As if this day wasn't bad enough already. The plate I'm standing on-" The captain taps his toe on the plate firmly, creating a resonant thud. "-it's a hidden compartment. Take what you want from there and just... leave me be."
+			`	The captain's eyes flash downwards towards the plate he's standing on. "Fine. Fine. As if this day wasn't bad enough already. The plate I'm standing on-" The captain taps his toe on the plate firmly, creating a resonant thud. "-it's a hidden compartment. Take what you want from there and just... leave me be."`
 			choice
-				`	"Step aside." (Fetch a prybar from the airlock tool cabinet and get to work.)
-				`	"Open it." (Fetch a prybar from the airlock tool cabinet and throw it at your new friend's feet.)
+				`	"Step aside." (Fetch a prybar from the airlock tool cabinet and get to work.)`
+				`	"Open it." (Fetch a prybar from the airlock tool cabinet and throw it at your new friend's feet.)`
 			`	Given a long enough lever and a place to wedge it, you can evidently move... a deck plate. A cozy little smugglers' compartment is revealed beneath, a bulky handled case within. Your new acquaintance regards you with clear hatred, but addresses you nonetheless.`
-			`"Look - you want to get paid what this thing's worth, I want to keep my reputation as a trustworthy courier. Take this to my clients on Trikent, tell them you're me - Captain Sigmund Adams, you'll get full payment on delivery and I... Well, I get to keep my good name and nobody ever has to learn about this. I guarantee that your average fence will only pay a pittance for what's in that case."`
-				label forced
+			`	"Look - you want to get paid what this thing's worth, I want to keep my reputation as a trustworthy courier. Take this to my clients on Trikent, tell them you're me - Captain Sigmund Adams, you'll get full payment on delivery and I... Well, I get to keep my good name and nobody ever has to learn about this. I guarantee that your average fence will only pay a pittance for what's in that case."`
+			label forced
+				decline
 				
 			
 			
