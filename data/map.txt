@@ -26837,7 +26837,8 @@ planet "Copperline Station"
 	attributes pirate station frontier "core pirate" smuggling
 	landscape land/distillery1
 	description `C2H5OH. Ethyl alcohol, the nectar of the Gods spilled upon the heavens themselves; the Great Molecular Cloud has long been a mythical promised land to spacers, from the early days when humanity yearned to journey beyond their star, even until recently - the only thing that actually put an end to the myths was finally encountering them. As it turns out, harvesting pure vodka from clouds of loose molecules - even though this region be comparatively rich in such substances - is still taxing work.`
-	description `Perhaps that's exactly why the independent-minded Coreshiners who operate Copperline Station refuse to pay any such duties. Here on the very edge of human space, they've managed to remain low enough on the Republic's priority list that the taxman can't bring enough guns to bear to settle accounts with the rumrummers and smugglers who call this remote corner of the galaxy home.`
+	description `Here on the very edge of human space, the Coreshiners have managed to remain low enough on the Republic's priority list that the taxman can't bring enough guns to bear to settle accounts with the rumrummers and smugglers who call this remote corner of the galaxy home.`
+	outfitter "Smuggling: Coreshine"
 
 planet Cornucopia
 	attributes south farming research frontier
@@ -27554,6 +27555,7 @@ planet Glory
 	tribute 4300
 		threshold 7500
 		fleet "Large Republic" 16
+	outfitter "Smuggling: Designer Drugs"
 
 planet Goldcrawl
 	attributes hai station uninhabited retirement
@@ -29397,12 +29399,14 @@ planet Skymoot
 	tribute 400
 		threshold 2000
 		fleet "Large Militia" 6
+	outfitter "Smuggling: Dragon's Teeth"
 
 planet "Sleezy Ed's Scrap and Surplus"
 	attributes moon smuggling
 	landscape land/badlands0
 	description `This is a scrapyard in space.`
 	spaceport `This is a spaceport in space, in a scrapyard.`
+	outfitter "Smuggling: Stolen Ship Parts"
 
 planet Slylandro
 	attributes "requires: gaslining"
