@@ -8547,6 +8547,11 @@ system Durax
 		sprite planet/ice8
 		distance 1740.09
 		period 883.498
+	object "Copperline Station"
+		sprite planet/station1b-recolor
+		distance 1975
+		period 165
+		
 	object
 		sprite planet/gas2
 		distance 2530.73
@@ -17613,7 +17618,7 @@ system Naper
 		sprite planet/gas13-b
 		distance 967.73
 		period 290.776
-		object
+		object "Sleezy Ed's Scrap and Surplus"
 			sprite planet/ganymede
 			distance 301
 			period 14.0112
@@ -26491,7 +26496,7 @@ planet "Big Sky"
 		fleet "Small Militia" 50
 
 planet Bivrost
-	attributes deep mining urban
+	attributes deep mining urban smuggling
 	landscape land/city14-sfiera
 	description `Bivrost is the one planet in the Deep where heavy metals are relatively abundant. What began as a mining colony has developed into one of the most prosperous worlds in the region.`
 	description `	Unlike most worlds that are strip mined for uranium, the environment outside the cities is relatively unspoiled. Strict controls are placed on the emissions and waste products of the local manufacturing plants to ensure that it stays that way.`
@@ -26827,6 +26832,12 @@ planet "Cool Forest"
 	landscape land/myrabella0
 	description `Much of Cool Forest's land mass is covered by the sort of temperate woodlands that the Saryds prefer to build their residential neighborhoods in. The total population is over a billion, but living in small settlements so well integrated with the surrounding forest that from space only a few major cities are visible.`
 	spaceport `The spaceport here is a major city, with a continuous stream of cargo transports bringing goods manufactured on Cool Forest's sister planet, Diligent Hand. Here, some final assembly, testing, and repackaging is performed before those goods are shipped out to the rest of Saryd space and beyond.`
+
+planet "Copperline Station"
+	attributes pirate station frontier "core pirate" smuggling
+	landscape land/distillery1
+	description `C2H5OH. Ethyl alcohol, the nectar of the Gods spilled upon the heavens themselves; the Great Molecular Cloud has long been a mythical promised land to spacers, from the early days when humanity yearned to journey beyond their star, even until recently - the only thing that actually put an end to the myths was finally encountering them. As it turns out, harvesting pure vodka from clouds of loose molecules - even though this region be comparatively rich in such substances - is still taxing work.`
+	description `Perhaps that's exactly why the independent-minded Coreshiners who operate Copperline Station refuse to pay any such duties. Here on the very edge of human space, they've managed to remain low enough on the Republic's priority list that the taxman can't bring enough guns to bear to settle accounts with the rumrummers and smugglers who call this remote corner of the galaxy home.`
 
 planet Cornucopia
 	attributes south farming research frontier
@@ -27531,7 +27542,7 @@ planet "Glittering Ice"
 	"required reputation" 15
 
 planet Glory
-	attributes paradise medical
+	attributes paradise medical smuggling
 	landscape land/sky8
 	description `Elsewhere in the galaxy, people speak dismissively of the "boughten sunshine" that rich terraformed worlds can afford. On Glory, even many of the lakes and hills are artificial, crafted to garden-like perfection.`
 	description `	Fittingly, the chief industry on Glory is plastic surgery, along with other medical efforts aimed at prolonging life, funded by rich, elderly folks who have settled here.`
@@ -27662,7 +27673,7 @@ planet Harmony
 	security 0
 
 planet Haven
-	attributes pirate mining "north pirate" north frontier
+	attributes pirate mining "north pirate" north frontier smuggling
 	landscape land/dune1
 	description `Haven was founded by highly successful "privateers" nearly two centuries ago. Since then, as rival bands of pirates have fought over it, it has changed hands fourteen times, but has never been successfully invaded by the Republic. Numerous small manufacturing shops sell outfits that cannot be bought legally, and there is even a small shipyard where customized ships are sold to those who have the right connections.`
 	description `	Much of the planet is desert, but with enough moisture to grow enough crops to feed the entire population. Strip mining has turned other parts of the planet into barren wastelands, and has polluted many of the rivers.`
@@ -29376,7 +29387,7 @@ planet Skyfarm
 	security 0.2
 
 planet Skymoot
-	attributes rim tourism
+	attributes rim tourism smuggling
 	landscape land/sky2
 	description `The "dragons" of Skymoot are an immensely popular tourist attraction, unlike their mythical namesakes only in their lack of ability to breathe fire. The presence of such an efficient apex predator has spurred the evolution of a stunning variety of defense mechanisms in its prey, as well; whether in the air or in the plains or deep in the forest, Skymoot is a dangerous place to visit.`
 	description `	The scientific consensus is that the "dragons" are clever animals, but not sentient. Those who insist on trying to find ways to communicate with them almost invariably end up getting eaten.`
@@ -29387,13 +29398,19 @@ planet Skymoot
 		threshold 2000
 		fleet "Large Militia" 6
 
+planet "Sleezy Ed's Scrap and Surplus"
+	attributes moon smuggling
+	landscape land/badlands0
+	description `This is a scrapyard in space.`
+	spaceport `This is a spaceport in space, in a scrapyard.`
+
 planet Slylandro
 	attributes "requires: gaslining"
 	landscape land/nasa9
 	description `Far beneath the swirling blue surface of Slylandro's atmosphere, void sprites and other strange creatures float about. As improbable as it may seem, the void sprites must have somehow evolved the capability to manipulate gravity fields, because every once in a while one of them will rise up from the surface powered by an antigravity field similar to the landing repulsors used by human ships. When they do so, the decrease in atmospheric pressure causes them to nearly double in size.`
 
 planet "Smuggler's Den"
-	attributes pirate station "south pirate" south frontier
+	attributes pirate station "south pirate" south frontier smuggling
 	landscape land/loc1
 	description `Smuggler's Den was formerly known as Grendel Station, back when it was an operating refinery. But, it has since been taken over by pirates, who turned it into a haven for all manner of smugglers and privateers. As a hub of pirate activity, Smuggler's Den has access to fenced goods from beyond the region, resulting in repair shops that can make a variety of legal and illegal modifications to your ship. This confluence also provides the opportunity to buy refurbished starships... if it does not trouble your conscience to think about the likely fates of their previous owners. Rumor has it that pilots with the right connections may be able to purchase heavily modified ships here.`
 	spaceport `It is a strange but indisputable fact that pirates smell worse than ordinary human beings. In this day and age, where even the cheapest shuttlecraft at least has a sonic shower, there is no logical explanation for it, except that anarchist tendencies must somehow go hand in hand with a tendency to reject society's norms around hygiene. Here in a space station, with nothing but recycled air to breathe, the effect is overpowering.`
