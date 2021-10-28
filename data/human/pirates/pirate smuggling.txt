@@ -97,3 +97,18 @@ outfitter "Smuggling: Counterfeit Credsticks"
 
 outfitter "Smuggling: Jailbroken AI Cores"
 	"Jailbroken AI Core"
+
+
+
+mission "Smuggling to Glory: Sell 10x Chemical Warheads"
+	invisible
+	landing
+	repeat
+	source "Glory"
+	on offer
+		require "Chemical Warheads" 10
+		dialog "Do you want to sell 10 Chemical Warheads?"
+	on accept
+		outfit "Chemical Warheads" -10
+		payment 1000000
+		fail

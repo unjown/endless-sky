@@ -27550,7 +27550,7 @@ planet Glory
 	spaceport `The starport is as perfectly sculpted as the rest of the planet, a hive-like structure with hexagonal openings of various sizes for docking bays. Gardens have been planted on the roofs and on terraces on all different levels, and a small artificial river flows from a fountain on the roof down among the terraces and out to the ground below.`
 	spaceport `	It is almost impossible to tell the age of the locals who are walking by: there is a frightening monotony of wrinkle-free, nearly identically proportioned faces. When they speak, only their lips move; their expressions remain mask-like, immobile.`
 	bribe 0.05
-	security 0.6
+	security 0
 	tribute 4300
 		threshold 7500
 		fleet "Large Republic" 16
@@ -29425,6 +29425,7 @@ planet "Smuggler's Den"
 	outfitter "Ammo North"
 	outfitter "Ammo South"
 	outfitter "Pirate Outfits"
+	outfitter "Smuggling: Chemical Warheads"
 	bribe 0.06
 	security 0
 	tribute 400
