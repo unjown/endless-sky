@@ -4,6 +4,7 @@ outfit "Chemical Warhead"
 	category "Special"
 	cost 850000
 	thumbnail "outfit/chemical warhead"
+	illegal 1000000
 	"mass" 10
 	"installable" -1
 	description "It's a commodity, but it's illegal. Somebody, somewhere, will pay a good price for this."
@@ -100,15 +101,88 @@ outfitter "Smuggling: Jailbroken AI Cores"
 
 
 
-mission "Smuggling to Glory: Sell 10x Chemical Warheads"
+# TODO - When auto-generated conditions that can check outfits are implemented, replace
+# these mission variants with a single one per type, with a conversation that can dynamically
+# buy as many commodities as you have.
+mission "Smuggling to Glory A: Sell 100x Chemical Warheads"
 	invisible
 	landing
 	repeat
 	source "Glory"
 	on offer
-		require "Chemical Warheads" 10
-		dialog "Do you want to sell 10 Chemical Warheads?"
+		require "Chemical Warhead" 100
+		conversation "Smuggling: Sell 100x Chemical Warheads"
 	on accept
-		outfit "Chemical Warheads" -10
-		payment 1000000
+		outfit "Chemical Warhead" -100
+		payment 100000000
 		fail
+	on complete
+		payment 100000000
+
+mission "Smuggling to Glory B: Sell 50x Chemical Warheads"
+	invisible
+	landing
+	repeat
+	source "Glory"
+	on offer
+		require "Chemical Warhead" 50
+		conversation "Smuggling: Sell 50x Chemical Warheads"
+	on accept
+		outfit "Chemical Warhead" -50
+		payment 50000000
+		fail
+	on complete
+		payment 50000000
+
+mission "Smuggling to Glory C: Sell 10x Chemical Warheads"
+	invisible
+	landing
+	repeat
+	source "Glory"
+	on offer
+		require "Chemical Warhead" 10
+		conversation "Smuggling: Sell 10x Chemical Warheads"
+	on accept
+		outfit "Chemical Warhead" -10
+		payment 10000000
+		fail
+	on complete
+		payment 10000000
+
+
+
+conversation "Smuggling: Sell 10x Chemical Warheads"
+	`Do you want to sell 10 Chemical Warheads? You will get <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 50x Chemical Warheads"
+	`Do you want to sell 50 Chemical Warheads? You will get <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 100x Chemical Warheads"
+	`Do you want to sell 100 Chemical Warheads? You will get <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
