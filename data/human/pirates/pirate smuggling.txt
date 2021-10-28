@@ -2,72 +2,73 @@
 outfit "Chemical Warhead"
 	plural "chemical warheads"
 	category "Special"
-	cost 0
+	cost 850000
 	thumbnail "outfit/chemical warhead"
-	"mass" 8
+	"mass" 10
 	"installable" -1
 	description "It's a commodity, but it's illegal. Somebody, somewhere, will pay a good price for this."
 	
 outfit "Coreshine"
 	plural "coreshine"
 	category "Special"
-	cost 0
+	cost 200
 	thumbnail "outfit/coreshine"
-	"mass" 8
+	"mass" 1
 	"installable" -1
 	description "It's a commodity, but it's illegal. Somebody, somewhere, will pay a good price for this."
 	
 outfit "Dragon's Teeth"
 	plural "dragon's teeth"
 	category "Special"
-	cost 0
+	cost 10000
 	thumbnail "outfit/dragon teeth"
-	"mass" 8
+	"mass" 1
 	"installable" -1
 	description "It's a commodity, but it's illegal. Somebody, somewhere, will pay a good price for this."
 	
 outfit "Designer Drugs"
 	plural "designer drugs"
 	category "Special"
-	cost 0
+	cost 900
 	thumbnail "outfit/designer drugs"
-	"mass" 8
+	"mass" 0.25
 	"installable" -1
 	description "It's a commodity, but it's illegal. Somebody, somewhere, will pay a good price for this."
 	
 outfit "Stolen Ship Parts"
 	plural "stolen ship parts"
 	category "Special"
-	cost 0
+	cost 200000
 	thumbnail "outfit/stolen ship parts"
 	"mass" 8
 	"installable" -1
 	description "It's a commodity, but it's illegal. Somebody, somewhere, will pay a good price for this."
 	
-outfit "MANPADS"
-	plural "MANPADS"
+outfit "Missile Launchers"
+	plural "missile launchers"
 	category "Special"
-	cost 0
+	cost 12000
 	thumbnail "outfit/MANPADS"
-	"mass" 8
+	"mass" 2
 	"installable" -1
 	description "It's a commodity, but it's illegal. Somebody, somewhere, will pay a good price for this."
 	
 outfit "Counterfeit Credsticks"
 	plural "counterfeit credsticks"
 	category "Special"
-	cost 0
+	cost 10
 	thumbnail "outfit/counterfeit credsticks"
-	"mass" 8
+	"mass" 0.01
+	illegal 30
 	"installable" -1
-	description "It's a commodity, but it's illegal. Somebody, somewhere, will pay a good price for this."
+	description "Cash is so last millenium. Even so, humanity's old habits die hard - who wouldn't want money for nothing? Fake credsticks, like counterfeit money in any era, follows a basic premise: the producers trade it at a discount relative to its face value, their customers understanding that there's a degree of risk in conducting commerce with false currency. Credsticks like these are in demand among the sleazier elements of the galaxy, and with those who have the sheer chutzpah to fob off rubbish as gold."
 	
 outfit "Jailbroken AI Core"
 	plural "jailbroke AI cores"
 	category "Special"
-	cost 0
+	cost 12471116
 	thumbnail "outfit/jailbroken AI core"
-	"mass" 8
+	"mass" 0.25
 	"installable" -1
 	description "It's a commodity, but it's illegal. Somebody, somewhere, will pay a good price for this."
 
@@ -89,10 +90,10 @@ outfitter "Smuggling: Stolen Ship Parts"
 	"Stolen Ship Parts"
 
 outfitter "Smuggling: MANPADS"
-	"MANPADS"
+	"Missile Launchers"
 
 outfitter "Smuggling: Counterfeit Credsticks"
 	"Counterfeit Credsticks"
 
-outfitter "Smuggling: Jailbroken AI Core"
+outfitter "Smuggling: Jailbroken AI Cores"
 	"Jailbroken AI Core"
