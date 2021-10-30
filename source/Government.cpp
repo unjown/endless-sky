@@ -339,11 +339,11 @@ void Government::Bribe() const
 
 
 
-// Check to see if the player has done anything they should be fined for.
+// Check to see if the player has done anything they should be fined for on a planet.
 // Each government can only fine you once per day.
-string Government::Fine(PlayerInfo &player, int scan, const Ship *target, double security) const
+string Government::Fine(PlayerInfo &player, double security) const
 {
-	return GameData::GetPolitics().Fine(player, this, scan, target, security);
+	return GameData::GetPolitics().Fine(player, this, security);
 }
 
 

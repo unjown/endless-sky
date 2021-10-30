@@ -103,9 +103,9 @@ public:
 	void Offend(int eventType, int count = 1) const;
 	// Bribe this government to be friendly to you for one day.
 	void Bribe() const;
-	// Check to see if the player has done anything they should be fined for.
+	// Check to see if the player has done anything they should be fined for on a planet.
 	// Each government can only fine you once per day.
-	std::string Fine(PlayerInfo &player, int scan = 0, const Ship *target = nullptr, double security = 1.) const;
+	std::string Fine(PlayerInfo &player, double security) const;
 	
 	// Get or set the player's reputation with this government.
 	double Reputation() const;
