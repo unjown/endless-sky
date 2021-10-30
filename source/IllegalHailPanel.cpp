@@ -70,6 +70,7 @@ IllegalHailPanel::IllegalHailPanel(PlayerInfo &player, const Ship &hailingShip, 
 		auto bribeMessage =
 			Format::Replace(gov->GetInterdictionBribe().empty() ? defaultBribe : gov->GetInterdictionBribe(),
 					subs);
+		message += "\n\t";
 		message += bribeMessage;
 	}
 }
