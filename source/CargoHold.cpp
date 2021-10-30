@@ -578,7 +578,7 @@ int64_t CargoHold::IllegalCargoFine() const
 		if(fine < 0)
 			return fine;
 		if(!it.first->IsFailed())
-			totalFine += fine * it.second;
+			totalFine += fine;
 	}
 	
 	for(const auto &it : passengers)
@@ -587,7 +587,7 @@ int64_t CargoHold::IllegalCargoFine() const
 		if(fine < 0)
 			return fine;
 		if(!it.first->IsFailed())
-			totalFine += fine * it.second;
+			totalFine += fine;
 	}
 	
 	return totalFine;
