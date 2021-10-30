@@ -115,6 +115,9 @@ public:
 	// Get the government's crew attack/defense values
 	double CrewAttack() const;
 	double CrewDefense() const;
+
+	const std::string &GetInterdiction() const;
+	const std::string &GetInterdictionBribe() const;
 	
 	
 private:
@@ -139,6 +142,9 @@ private:
 	const Fleet *raidFleet = nullptr;
 	double crewAttack = 1.;
 	double crewDefense = 2.;
+
+	std::string interdiction;
+	std::string interdictionBribe;
 };
 
 

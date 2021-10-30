@@ -56,6 +56,8 @@ void Government::Load(const DataNode &node)
 			displayName = name;
 	}
 	
+	bool hasInterdiction = false;
+	bool hasInterdictionBribe = false;
 	for(const DataNode &child : node)
 	{
 		if(child.Token(0) == "display name" && child.Size() >= 2)
@@ -127,6 +129,25 @@ void Government::Load(const DataNode &node)
 			language = child.Token(1);
 		else if(child.Token(0) == "raid" && child.Size() >= 2)
 			raidFleet = GameData::Fleets().Get(child.Token(1));
+		else if((child.Token(0) == "interdiction" || child.Token(0) == "interdiction bribe")
+				&& child.Size() >= 2)
+		{
+			const bool isInterdiction = child.Token(0) == "interdiction";
+			string &text = isInterdiction ? interdiction : interdictionBribe;
+			bool &seen = isInterdiction ? hasInterdiction : hasInterdictionBribe;
+
+			if(!seen)
+			{
+				text.clear();
+				seen = true;
+			}
+
+			const auto &value = child.Token(1);
+			if(!text.empty() && !value.empty() && value[0] > ' ')
+				text += '\t';
+			text += child.Token(1);
+			text += "\n\t";
+		}
 		else
 			child.PrintTrace("Skipping unrecognized attribute:");
 	}
@@ -380,4 +401,18 @@ double Government::CrewAttack() const
 double Government::CrewDefense() const
 {
 	return crewDefense;
+}
+
+
+
+const string &Government::GetInterdiction() const
+{
+	return interdiction;
+}
+
+
+
+const string &Government::GetInterdictionBribe() const
+{
+	return interdictionBribe;
 }
