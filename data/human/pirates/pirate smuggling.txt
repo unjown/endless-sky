@@ -196,3 +196,66 @@ conversation "Smuggling: Sell 100x Chemical Warheads"
 	label sell
 	`You successfully sell your smuggled goods for <payment>.`
 		accept
+
+mission "Legal Code: Chemical Warheads"
+	invisible
+	landing
+	source "Smuggler's Den"
+	on offer
+		log ["Republic Customs Law" "Chemical Warheads"] `Excerpted from Republic Customs code, Section A: Absolutely Forbidden Cargo`
+		log ["Republic Customs Law" "Chemical Warheads"] `... possession of items defined under Article 2, including but not limited to CHEMICAL WARHEADS, cobalt-doped THERMONUCLEAR DEVICES, and other WEAPONS OF MASS DESTRUCTION shall be considered grounds for immediate seizure by Naval Forces, warranting actions including but not limited to the full destruction of transporting vessel(s) and personnel.`
+		
+mission "Legal Code: Coreshine"
+	invisible
+	landing
+	source "smugglingport"
+	on offer
+		log ["Republic Customs Law" "Coreshine"] `Excerpted from Republic Customs code, Section D: Tax Evasion and Fraud`
+		log ["Republic Customs Law" "Coreshine"] `Upon failure to provide proof of payment for duties on cargo, inspecting officers are authorized to immediately collect UNPAID TAXES and issue a FINE of 500c. If the purchase price of the cargo is unknown, officers are authorized to collect taxes according to prices as detailed in TABLE IV.`
+		log ["Republic Customs Law" "Coreshine"] `	Table IV: Taxes to be levied on bulk commodities"`
+		log ["Republic Customs Law" "Coreshine"] `		...
+		log ["Republic Customs Law" "Coreshine"] `		Alcohol, Ethyl: 50c/ton
+		log ["Republic Customs Law" "Coreshine"] `		Alpaca Wool: 22c/ton
+		log ["Republic Customs Law" "Coreshine"] `		...
+		
+mission "Legal Code: Dragon's Teeth"
+	invisible
+	landing
+	source "Skymoot"
+	on offer
+		log ["Republic Customs Law" "Dragon's Teeth"] `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
+		
+mission "Legal Code: Designer Drugs"
+	invisible
+	landing
+	source "smugglingport"
+	on offer
+		log ["Republic Customs Law" "Designer Drugs"] `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
+		
+mission "Legal Code: Stolen Ship Parts"
+	invisible
+	landing
+	source "Sleezy Ed's Scrap and Surplus"
+	on offer
+		log ["Republic Customs Law" "Stolen Ship Parts"] `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
+		
+mission "Legal Code: Missile Launchers"
+	invisible
+	landing
+	source "Haven"
+	on offer
+		log ["Republic Customs Law" "Missile Launchers"] `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
+		
+mission "Legal Code: Counterfeit Credsticks"
+	invisible
+	landing
+	source "Warehouse 26FF57C3"
+	on offer
+		log ["Republic Customs Law" "Counterfeit Credsticks"] `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
+		
+mission "Legal Code: Jailbroken AI Cores"
+	invisible
+	landing
+	source "Bivrost"
+	on offer
+		log ["Republic Customs Law" "Jailbroken AI Cores"] `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
