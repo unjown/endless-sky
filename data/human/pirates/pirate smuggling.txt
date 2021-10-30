@@ -213,7 +213,7 @@ mission "Legal Code: Coreshine"
 	source "smugglingport"
 	on offer
 		log "Republic Law" "Coreshine" `Excerpted from Republic Customs code, Section D: Tax Evasion and Fraud`
-		log "Republic Law" "Coreshine" `Upon failure to provide proof of payment for duties on cargo, inspecting officers are authorized to immediately collect UNPAID TAXES and issue a FINE of 500c. If the purchase price of the cargo is unknown, officers are authorized to collect taxes according to prices as detailed in TABLE IV.`
+		log "Republic Law" "Coreshine" `Upon failure to provide proof of payment for duties on cargo, inspecting officers are authorized to immediately collect UNPAID TAXES and issue a FINE of up to TEN TIMES the value of UNPAID TAXES. If the purchase price of the cargo is unknown, officers are authorized to collect taxes according to prices as detailed in TABLE IV.`
 		log "Republic Law" "Coreshine" `	Table IV: Taxes to be levied on bulk commodities"`
 		log "Republic Law" "Coreshine" `		...`
 		log "Republic Law" "Coreshine" `		Alcohol, Ethyl: 50c/ton`
