@@ -26505,6 +26505,7 @@ planet Bivrost
 	outfitter "Basic Outfits"
 	outfitter "Deep Sky Basics"
 	outfitter "Ammo North"
+	outfitter "Smuggling: Jailbroken AI Cores"
 	security 0.8
 	tribute 3600
 		threshold 7000
@@ -27688,6 +27689,7 @@ planet Haven
 	outfitter "Ammo North"
 	outfitter "Ammo South"
 	outfitter "Pirate Outfits"
+	outfitter "Smuggling: MANPADS"
 	bribe 0.03
 	security 0
 	tribute 700
