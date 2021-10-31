@@ -53,15 +53,16 @@ outfit "Stolen Ship Parts"
 	description "Well, somebody is going to miss these parts. Possibly. The alternative that nobody is left to miss them is somewhat more grim."
 	description "Stolen parts are generally traded at a discount, though most customers will avoid them due to the risks of being discovered in possession of stolen property. Coreshine runners tend to go through spare parts like candy, often due to their propensity for tinkering and experimentation to make the meanest, leanest hotrods in space."
 
-outfit "Missile Launchers"
-	plural "missile launchers"
+outfit "Liberator Missile System"
+	plural "Liberators"
 	category "Special"
 	cost 12000
 	thumbnail "outfit/MANPADS"
 	"mass" 2
 	"installable" -1
-	description "'Give a long enough tube and a missile to launch from it and I'll give you the world', said a very wise mercenary once. Portable, potent enough to down civilian air vehicles or, in a volley, lightly shielded spacecraft, these man-portable missile launchers are rumored to be based on an experimental design out of Lovelace Labs that was, for whatever reason, leaked to the pirate warlords of the Far North, who now manufacture them in bulk."
-	description "Besides guerillas, they're much beloved by poachers on Skymoot, as a compact anti-air missile that one can still reasonably carry through rugged terrain is a great boon in dragon slaying."
+	description "These man-portable missile launchers were instrumental in bringing about the collapse of an early political rival of the Republic, when decades of stalemate were finally brought to an end by Republic Intelligence operatives smuggling tens of thousands of missile launchers into the hands of freedom fighters behind enemy lines."
+	description "Of course, those freedom fighters are now brutal warlords wanted dead or alive by the very same organization that once armed them. No longer needing to resort to ambush or hit-and-run tactics, the northern warlords are content to sell off their stocks of Liberators in order to fund other activities."
+	description "Besides guerillas, the Liberator is much beloved by poachers on Skymoot, as a compact anti-air missile is a great boon during the cross-country treks that dragon slaying oft requires."
 
 outfit "Counterfeit Credsticks"
 	plural "counterfeit credsticks"
@@ -101,7 +102,7 @@ outfitter "Smuggling: Stolen Ship Parts"
 	"Stolen Ship Parts"
 
 outfitter "Smuggling: MANPADS"
-	"Missile Launchers"
+	"Liberator Missile System"
 
 outfitter "Smuggling: Counterfeit Credsticks"
 	"Counterfeit Credsticks"
@@ -246,12 +247,12 @@ mission "Legal Code: Missile Launchers"
 	landing
 	source "Haven"
 	on offer
-		log "Republic Law" "Missile Launchers" `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
+		log "Republic Law" "Liberator Missile Systems" `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
 
 mission "Legal Code: Counterfeit Credsticks"
 	invisible
 	landing
-	source "Warehouse 26FF57C3"
+	source "Warehouse 26FF"
 	on offer
 		log "Republic Law" "Counterfeit Credsticks" `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
 
