@@ -343,7 +343,7 @@ Politics::Punishment Politics::CalculateFine(PlayerInfo &player, const Governmen
 					{
 						// Negative fines are an alternative way of specifying an atrocity.
 						// We don't add them to the total fines that the player needs to pay.
-						if(fine > 0)
+						if(!punishment.isAtrocity)
 							punishment.cost += fine;
 						punishment.reason |= Punishment::Outfit;
 					}
