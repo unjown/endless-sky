@@ -39,7 +39,7 @@ using namespace std;
 
 
 
-IllegalHailPanel::IllegalHailPanel(PlayerInfo &player, const Ship &hailingShip, const Ship &scannedShip, const Politics::Punishment &fine)
+IllegalHailPanel::IllegalHailPanel(PlayerInfo &player, const Ship &hailingShip, Ship &scannedShip, const Politics::Punishment &fine)
 	: player(player), hailingShip(hailingShip), scannedShip(scannedShip), facing(hailingShip.Facing()), fine(fine)
 {
 	const Government *gov = hailingShip.GetGovernment();
@@ -131,8 +131,11 @@ bool IllegalHailPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &comma
 	if(((key == 's' || key == 'c') && !cantSurrender)
 			|| ((key == 'p' || key == 'f') && cantSurrender))
 	{
-		// TODO: Dump illegal cago.
-		(void)scannedShip;
+		// Dump illegal cago. Only spare outfits are removed. Any mission cargo
+		// is automatically removed since the missions are failed.
+		for(const auto &pair : scannedShip.Cargo().Outfits())
+			if(pair.first->Get("illegal") || pair.first->Get("atrocity"))
+				scannedShip.Jettison(pair.first, pair.second, true);
 
 		// Pay the required fine.
 		player.Accounts().AddFine(fine.cost);

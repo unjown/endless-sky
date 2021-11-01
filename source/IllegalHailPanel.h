@@ -35,7 +35,7 @@ class StellarObject;
 // This panel is shown when a ship scans you and finds illegal outfits.
 class IllegalHailPanel : public Panel {
 public:
-	IllegalHailPanel(PlayerInfo &player, const Ship &hailingShip, const Ship &scannedShip, const Politics::Punishment &fine);
+	IllegalHailPanel(PlayerInfo &player, const Ship &hailingShip, Ship &scannedShip, const Politics::Punishment &fine);
 
 	virtual void Draw() override;
 
@@ -52,7 +52,7 @@ private:
 private:
 	PlayerInfo &player;
 	const Ship &hailingShip;
-	const Ship &scannedShip;
+	Ship &scannedShip;
 	Angle facing;
 
 	std::string header;
