@@ -52,6 +52,9 @@ IllegalHailPanel::IllegalHailPanel(PlayerInfo &player, const Ship &hailingShip, 
 	static const std::string defaultMessage
 		= "You've been detected carrying illegal <type> and have been issued a fine of <fine> credits. \n\tDump your cargo immediately or we'll be forced to disable and board your ship.";
 
+
+	cantSurrender = fine.reason == Politics::Punishment::Outfit;
+
 	map<string, string> subs = {
 		{"<type>", fine.reason & Politics::Punishment::Outfit ? "outfits" : "cargo"},
 		{"<fine>", Format::Number(fine.cost)},
@@ -85,6 +88,7 @@ void IllegalHailPanel::Draw()
 	info.SetString("header", header);
 	if(bribe)
 		info.SetCondition("can bribe");
+	info.SetCondition(cantSurrender ? "can pay" : "can surrender");
 
 	const Interface *hailUi = GameData::Interfaces().Get("illegal hail panel");
 	hailUi->Draw(info, this);
@@ -124,7 +128,8 @@ void IllegalHailPanel::Draw()
 
 bool IllegalHailPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress)
 {
-	if(key == 's' || key == 'c')
+	if(((key == 's' || key == 'c') && !cantSurrender)
+			|| ((key == 'p' || key == 'f') && cantSurrender))
 	{
 		// TODO: Dump illegal cago.
 		(void)scannedShip;

@@ -59,7 +59,8 @@ private:
 	std::string message;
 
 	Politics::Punishment fine;
-	int64_t bribe;
+	int64_t bribe = 0;
+	bool cantSurrender = false;
 };
 
 
