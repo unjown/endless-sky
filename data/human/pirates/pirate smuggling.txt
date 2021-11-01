@@ -96,7 +96,7 @@ outfitter "Smuggling: Dragon's Teeth"
 	"Dragon's Teeth"
 
 outfitter "Smuggling: Designer Drugs"
-	"Desinger Drugs"
+	"Designer Drugs"
 
 outfitter "Smuggling: Stolen Ship Parts"
 	"Stolen Ship Parts"
@@ -211,7 +211,8 @@ mission "Legal Code: Chemical Warheads"
 mission "Legal Code: Coreshine"
 	invisible
 	landing
-	source "smugglingport"
+	source
+		attributes "smuggling port"
 	on offer
 		log "Republic Law" "Coreshine" `Excerpted from Republic Customs code, Section D: Tax Evasion and Fraud`
 		log "Republic Law" "Coreshine" `Upon failure to provide proof of payment for duties on cargo, inspecting officers are authorized to immediately collect UNPAID TAXES and issue a FINE of up to TEN TIMES the value of UNPAID TAXES. If the purchase price of the cargo is unknown, officers are authorized to collect taxes according to prices as detailed in TABLE IV.`
@@ -231,7 +232,8 @@ mission "Legal Code: Dragon's Teeth"
 mission "Legal Code: Designer Drugs"
 	invisible
 	landing
-	source "smugglingport"
+	source
+		attributes "smuggling port"
 	on offer
 		log "Republic Law" "Designer Drugs" `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
 
@@ -252,7 +254,7 @@ mission "Legal Code: Missile Launchers"
 mission "Legal Code: Counterfeit Credsticks"
 	invisible
 	landing
-	source "Warehouse 26FF"
+	#source "Warehouse 26FF"
 	on offer
 		log "Republic Law" "Counterfeit Credsticks" `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
 
