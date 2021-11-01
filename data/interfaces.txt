@@ -1172,7 +1172,7 @@ interface "illegal hail panel"
 		center 250 115
 		dimensions 80 30
 
-	button p "_Pay and Dump Cargo"
+	button s "_Surrender Cargo"
 		center -20 115
 		dimensions 140 30
 

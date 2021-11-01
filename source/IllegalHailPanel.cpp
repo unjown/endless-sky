@@ -124,7 +124,7 @@ void IllegalHailPanel::Draw()
 
 bool IllegalHailPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress)
 {
-	if(key == 'p' || key == 'd' || key == 'c')
+	if(key == 's' || key == 'c')
 	{
 		// TODO: Dump illegal cago.
 		(void)scannedShip;
