@@ -261,17 +261,12 @@ Politics::Punishment Politics::Fine(PlayerInfo &player, const Ship &ship, int sc
 	auto punishment = CalculateFine(player, ship.GetGovernment(), scan, &target);
 
 	// Do nothing if there is nothing to fine for or the target ship has already been fined today.
-	auto its = finedShips.equal_range(&ship);
-	if(!punishment.HasPunishment() || find_if(its.first, its.second,
-				[&target](const pair<const Ship *, const Ship *> &pair)
-				{
-					return pair.second == &target;
-				}) != its.second)
+	if(!punishment.HasPunishment() || fined.count(ship.GetGovernment()))
 		return {};
 
 	if(punishment.isAtrocity)
 		ship.GetGovernment()->Offend(ShipEvent::ATROCITY);
-	finedShips.emplace(&ship, &target);
+	fined.insert(ship.GetGovernment());
 	return punishment;
 }
 

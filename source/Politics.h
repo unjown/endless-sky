@@ -116,7 +116,6 @@ private:
 	std::map<const Planet *, bool> bribedPlanets;
 	std::set<const Planet *> dominatedPlanets;
 	std::set<const Government *> fined;
-	std::multimap<const Ship *, const Ship *> finedShips;
 };
 
 
