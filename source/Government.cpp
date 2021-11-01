@@ -111,6 +111,8 @@ void Government::Load(const DataNode &node)
 			bribe = child.Value(1);
 		else if(child.Token(0) == "fine" && child.Size() >= 2)
 			fine = child.Value(1);
+		else if(child.Token(0) == "bribe factor" && child.Size() >= 2)
+			bribeFactor = child.Value(1);
 		else if(child.Token(0) == "enforces" && child.HasChildren())
 			enforcementZones.emplace_back(child);
 		else if(child.Token(0) == "enforces" && child.Size() == 2 && child.Token(1) == "all")
@@ -248,6 +250,13 @@ double Government::GetBribeFraction() const
 double Government::GetFineFraction() const
 {
 	return fine;
+}
+
+
+
+double Government::GetBribeFactor() const
+{
+	return bribeFactor;
 }
 
 

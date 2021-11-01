@@ -59,12 +59,12 @@ IllegalHailPanel::IllegalHailPanel(PlayerInfo &player, const Ship &hailingShip, 
 	message =
 		Format::Replace(gov->GetInterdiction().empty() ? defaultMessage : gov->GetInterdiction(), subs);
 
-	if(gov->GetBribeFraction())
+	if(gov->GetBribeFactor())
 	{
 		static const std::string defaultBribe
 			= "If you want us to leave you alone, it'll cost you <bribe> credits.";
 
-		bribe = 1000 * static_cast<int64_t>(sqrt(fine.cost) * gov->GetBribeFraction());
+		bribe = static_cast<int64_t>(fine.cost * gov->GetBribeFactor());
 		subs["<bribe>"] = Format::Credits(bribe);
 
 		auto bribeMessage =
