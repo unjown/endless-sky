@@ -1988,6 +1988,27 @@ ship "Raven" "Raven (Heavy)"
 	gun "Meteor Missile Launcher"
 
 
+ship "Raven" "Raven (Police)"
+	outfits
+		"Afterburner"
+		"Brig"
+		"Cargo Scanner" 6
+		"D23-QP Shield Generator"
+		"Fragmentation Grenades" 2
+		"Greyhound Plasma Steering"
+		"Heavy Laser" 2
+		"Hyperdrive"
+		"Impala Plasma Thruster"
+		"LP072a Battery Pack"
+		"Laser Rifle" 6
+		"Outfit Scanner" 6
+		"Ramscoop"
+		"Security Station"
+		"Tactical Scanner"
+		"Water Coolant System"
+		"nGVF-CC Fuel Cell"
+
+
 
 ship "Roost" "Roost (Sidewinder)"
 	outfits
@@ -2100,6 +2121,29 @@ ship "Splinter" "Splinter (Mark II)"
 		"A375 Atomic Steering"
 		"Hyperdrive"
 		"Ionic Afterburner"
+
+
+ship "Splinter" "Splinter (Police)"
+	outfits
+		"Afterburner"
+		"Brig" 2
+		"Cargo Scanner" 10
+		"D41-HY Shield Generator"
+		"Fragmentation Grenades" 4
+		"Greyhound Plasma Steering"
+		"Heavy Anti-Missile Turret"
+		"Hyperdrive"
+		"Impala Plasma Thruster"
+		"LP036a Battery Pack"
+		"Laser Rifle" 14
+		"Outfit Scanner" 10
+		"Proton Turret" 2
+		"Ramscoop"
+		"S3 Thermionic"
+		"Security Station" 4
+		"Tactical Scanner"
+		"Water Coolant System"
+		"nGVF-AA Fuel Cell"
 
 
 ship "Splinter" "Splinter (Proton)"

@@ -1291,6 +1291,10 @@ fleet "Republic Police"
 		disables plunders opportunistic
 	variant 1
 		"Gunboat"
+	variant 1
+		"Raven (Police)"
+	variant 1
+		"Splinter (Police)"
 
 
 fleet "Small Republic"
