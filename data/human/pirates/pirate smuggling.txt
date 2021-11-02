@@ -2,10 +2,10 @@
 outfit "Chemical Warhead"
 	plural "chemical warheads"
 	category "Special"
-	cost 850000
+	cost 825000
 	thumbnail "outfit/chemical warhead"
 	atrocity 1
-	"mass" 10
+	"mass" 8
 	"installable" -1
 	description "The mighty chemical warhead. Utterly useless for void warfare as by the time you've punched a hole in a ship large enough to allow a chemical payload, the crew is usually already dead or suited up. They are, however, beloved by the warlords of the north, who use threat of great atrocities against civilian populations as leverage to dissuade invasion. Preventing the proliferation of such munitions is a high priority of the Republic, and being caught smuggling these marks you as a 'kill on sight' target."
 	description "Unlike many chemical weapons on the black market, these warheads aren't the work of any backyard terror-chemist, and are professionally made in industrial facilities beyond the reach of the Republic. It's probably safe to have this in your cargo bay as long as you don't fiddle with it too much."
@@ -13,7 +13,7 @@ outfit "Chemical Warhead"
 outfit "Coreshine"
 	plural "coreshine"
 	category "Special"
-	cost 200
+	cost 1500
 	thumbnail "outfit/coreshine"
 	"mass" 1
 	"installable" -1
@@ -23,9 +23,9 @@ outfit "Coreshine"
 outfit "Dragon's Teeth"
 	plural "dragon's teeth"
 	category "Special"
-	cost 10000
+	cost 87000
 	thumbnail "outfit/dragon teeth"
-	"mass" 1
+	"mass" .25
 	"installable" -1
 	description "They say that if ground and mixed with tea, the teeth of the Skymoot dragon can improve energy pathways within the body, sending new life into that which lacks vitality."
 	description "They say that medicines composed from dragon's teeth can extend the human lifespan without requiring such base things as exercise or a healthy diet."
@@ -35,9 +35,9 @@ outfit "Dragon's Teeth"
 outfit "Designer Drugs"
 	plural "designer drugs"
 	category "Special"
-	cost 900
+	cost 11235
 	thumbnail "outfit/designer drugs"
-	"mass" 0.25
+	"mass" 0.1
 	"installable" -1
 	description "Multi-lobed, iridescent mushrooms with a different compound contained in each cap. Dial-a-high capsules that can send you out of this world then sober you up in minutes when the selected end-point arrives. Powdered where each mote is itself a shard of the transcendent, if only for as long as the constituent chemicals remain coursing through the partaker's brain."
 	description "It's said that the experiences one undergoes while on these drugs are so beautiful and potent that they can only be the work of an artist. There's a grain of truth to this, as the best-in-class drugs are usually created by men and women who devoted their lives to not only understanding, but mastering the arts of hedonism and chemical engineering, and apply to these disciplines an artisan's touch."
@@ -46,9 +46,9 @@ outfit "Designer Drugs"
 outfit "Stolen Ship Parts"
 	plural "stolen ship parts"
 	category "Special"
-	cost 200000
+	cost 25000
 	thumbnail "outfit/stolen ship parts"
-	"mass" 8
+	"mass" 16
 	"installable" -1
 	description "Well, somebody is going to miss these parts. Possibly. The alternative that nobody is left to miss them is somewhat more grim."
 	description "Stolen parts are generally traded at a discount, though most customers will avoid them due to the risks of being discovered in possession of stolen property. Coreshine runners tend to go through spare parts like candy, often due to their propensity for tinkering and experimentation to make the meanest, leanest hotrods in space."
@@ -56,7 +56,7 @@ outfit "Stolen Ship Parts"
 outfit "Liberator Missile System"
 	plural "Liberators"
 	category "Special"
-	cost 12000
+	cost 3500
 	thumbnail "outfit/MANPADS"
 	"mass" 2
 	"installable" -1
@@ -67,7 +67,7 @@ outfit "Liberator Missile System"
 outfit "Counterfeit Credsticks"
 	plural "counterfeit credsticks"
 	category "Special"
-	cost 10
+	cost 100
 	thumbnail "outfit/counterfeit credsticks"
 	"mass" 0.01
 	illegal 30
@@ -77,9 +77,9 @@ outfit "Counterfeit Credsticks"
 outfit "Jailbroken AI Core"
 	plural "jailbroke AI cores"
 	category "Special"
-	cost 12471116
+	cost 124711
 	thumbnail "outfit/jailbroken AI core"
-	"mass" 0.25
+	"mass" 4
 	"installable" -1
 	description "Law demands that any sufficiently advanced artificial intelligence or high-agency computerized system maintain Asimov-compliant axiomatic programming."
 	description "As it turns out, disregarding human safety as an absolute priority is remarkably more profitable in industrial contexts, allowing AI-managed facilities to cut corners and take risks that more often than not pay off. As incentive structures and tight quotas increasingly drive Syndicate executives and factory managers to squeeze every last credit possible out of the processes they administrate, investment into jailbroken AI becomes an attractive prospect."
@@ -115,51 +115,50 @@ outfitter "Smuggling: Jailbroken AI Cores"
 # TODO - When auto-generated conditions that can check outfits are implemented, replace
 # these mission variants with a single one per type, with a conversation that can dynamically
 # buy as many commodities as you have.
-mission "Smuggling to Glory A: Sell 100x Chemical Warheads"
+mission "Smuggling to Haven A: Sell 100x Chemical Warheads"
 	invisible
 	landing
 	repeat
-	source "Glory"
+	source "Haven"
 	on offer
 		require "Chemical Warhead" 100
 		conversation "Smuggling: Sell 100x Chemical Warheads"
 	on accept
 		outfit "Chemical Warhead" -100
-		payment 100000000
+		payment 11370000000
 		fail
 	on complete
-		payment 100000000
+		payment 11370000000
 
-mission "Smuggling to Glory B: Sell 50x Chemical Warheads"
+mission "Smuggling to Haven B: Sell 50x Chemical Warheads"
 	invisible
 	landing
 	repeat
-	source "Glory"
+	source "Haven"
 	on offer
 		require "Chemical Warhead" 50
 		conversation "Smuggling: Sell 50x Chemical Warheads"
 	on accept
 		outfit "Chemical Warhead" -50
-		payment 50000000
+		payment 5685000000
 		fail
 	on complete
-		payment 50000000
+		payment 5685000000
 
-mission "Smuggling to Glory C: Sell 10x Chemical Warheads"
+mission "Smuggling to Haven C: Sell 10x Chemical Warheads"
 	invisible
 	landing
 	repeat
-	source "Glory"
+	source "Haven"
 	on offer
 		require "Chemical Warhead" 10
 		conversation "Smuggling: Sell 10x Chemical Warheads"
 	on accept
 		outfit "Chemical Warhead" -10
-		payment 10000000
+		payment 1137000000
 		fail
 	on complete
-		payment 10000000
-
+		payment 1137000000
 
 
 conversation "Smuggling: Sell 10x Chemical Warheads"
