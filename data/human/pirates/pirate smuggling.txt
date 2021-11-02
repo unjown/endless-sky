@@ -115,6 +115,9 @@ outfitter "Smuggling: Jailbroken AI Cores"
 # TODO - When auto-generated conditions that can check outfits are implemented, replace
 # these mission variants with a single one per type, with a conversation that can dynamically
 # buy as many commodities as you have.
+
+
+# Smuggling - Smuggler's Den
 mission "Smuggling to Haven A: Sell 100x Chemical Warheads"
 	invisible
 	landing
@@ -161,8 +164,748 @@ mission "Smuggling to Haven C: Sell 10x Chemical Warheads"
 		payment 1137000000
 
 
+# Smuggling - Mars
+mission "Smuggling to Mars A: Sell 100x Chemical Warheads"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Chemical Warhead" 100
+		conversation "Smuggling: Sell 100x Chemical Warheads"
+	on accept
+		outfit "Chemical Warhead" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Mars B: Sell 50x Chemical Warheads"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Chemical Warhead" 50
+		conversation "Smuggling: Sell 50x Chemical Warheads"
+	on accept
+		outfit "Chemical Warhead" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Mars C: Sell 10x Chemical Warheads"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Chemical Warhead" 10
+		conversation "Smuggling: Sell 10x Chemical Warheads"
+	on accept
+		outfit "Chemical Warhead" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Mars A: Sell 100x Coreshine"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Coreshine" 100
+		conversation "Smuggling: Sell 100x Coreshine"
+	on accept
+		outfit "Coreshine" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Mars B: Sell 50x Coreshine"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Coreshine" 50
+		conversation "Smuggling: Sell 50x Coreshine"
+	on accept
+		outfit "Coreshine" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Mars C: Sell 10x Coreshine"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Coreshine" 10
+		conversation "Smuggling: Sell 10x Coreshine"
+	on accept
+		outfit "Coreshine" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Mars A: Sell 100x Dragon's Teeth"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Dragon's Teeth" 100
+		conversation "Smuggling: Sell 100x Dragon's Teeth"
+	on accept
+		outfit "Dragon's Teeth" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Mars B: Sell 50x Dragon's Teeth"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Dragon's Teeth" 50
+		conversation "Smuggling: Sell 50x Dragon's Teeth"
+	on accept
+		outfit "Dragon's Teeth" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Mars C: Sell 10x Dragon's Teeth"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Dragon's Teeth" 10
+		conversation "Smuggling: Sell 10x Dragon's Teeth"
+	on accept
+		outfit "Dragon's Teeth" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Mars A: Sell 100x Designer Drugs"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Designer Drugs" 100
+		conversation "Smuggling: Sell 100x Designer Drugs"
+	on accept
+		outfit "Designer Drugs" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Mars B: Sell 50x Designer Drugs"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Designer Drugs" 50
+		conversation "Smuggling: Sell 50x Designer Drugs"
+	on accept
+		outfit "Designer Drugs" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Mars C: Sell 10x Designer Drugs"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Designer Drugs" 10
+		conversation "Smuggling: Sell 10x Designer Drugs"
+	on accept
+		outfit "Designer Drugs" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Mars A: Sell 100x Stolen Ship Parts"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Stolen Ship Parts" 100
+		conversation "Smuggling: Sell 100x Stolen Ship Parts"
+	on accept
+		outfit "Stolen Ship Parts" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Mars B: Sell 50x Stolen Ship Parts"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Stolen Ship Parts" 50
+		conversation "Smuggling: Sell 50x Stolen Ship Parts"
+	on accept
+		outfit "Stolen Ship Parts" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Mars C: Sell 10x Stolen Ship Parts"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Stolen Ship Parts" 10
+		conversation "Smuggling: Sell 10x Stolen Ship Parts"
+	on accept
+		outfit "Stolen Ship Parts" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Mars A: Sell 100x MANPADS"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Liberator Missile System" 100
+		conversation "Smuggling: Sell 100x MANPADS"
+	on accept
+		outfit "Liberator Missile System" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Mars B: Sell 50x MANPADS"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Liberator Missile System" 50
+		conversation "Smuggling: Sell 50x MANPADS"
+	on accept
+		outfit "Liberator Missile System" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Mars C: Sell 10x MANPADS"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Liberator Missile System" 10
+		conversation "Smuggling: Sell 10x MANPADS"
+	on accept
+		outfit "Liberator Missile System" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Mars A: Sell 100x Counterfeit Credsticks"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Counterfeit Credsticks" 100
+		conversation "Smuggling: Sell 100x Counterfeit Credsticks"
+	on accept
+		outfit "Counterfeit Credsticks" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Mars B: Sell 50x Counterfeit Credsticks"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Counterfeit Credsticks" 50
+		conversation "Smuggling: Sell 50x Counterfeit Credsticks"
+	on accept
+		outfit "Counterfeit Credsticks" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Mars C: Sell 10x Counterfeit Credsticks"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Counterfeit Credsticks" 10
+		conversation "Smuggling: Sell 10x Counterfeit Credsticks"
+	on accept
+		outfit "Counterfeit Credsticks" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Mars A: Sell 100x Jailbroken AI Cores"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Jailbroken AI Core" 100
+		conversation "Smuggling: Sell 100x Jailbroken AI Cores"
+	on accept
+		outfit "Jailbroken AI Core" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Mars B: Sell 50x Jailbroken AI Cores"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Jailbroken AI Core" 50
+		conversation "Smuggling: Sell 50x Jailbroken AI Cores"
+	on accept
+		outfit "Jailbroken AI Core" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Mars C: Sell 10x Jailbroken AI Cores"
+	invisible
+	landing
+	repeat
+	source "Mars"
+	on offer
+		require "Jailbroken AI Core" 10
+		conversation "Smuggling: Sell 10x Jailbroken AI Cores"
+	on accept
+		outfit "Jailbroken AI Core" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+# Smuggling - Trojan Strip
+mission "Smuggling to Trinket A: Sell 100x Chemical Warheads"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Chemical Warhead" 100
+		conversation "Smuggling: Sell 100x Chemical Warheads"
+	on accept
+		outfit "Chemical Warhead" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Trinket B: Sell 50x Chemical Warheads"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Chemical Warhead" 50
+		conversation "Smuggling: Sell 50x Chemical Warheads"
+	on accept
+		outfit "Chemical Warhead" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Trinket C: Sell 10x Chemical Warheads"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Chemical Warhead" 10
+		conversation "Smuggling: Sell 10x Chemical Warheads"
+	on accept
+		outfit "Chemical Warhead" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Trinket A: Sell 100x Coreshine"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Coreshine" 100
+		conversation "Smuggling: Sell 100x Coreshine"
+	on accept
+		outfit "Coreshine" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Trinket B: Sell 50x Coreshine"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Coreshine" 50
+		conversation "Smuggling: Sell 50x Coreshine"
+	on accept
+		outfit "Coreshine" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Trinket C: Sell 10x Coreshine"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Coreshine" 10
+		conversation "Smuggling: Sell 10x Coreshine"
+	on accept
+		outfit "Coreshine" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Trinket A: Sell 100x Dragon's Teeth"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Dragon's Teeth" 100
+		conversation "Smuggling: Sell 100x Dragon's Teeth"
+	on accept
+		outfit "Dragon's Teeth" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Trinket B: Sell 50x Dragon's Teeth"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Dragon's Teeth" 50
+		conversation "Smuggling: Sell 50x Dragon's Teeth"
+	on accept
+		outfit "Dragon's Teeth" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Trinket C: Sell 10x Dragon's Teeth"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Dragon's Teeth" 10
+		conversation "Smuggling: Sell 10x Dragon's Teeth"
+	on accept
+		outfit "Dragon's Teeth" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Trinket A: Sell 100x Designer Drugs"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Designer Drugs" 100
+		conversation "Smuggling: Sell 100x Designer Drugs"
+	on accept
+		outfit "Designer Drugs" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Trinket B: Sell 50x Designer Drugs"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Designer Drugs" 50
+		conversation "Smuggling: Sell 50x Designer Drugs"
+	on accept
+		outfit "Designer Drugs" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Trinket C: Sell 10x Designer Drugs"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Designer Drugs" 10
+		conversation "Smuggling: Sell 10x Designer Drugs"
+	on accept
+		outfit "Designer Drugs" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Trinket A: Sell 100x Stolen Ship Parts"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Stolen Ship Parts" 100
+		conversation "Smuggling: Sell 100x Stolen Ship Parts"
+	on accept
+		outfit "Stolen Ship Parts" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Trinket B: Sell 50x Stolen Ship Parts"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Stolen Ship Parts" 50
+		conversation "Smuggling: Sell 50x Stolen Ship Parts"
+	on accept
+		outfit "Stolen Ship Parts" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Trinket C: Sell 10x Stolen Ship Parts"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Stolen Ship Parts" 10
+		conversation "Smuggling: Sell 10x Stolen Ship Parts"
+	on accept
+		outfit "Stolen Ship Parts" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Trinket A: Sell 100x MANPADS"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Liberator Missile System" 100
+		conversation "Smuggling: Sell 100x MANPADS"
+	on accept
+		outfit "Liberator Missile System" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Trinket B: Sell 50x MANPADS"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Liberator Missile System" 50
+		conversation "Smuggling: Sell 50x MANPADS"
+	on accept
+		outfit "Liberator Missile System" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Trinket C: Sell 10x MANPADS"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Liberator Missile System" 10
+		conversation "Smuggling: Sell 10x MANPADS"
+	on accept
+		outfit "Liberator Missile System" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Trinket A: Sell 100x Counterfeit Credsticks"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Counterfeit Credsticks" 100
+		conversation "Smuggling: Sell 100x Counterfeit Credsticks"
+	on accept
+		outfit "Counterfeit Credsticks" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Trinket B: Sell 50x Counterfeit Credsticks"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Counterfeit Credsticks" 50
+		conversation "Smuggling: Sell 50x Counterfeit Credsticks"
+	on accept
+		outfit "Counterfeit Credsticks" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Trinket C: Sell 10x Counterfeit Credsticks"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Counterfeit Credsticks" 10
+		conversation "Smuggling: Sell 10x Counterfeit Credsticks"
+	on accept
+		outfit "Counterfeit Credsticks" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+mission "Smuggling to Trinket A: Sell 100x Jailbroken AI Cores"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Jailbroken AI Core" 100
+		conversation "Smuggling: Sell 100x Jailbroken AI Cores"
+	on accept
+		outfit "Jailbroken AI Core" -100
+		payment 11370000000
+		fail
+	on complete
+		payment 11370000000
+
+mission "Smuggling to Trinket B: Sell 50x Jailbroken AI Cores"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Jailbroken AI Core" 50
+		conversation "Smuggling: Sell 50x Jailbroken AI Cores"
+	on accept
+		outfit "Jailbroken AI Core" -50
+		payment 5685000000
+		fail
+	on complete
+		payment 5685000000
+
+mission "Smuggling to Trinket C: Sell 10x Jailbroken AI Cores"
+	invisible
+	landing
+	repeat
+	source "Trinket"
+	on offer
+		require "Jailbroken AI Core" 10
+		conversation "Smuggling: Sell 10x Jailbroken AI Cores"
+	on accept
+		outfit "Jailbroken AI Core" -10
+		payment 1137000000
+		fail
+	on complete
+		payment 1137000000
+
+
+
+# Smuggling Conversations
 conversation "Smuggling: Sell 10x Chemical Warheads"
-	`Do you want to sell 10 Chemical Warheads? You will get <payment> for it.`
+	`Do you want to sell 10 Chemical Warheads? You will receive <payment> for it.`
 	choice
 		`	Yes.`
 			goto sell
@@ -174,7 +917,7 @@ conversation "Smuggling: Sell 10x Chemical Warheads"
 		accept
 
 conversation "Smuggling: Sell 50x Chemical Warheads"
-	`Do you want to sell 50 Chemical Warheads? You will get <payment> for it.`
+	`Do you want to sell 50 Chemical Warheads? You will receive <payment> for it.`
 	choice
 		`	Yes.`
 			goto sell
@@ -186,7 +929,266 @@ conversation "Smuggling: Sell 50x Chemical Warheads"
 		accept
 
 conversation "Smuggling: Sell 100x Chemical Warheads"
-	`Do you want to sell 100 Chemical Warheads? You will get <payment> for it.`
+	`Do you want to sell 100 Chemical Warheads? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+
+conversation "Smuggling: Sell 10x Coreshine"
+	`Do you want to sell 10 units of Coreshine? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 50x Coreshine"
+	`Do you want to sell 50 units of Coreshine? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 100x Coreshine"
+	`Do you want to sell 100 units of Coreshine? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+
+conversation "Smuggling: Sell 10x Dragon's Teeth"
+	`Do you want to sell 10 units of Dragon's Teeth? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 50x Dragon's Teeth"
+	`Do you want to sell 50 units of Dragon's Teeth? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 100x Dragon's Teeth"
+	`Do you want to sell 100 units of Dragon's Teeth? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+
+conversation "Smuggling: Sell 10x Designer Drugs"
+	`Do you want to sell 10 units of Designer Drugs? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 50x Designer Drugs"
+	`Do you want to sell 50 units of Designer Drugs? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 100x Designer Drugs"
+	`Do you want to sell 100 units of Designer Drugs? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+
+conversation "Smuggling: Sell 10x Stolen Ship Parts"
+	`Do you want to sell 10 units of Stolen Ship Parts? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 50x Stolen Ship Parts"
+	`Do you want to sell 50 units of Stolen Ship Parts? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 100x Stolen Ship Parts"
+	`Do you want to sell 100 units of Stolen Ship Parts? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+
+conversation "Smuggling: Sell 10x MANPADS"
+	`Do you want to sell 10 Liberator Missile Systems? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 50x MANPADS"
+	`Do you want to sell 50 Liberator Missile Systems? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 100x MANPADS"
+	`Do you want to sell 100 Liberator Missile Systems? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+
+conversation "Smuggling: Sell 10x Counterfeit Credsticks"
+	`Do you want to sell 10 units of Counterfeit Credsticks? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 50x Counterfeit Credsticks"
+	`Do you want to sell 50 units of Counterfeit Credsticks? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 100x Counterfeit Credsticks"
+	`Do you want to sell 100 units of Counterfeit Credsticks? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+
+conversation "Smuggling: Sell 10x Jailbroken AI Cores"
+	`Do you want to sell 10 Jailbroken AI Cores? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 50x Jailbroken AI Cores"
+	`Do you want to sell 50 Jailbroken AI Cores? You will receive <payment> for it.`
+	choice
+		`	Yes.`
+			goto sell
+		`	No.`
+	`	Maybe at another port.`
+		decline
+	label sell
+	`You successfully sell your smuggled goods for <payment>.`
+		accept
+
+conversation "Smuggling: Sell 100x Jailbroken AI Cores"
+	`Do you want to sell 100 Jailbroken AI Cores? You will receive <payment> for it.`
 	choice
 		`	Yes.`
 			goto sell
@@ -199,6 +1201,7 @@ conversation "Smuggling: Sell 100x Chemical Warheads"
 
 
 
+# Legal Code Entries
 mission "Legal Code: Chemical Warheads"
 	invisible
 	landing
