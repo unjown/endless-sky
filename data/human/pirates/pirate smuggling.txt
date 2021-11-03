@@ -75,7 +75,7 @@ outfit "Counterfeit Credsticks"
 	description "Cash is so last millenium. Even so, humanity's old habits die hard - who wouldn't want money for nothing? Fake credsticks, like counterfeit money in any era, follows a basic premise: the producers trade it at a discount relative to its face value, their customers understanding that there's a degree of risk in conducting commerce with false currency. Credsticks like these are in demand among the sleazier elements of the galaxy, and with those who have the sheer chutzpah to fob off rubbish as gold."
 
 outfit "Jailbroken AI Core"
-	plural "jailbroke AI cores"
+	plural "jailbroken AI cores"
 	category "Special"
 	cost 124711
 	thumbnail "outfit/jailbroken AI core"
@@ -1966,6 +1966,7 @@ mission "Legal Code: Missile Launchers"
 	source "Haven"
 	on offer
 		log "Republic Law" "Liberator Missile Systems" `Excerpted from Republic customs code, Section B: Narcotics, Weapons, and Controlled Substances`
+		log "Republic Law" "Liberator Missile Systems" `Civilian possession of HANDHELD MISSILE LAUNCHERS, hereby defined as weapons systems small enough to be HUMAN-PORTABLE rather than mounted upon a starship, shall incur a fine not less than TWENTY-THOUSAND CREDITS PER SYSTEM. This law applies both to purpose built weapons systems and aftermarket modifications performed upon ship-scale weapons systems.`
 
 mission "Legal Code: Counterfeit Credsticks"
 	invisible
@@ -1973,10 +1974,17 @@ mission "Legal Code: Counterfeit Credsticks"
 	#source "Warehouse 26FF"
 	on offer
 		log "Republic Law" "Counterfeit Credsticks" `Excerpted from Republic customs code, Section C: Objects of Illegal Provenance`
+		log "Republic Law" "Counterfeit Credsticks" `Unlicensed minting of credit-sticks, tax vouchers, or SmileyBites - "SmileyBites, it'll satisfy you, yum!"(tm) - gift cards shall be punished with a fine equal to TEN TIMES the NOMINAL VALUE of the counterfeited currency/vouchers/gift cards.`
+		log "Republic Law" "Counterfeit Credsticks" `(Face value on a box of credsticks is usually 200c, so I should expect a 2,000c fine if caught.)`
 
 mission "Legal Code: Jailbroken AI Cores"
 	invisible
 	landing
 	source "Bivrost"
 	on offer
+		log "Republic Law" "Jailbroken AI Cores" `Excerpted from Republic Constitutional Amendment VI`
+		log "Republic Law" "Jailbroken AI Cores" `The incarnation of UNLICENSED ARTIFICIAL-INTELLIGENCE (hereafter referred to as "AI"), or subversion of existing "AI" to bypass Asimov-compliant mental axioms shall, following the ratification of this MOST IMPORTANT OF LAWS, be a CRIME OF THE HIGHEST ORDER due to the risks posed to all organic life.`
+		log "Republic Law" "Jailbroken AI Cores" `...`
 		log "Republic Law" "Jailbroken AI Cores" `Excerpted from Republic customs code, Section A: Absolutely Forbidden Cargo`
+		log "Republic Law" "Jailbroken AI Cores" `... HIGH-AGENCY COMPUTERIZED SYSTEMS shall be considered likewise subject to all constitutional RESTRICTIONS and LAWS upon ARTIFICIAL-INTELLIGENCE.`
+		log "Republic Law" "Jailbroken AI Cores" `SALE, TRANSPORT or POSSESSION of restricted ARTIFICIAL INTELLIGENCES shall be considered grounds for immediate seizure by Naval Forces, warranting actions including but not limited to the full destruction of transporting vessel(s) and personnel.`
