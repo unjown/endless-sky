@@ -1904,7 +1904,7 @@ mission "Legal Code: Chemical Warheads"
 	landing
 	source "Smuggler's Den"
 	on offer
-		log "Republic Law" "Chemical Warheads" `Excerpted from Republic Customs code, Section A: Absolutely Forbidden Cargo`
+		log "Republic Law" "Chemical Warheads" `Excerpted from Republic customs code, Section A: Absolutely Forbidden Cargo`
 		log "Republic Law" "Chemical Warheads" `... possession of items defined under Article 2, including but not limited to CHEMICAL WARHEADS, cobalt-doped THERMONUCLEAR DEVICES, and other WEAPONS OF MASS DESTRUCTION shall be considered grounds for immediate seizure by Naval Forces, warranting actions including but not limited to the full destruction of transporting vessel(s) and personnel.`
 
 mission "Legal Code: Coreshine"
@@ -1913,20 +1913,32 @@ mission "Legal Code: Coreshine"
 	source
 		attributes "smuggling port"
 	on offer
-		log "Republic Law" "Coreshine" `Excerpted from Republic Customs code, Section D: Tax Evasion and Fraud`
-		log "Republic Law" "Coreshine" `Upon failure to provide proof of payment for duties on cargo, inspecting officers are authorized to immediately collect UNPAID TAXES and issue a FINE of up to TEN TIMES the value of UNPAID TAXES. If the purchase price of the cargo is unknown, officers are authorized to collect taxes according to prices as detailed in TABLE IV.`
-		log "Republic Law" "Coreshine" `	Table IV: Taxes to be levied on bulk commodities"`
+		log "Republic Law" "Coreshine" `Excerpted from Republic customs code, Section D: Tax Evasion and Fraud`
+		log "Republic Law" "Coreshine" `Upon failure to provide proof of payment for duties on cargo, inspecting officers are authorized to immediately collect UNPAID TAXES and issue a FINE of up to TWENTY TIMES the value of UNPAID TAXES. If the purchase price of the cargo is unknown, officers are authorized to collect taxes according to prices as detailed in TABLE IV.`
+		log "Republic Law" "Coreshine" `	Table IV: Taxes to be levied on bulk commodities`
 		log "Republic Law" "Coreshine" `		...`
-		log "Republic Law" "Coreshine" `		Alcohol, Ethyl: 50c/ton`
-		log "Republic Law" "Coreshine" `		Alpaca Wool: 22c/ton`
+		log "Republic Law" "Coreshine" `		Alcohol, Ethyl: 400c/ton`
 		log "Republic Law" "Coreshine" `		...`
+		log "Republic Law" "Coreshine" `(I should expect to pay 8400 credits per ton if I'm caught smuggling untaxed liquor.)`
 
 mission "Legal Code: Dragon's Teeth"
 	invisible
 	landing
 	source "Skymoot"
 	on offer
-		log "Republic Law" "Dragon's Teeth" `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
+		log "Republic Law" "Dragon's Teeth"	`Excerpted from Republic customs code, Section C: Objects of Illegal Provenance`
+		log "Republic Law" "Dragon's Teeth" `TRANSPORT, USE, or POSSESSION of body parts from critically PROTECTED or ENDANGERED ANIMALS shall warrant fines as detailed in TABLE I. Items on TABLE II may be considered EXEMPT and GRANDFATHERED provided the accused can provide proof of production prior to the ratification of P.R.6298.`
+		log "Republic Law" "Dragon's Teeth"	`	Table I: Fines to be imposed on poached animal parts`
+		log "Republic Law" "Dragon's Teeth"	`		...`
+		log "Republic Law" "Dragon's Teeth"	`		Widow Antelope, Horns: 200c/rack`
+		log "Republic Law" "Dragon's Teeth"	`		Widow Antelope, Fangs: 10,000c/tooth`
+		log "Republic Law" "Dragon's Teeth"	`		Widow Antelope, misc: 500c/ton`
+		log "Republic Law" "Dragon's Teeth"	`		Kornepheran Beaversquid, Appendages: 400c`
+		log "Republic Law" "Dragon's Teeth"	`		Kornepheran Beaversquid, misc: 1000c/ton`
+		log "Republic Law" "Dragon's Teeth"	`		Skymoot Dragon, Teeth (intact): 3000c/tooth`
+		log "Republic Law" "Dragon's Teeth"	`		Skymoot Dragon, Teeth (powdered): 150,000c/ton`
+		log "Republic Law" "Dragon's Teeth"	`		...`
+		log "Republic Law" "Dragon's Teeth"	`(Powdered dragon teeth are usually sold in tenth-tons, so I should expect to pay 15,000c per jar I'm caught with.)`
 
 mission "Legal Code: Designer Drugs"
 	invisible
@@ -1934,32 +1946,37 @@ mission "Legal Code: Designer Drugs"
 	source
 		attributes "smuggling port"
 	on offer
-		log "Republic Law" "Designer Drugs" `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
+		log "Republic Law" "Designer Drugs" `Excerpted from Republic customs code, Section B: Narcotics, Weapons, and Controlled Substances`
+		log "Republic Law" "Designer Drugs" `DESIGNER DRUGS shall be defined as narcotics, hallucinogens, entheogens, or other substances which (A) risk creating CHEMICAL DEPENDENCY, (B) are created for HEDONIC PURSUITS, and/or (C) risk altering the minds of citizens and engendering NEW WAYS OF THINKING.`
+		log "Republic Law" "Designer Drugs" `TRANSPORT, USE, or POSSESSION of DESIGNER DRUGS will be fined at a rate of 100,000c/ton for PRIVATE CITIZENS, or 200c/ton for SELECT MEDCHEM FIRMS which can present completed and validated copies of form 27-efef-(c).`
+		log "Republic Law" "Designer Drugs" `(Drugs tend to come in tenth-tons, so I should expect to pay 10,000c per batch I'm caught with.)`
 
 mission "Legal Code: Stolen Ship Parts"
 	invisible
 	landing
 	source "Sleezy Ed's Scrap and Surplus"
 	on offer
-		log "Republic Law" "Stolen Ship Parts" `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
+		log "Republic Law" "Stolen Ship Parts" `Excerpted from Republic customs code, Section C: Objects of Illegal Provenance`
+		log "Republic Law" "Stolen Ship Parts" `The fruit of PIRACY and GRAND THEFT STARSHIP shall warrant a fine of NOT LESS THAN 2000 CREDITS per TON OF ILLICIT CARGO. Ignorance of the source of one's ship parts is NO DEFENSE, and it is the DUTY OF ALL CAPTAINS to maintain a LOGBOOK of all their purchases extending back to the FIFTH MOST RECENT OWNER.`
+		log "Republic Law" "Stolen Ship Parts" `(Ship parts from the chop shop average around sixteen tons each, so for each I'm caught with I should expect a fine of 32,000c.)`
 
 mission "Legal Code: Missile Launchers"
 	invisible
 	landing
 	source "Haven"
 	on offer
-		log "Republic Law" "Liberator Missile Systems" `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
+		log "Republic Law" "Liberator Missile Systems" `Excerpted from Republic customs code, Section B: Narcotics, Weapons, and Controlled Substances`
 
 mission "Legal Code: Counterfeit Credsticks"
 	invisible
 	landing
 	#source "Warehouse 26FF"
 	on offer
-		log "Republic Law" "Counterfeit Credsticks" `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
+		log "Republic Law" "Counterfeit Credsticks" `Excerpted from Republic customs code, Section C: Objects of Illegal Provenance`
 
 mission "Legal Code: Jailbroken AI Cores"
 	invisible
 	landing
 	source "Bivrost"
 	on offer
-		log "Republic Law" "Jailbroken AI Cores" `You shall pay a fine not less than X times the value of the item and will be required to surrender it to authorities.`
+		log "Republic Law" "Jailbroken AI Cores" `Excerpted from Republic customs code, Section A: Absolutely Forbidden Cargo`
