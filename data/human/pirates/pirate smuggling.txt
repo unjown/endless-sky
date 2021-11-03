@@ -174,10 +174,10 @@ mission "Smuggling to Smuggler's Den A: Sell 100x Stolen Ship Parts"
 		conversation "Smuggling: Sell 100x Stolen Ship Parts"
 	on accept
 		outfit "Stolen Ship Parts" -100
-		payment 11370000000
+		payment 8900000
 		fail
 	on complete
-		payment 11370000000
+		payment 8900000
 
 mission "Smuggling to Smuggler's Den B: Sell 50x Stolen Ship Parts"
 	invisible
@@ -189,10 +189,10 @@ mission "Smuggling to Smuggler's Den B: Sell 50x Stolen Ship Parts"
 		conversation "Smuggling: Sell 50x Stolen Ship Parts"
 	on accept
 		outfit "Stolen Ship Parts" -50
-		payment 5685000000
+		payment 4450000
 		fail
 	on complete
-		payment 5685000000
+		payment 4450000
 
 mission "Smuggling to Smuggler's Den C: Sell 10x Stolen Ship Parts"
 	invisible
@@ -204,103 +204,103 @@ mission "Smuggling to Smuggler's Den C: Sell 10x Stolen Ship Parts"
 		conversation "Smuggling: Sell 10x Stolen Ship Parts"
 	on accept
 		outfit "Stolen Ship Parts" -10
-		payment 1137000000
+		payment 890000
 		fail
 	on complete
-		payment 1137000000
+		payment 890000
 
 
 # Smuggling - Copperline Station
-mission "Smuggling to Stormhold A: Sell 100x Stolen Ship Parts"
+mission "Smuggling to Copperline Station A: Sell 100x Stolen Ship Parts"
 	invisible
 	landing
 	repeat
-	source "Stormhold"
+	source "Copperline Station"
 	on offer
 		require "Stolen Ship Parts" 100
 		conversation "Smuggling: Sell 100x Stolen Ship Parts"
 	on accept
 		outfit "Stolen Ship Parts" -100
-		payment 11370000000
+		payment 12580000
 		fail
 	on complete
-		payment 11370000000
+		payment 12580000
 
-mission "Smuggling to Stormhold B: Sell 50x Stolen Ship Parts"
+mission "Smuggling to Copperline Station B: Sell 50x Stolen Ship Parts"
 	invisible
 	landing
 	repeat
-	source "Stormhold"
+	source "Copperline Station"
 	on offer
 		require "Stolen Ship Parts" 50
 		conversation "Smuggling: Sell 50x Stolen Ship Parts"
 	on accept
 		outfit "Stolen Ship Parts" -50
-		payment 5685000000
+		payment 6290000
 		fail
 	on complete
-		payment 5685000000
+		payment 6290000
 
-mission "Smuggling to Stormhold C: Sell 10x Stolen Ship Parts"
+mission "Smuggling to Copperline Station C: Sell 10x Stolen Ship Parts"
 	invisible
 	landing
 	repeat
-	source "Stormhold"
+	source "Copperline Station"
 	on offer
 		require "Stolen Ship Parts" 10
 		conversation "Smuggling: Sell 10x Stolen Ship Parts"
 	on accept
 		outfit "Stolen Ship Parts" -10
-		payment 1137000000
+		payment 1258000
 		fail
 	on complete
-		payment 1137000000
+		payment 1258000
 
 
-mission "Smuggling to Stormhold A: Sell 100x MANPADS"
+mission "Smuggling to Copperline Station A: Sell 100x MANPADS"
 	invisible
 	landing
 	repeat
-	source "Stormhold"
+	source "Copperline Station"
 	on offer
 		require "Liberator Missile System" 100
 		conversation "Smuggling: Sell 100x MANPADS"
 	on accept
 		outfit "Liberator Missile System" -100
-		payment 11370000000
+		payment 1790000
 		fail
 	on complete
-		payment 11370000000
+		payment 1790000
 
-mission "Smuggling to Stormhold B: Sell 50x MANPADS"
+mission "Smuggling to Copperline Station B: Sell 50x MANPADS"
 	invisible
 	landing
 	repeat
-	source "Stormhold"
+	source "Copperline Station"
 	on offer
 		require "Liberator Missile System" 50
 		conversation "Smuggling: Sell 50x MANPADS"
 	on accept
 		outfit "Liberator Missile System" -50
-		payment 5685000000
+		payment 895000
 		fail
 	on complete
-		payment 5685000000
+		payment 895000
 
-mission "Smuggling to Stormhold C: Sell 10x MANPADS"
+mission "Smuggling to Copperline Station C: Sell 10x MANPADS"
 	invisible
 	landing
 	repeat
-	source "Stormhold"
+	source "Copperline Station"
 	on offer
 		require "Liberator Missile System" 10
 		conversation "Smuggling: Sell 10x MANPADS"
 	on accept
 		outfit "Liberator Missile System" -10
-		payment 1137000000
+		payment 179000
 		fail
 	on complete
-		payment 1137000000
+		payment 179000
 
 
 # Smuggling - Skymoot
@@ -314,10 +314,10 @@ mission "Smuggling to Skymoot A: Sell 100x Designer Drugs"
 		conversation "Smuggling: Sell 100x Designer Drugs"
 	on accept
 		outfit "Designer Drugs" -100
-		payment 11370000000
+		payment 1200000
 		fail
 	on complete
-		payment 11370000000
+		payment 1200000
 
 mission "Smuggling to Skymoot B: Sell 50x Designer Drugs"
 	invisible
@@ -329,10 +329,10 @@ mission "Smuggling to Skymoot B: Sell 50x Designer Drugs"
 		conversation "Smuggling: Sell 50x Designer Drugs"
 	on accept
 		outfit "Designer Drugs" -50
-		payment 5685000000
+		payment 600000
 		fail
 	on complete
-		payment 5685000000
+		payment 600000
 
 mission "Smuggling to Skymoot C: Sell 10x Designer Drugs"
 	invisible
@@ -344,10 +344,10 @@ mission "Smuggling to Skymoot C: Sell 10x Designer Drugs"
 		conversation "Smuggling: Sell 10x Designer Drugs"
 	on accept
 		outfit "Designer Drugs" -10
-		payment 1137000000
+		payment 120000
 		fail
 	on complete
-		payment 1137000000
+		payment 120000
 
 
 mission "Smuggling to Skymoot A: Sell 100x MANPADS"
@@ -360,10 +360,10 @@ mission "Smuggling to Skymoot A: Sell 100x MANPADS"
 		conversation "Smuggling: Sell 100x MANPADS"
 	on accept
 		outfit "Liberator Missile System" -100
-		payment 11370000000
+		payment 4350000
 		fail
 	on complete
-		payment 11370000000
+		payment 4350000
 
 mission "Smuggling to Skymoot B: Sell 50x MANPADS"
 	invisible
@@ -375,10 +375,10 @@ mission "Smuggling to Skymoot B: Sell 50x MANPADS"
 		conversation "Smuggling: Sell 50x MANPADS"
 	on accept
 		outfit "Liberator Missile System" -50
-		payment 5685000000
+		payment 2175000
 		fail
 	on complete
-		payment 5685000000
+		payment 2175000
 
 mission "Smuggling to Skymoot C: Sell 10x MANPADS"
 	invisible
@@ -390,10 +390,10 @@ mission "Smuggling to Skymoot C: Sell 10x MANPADS"
 		conversation "Smuggling: Sell 10x MANPADS"
 	on accept
 		outfit "Liberator Missile System" -10
-		payment 1137000000
+		payment 435000
 		fail
 	on complete
-		payment 1137000000
+		payment 435000
 
 
 # Smuggling - Glory
@@ -453,10 +453,10 @@ mission "Smuggling to Glory A: Sell 100x Jailbroken AI Cores"
 		conversation "Smuggling: Sell 100x Jailbroken AI Cores"
 	on accept
 		outfit "Jailbroken AI Core" -100
-		payment 11370000000
+		payment 21471100
 		fail
 	on complete
-		payment 11370000000
+		payment 21471100
 
 mission "Smuggling to Glory B: Sell 50x Jailbroken AI Cores"
 	invisible
@@ -468,10 +468,10 @@ mission "Smuggling to Glory B: Sell 50x Jailbroken AI Cores"
 		conversation "Smuggling: Sell 50x Jailbroken AI Cores"
 	on accept
 		outfit "Jailbroken AI Core" -50
-		payment 5685000000
+		payment 10735550
 		fail
 	on complete
-		payment 5685000000
+		payment 10735550
 
 mission "Smuggling to Glory C: Sell 10x Jailbroken AI Cores"
 	invisible
@@ -483,10 +483,10 @@ mission "Smuggling to Glory C: Sell 10x Jailbroken AI Cores"
 		conversation "Smuggling: Sell 10x Jailbroken AI Cores"
 	on accept
 		outfit "Jailbroken AI Core" -10
-		payment 1137000000
+		payment 2147110
 		fail
 	on complete
-		payment 1137000000
+		payment 2147110
 
 
 # Smuggling - Sleezy Ed's
@@ -546,10 +546,10 @@ mission "Smuggling to Sleezy Ed's Scrap and Surplus A: Sell 100x Counterfeit Cre
 		conversation "Smuggling: Sell 100x Counterfeit Credsticks"
 	on accept
 		outfit "Counterfeit Credsticks" -100
-		payment 11370000000
+		payment 15000
 		fail
 	on complete
-		payment 11370000000
+		payment 15000
 
 mission "Smuggling to Sleezy Ed's Scrap and Surplus B: Sell 50x Counterfeit Credsticks"
 	invisible
@@ -561,10 +561,10 @@ mission "Smuggling to Sleezy Ed's Scrap and Surplus B: Sell 50x Counterfeit Cred
 		conversation "Smuggling: Sell 50x Counterfeit Credsticks"
 	on accept
 		outfit "Counterfeit Credsticks" -50
-		payment 5685000000
+		payment 7500
 		fail
 	on complete
-		payment 5685000000
+		payment 7500
 
 mission "Smuggling to Sleezy Ed's Scrap and Surplus C: Sell 10x Counterfeit Credsticks"
 	invisible
@@ -576,10 +576,10 @@ mission "Smuggling to Sleezy Ed's Scrap and Surplus C: Sell 10x Counterfeit Cred
 		conversation "Smuggling: Sell 10x Counterfeit Credsticks"
 	on accept
 		outfit "Counterfeit Credsticks" -10
-		payment 1137000000
+		payment 1500
 		fail
 	on complete
-		payment 1137000000
+		payment 1500
 
 
 # Smuggling - Haven
@@ -732,10 +732,10 @@ mission "Smuggling to Antipode A: Sell 100x Jailbroken AI Cores"
 		conversation "Smuggling: Sell 100x Jailbroken AI Cores"
 	on accept
 		outfit "Jailbroken AI Core" -100
-		payment 11370000000
+		payment 18871100
 		fail
 	on complete
-		payment 11370000000
+		payment 18871100
 
 mission "Smuggling to Antipode B: Sell 50x Jailbroken AI Cores"
 	invisible
@@ -747,10 +747,10 @@ mission "Smuggling to Antipode B: Sell 50x Jailbroken AI Cores"
 		conversation "Smuggling: Sell 50x Jailbroken AI Cores"
 	on accept
 		outfit "Jailbroken AI Core" -50
-		payment 5685000000
+		payment 9435550
 		fail
 	on complete
-		payment 5685000000
+		payment 9435550
 
 mission "Smuggling to Antipode C: Sell 10x Jailbroken AI Cores"
 	invisible
@@ -762,10 +762,10 @@ mission "Smuggling to Antipode C: Sell 10x Jailbroken AI Cores"
 		conversation "Smuggling: Sell 10x Jailbroken AI Cores"
 	on accept
 		outfit "Jailbroken AI Core" -10
-		payment 1137000000
+		payment 1887110
 		fail
 	on complete
-		payment 1137000000
+		payment 1887110
 
 
 # Smuggling - Bivrost
@@ -779,10 +779,10 @@ mission "Smuggling to Bivrost A: Sell 100x Designer Drugs"
 		conversation "Smuggling: Sell 100x Designer Drugs"
 	on accept
 		outfit "Designer Drugs" -100
-		payment 11370000000
+		payment 1163500
 		fail
 	on complete
-		payment 11370000000
+		payment 1163500
 
 mission "Smuggling to Bivrost B: Sell 50x Designer Drugs"
 	invisible
@@ -794,10 +794,10 @@ mission "Smuggling to Bivrost B: Sell 50x Designer Drugs"
 		conversation "Smuggling: Sell 50x Designer Drugs"
 	on accept
 		outfit "Designer Drugs" -50
-		payment 5685000000
+		payment 581750
 		fail
 	on complete
-		payment 5685000000
+		payment 581750
 
 mission "Smuggling to Bivrost C: Sell 10x Designer Drugs"
 	invisible
@@ -809,10 +809,10 @@ mission "Smuggling to Bivrost C: Sell 10x Designer Drugs"
 		conversation "Smuggling: Sell 10x Designer Drugs"
 	on accept
 		outfit "Designer Drugs" -10
-		payment 1137000000
+		payment 116350
 		fail
 	on complete
-		payment 1137000000
+		payment 116350
 
 
 mission "Smuggling to Bivrost A: Sell 100x Counterfeit Credsticks"
@@ -825,10 +825,10 @@ mission "Smuggling to Bivrost A: Sell 100x Counterfeit Credsticks"
 		conversation "Smuggling: Sell 100x Counterfeit Credsticks"
 	on accept
 		outfit "Counterfeit Credsticks" -100
-		payment 11370000000
+		payment 18000
 		fail
 	on complete
-		payment 11370000000
+		payment 18000
 
 mission "Smuggling to Bivrost B: Sell 50x Counterfeit Credsticks"
 	invisible
@@ -840,10 +840,10 @@ mission "Smuggling to Bivrost B: Sell 50x Counterfeit Credsticks"
 		conversation "Smuggling: Sell 50x Counterfeit Credsticks"
 	on accept
 		outfit "Counterfeit Credsticks" -50
-		payment 5685000000
+		payment 9000
 		fail
 	on complete
-		payment 5685000000
+		payment 9000
 
 mission "Smuggling to Bivrost C: Sell 10x Counterfeit Credsticks"
 	invisible
@@ -855,10 +855,10 @@ mission "Smuggling to Bivrost C: Sell 10x Counterfeit Credsticks"
 		conversation "Smuggling: Sell 10x Counterfeit Credsticks"
 	on accept
 		outfit "Counterfeit Credsticks" -10
-		payment 1137000000
+		payment 1800
 		fail
 	on complete
-		payment 1137000000
+		payment 1800
 
 
 # Smuggling - Mars
@@ -1010,10 +1010,10 @@ mission "Smuggling to Mars A: Sell 100x Designer Drugs"
 		conversation "Smuggling: Sell 100x Designer Drugs"
 	on accept
 		outfit "Designer Drugs" -100
-		payment 11370000000
+		payment 1141500
 		fail
 	on complete
-		payment 11370000000
+		payment 1141500
 
 mission "Smuggling to Mars B: Sell 50x Designer Drugs"
 	invisible
@@ -1025,10 +1025,10 @@ mission "Smuggling to Mars B: Sell 50x Designer Drugs"
 		conversation "Smuggling: Sell 50x Designer Drugs"
 	on accept
 		outfit "Designer Drugs" -50
-		payment 5685000000
+		payment 570750
 		fail
 	on complete
-		payment 5685000000
+		payment 570750
 
 mission "Smuggling to Mars C: Sell 10x Designer Drugs"
 	invisible
@@ -1040,10 +1040,10 @@ mission "Smuggling to Mars C: Sell 10x Designer Drugs"
 		conversation "Smuggling: Sell 10x Designer Drugs"
 	on accept
 		outfit "Designer Drugs" -10
-		payment 1137000000
+		payment 114150
 		fail
 	on complete
-		payment 1137000000
+		payment 114150
 
 
 mission "Smuggling to Mars A: Sell 100x Stolen Ship Parts"
@@ -1056,10 +1056,10 @@ mission "Smuggling to Mars A: Sell 100x Stolen Ship Parts"
 		conversation "Smuggling: Sell 100x Stolen Ship Parts"
 	on accept
 		outfit "Stolen Ship Parts" -100
-		payment 11370000000
+		payment 5380000
 		fail
 	on complete
-		payment 11370000000
+		payment 5380000
 
 mission "Smuggling to Mars B: Sell 50x Stolen Ship Parts"
 	invisible
@@ -1071,10 +1071,10 @@ mission "Smuggling to Mars B: Sell 50x Stolen Ship Parts"
 		conversation "Smuggling: Sell 50x Stolen Ship Parts"
 	on accept
 		outfit "Stolen Ship Parts" -50
-		payment 5685000000
+		payment 2690000
 		fail
 	on complete
-		payment 5685000000
+		payment 2690000
 
 mission "Smuggling to Mars C: Sell 10x Stolen Ship Parts"
 	invisible
@@ -1086,10 +1086,10 @@ mission "Smuggling to Mars C: Sell 10x Stolen Ship Parts"
 		conversation "Smuggling: Sell 10x Stolen Ship Parts"
 	on accept
 		outfit "Stolen Ship Parts" -10
-		payment 1137000000
+		payment 538000
 		fail
 	on complete
-		payment 1137000000
+		payment 538000
 
 
 mission "Smuggling to Mars A: Sell 100x MANPADS"
@@ -1102,10 +1102,10 @@ mission "Smuggling to Mars A: Sell 100x MANPADS"
 		conversation "Smuggling: Sell 100x MANPADS"
 	on accept
 		outfit "Liberator Missile System" -100
-		payment 11370000000
+		payment 1550000
 		fail
 	on complete
-		payment 11370000000
+		payment 1550000
 
 mission "Smuggling to Mars B: Sell 50x MANPADS"
 	invisible
@@ -1117,10 +1117,10 @@ mission "Smuggling to Mars B: Sell 50x MANPADS"
 		conversation "Smuggling: Sell 50x MANPADS"
 	on accept
 		outfit "Liberator Missile System" -50
-		payment 5685000000
+		payment 775000
 		fail
 	on complete
-		payment 5685000000
+		payment 775000
 
 mission "Smuggling to Mars C: Sell 10x MANPADS"
 	invisible
@@ -1132,10 +1132,10 @@ mission "Smuggling to Mars C: Sell 10x MANPADS"
 		conversation "Smuggling: Sell 10x MANPADS"
 	on accept
 		outfit "Liberator Missile System" -10
-		payment 1137000000
+		payment 155000
 		fail
 	on complete
-		payment 1137000000
+		payment 155000
 
 
 mission "Smuggling to Mars A: Sell 100x Counterfeit Credsticks"
@@ -1148,10 +1148,10 @@ mission "Smuggling to Mars A: Sell 100x Counterfeit Credsticks"
 		conversation "Smuggling: Sell 100x Counterfeit Credsticks"
 	on accept
 		outfit "Counterfeit Credsticks" -100
-		payment 11370000000
+		payment 11500
 		fail
 	on complete
-		payment 11370000000
+		payment 11500
 
 mission "Smuggling to Mars B: Sell 50x Counterfeit Credsticks"
 	invisible
@@ -1163,10 +1163,10 @@ mission "Smuggling to Mars B: Sell 50x Counterfeit Credsticks"
 		conversation "Smuggling: Sell 50x Counterfeit Credsticks"
 	on accept
 		outfit "Counterfeit Credsticks" -50
-		payment 5685000000
+		payment 5750
 		fail
 	on complete
-		payment 5685000000
+		payment 5750
 
 mission "Smuggling to Mars C: Sell 10x Counterfeit Credsticks"
 	invisible
@@ -1178,10 +1178,10 @@ mission "Smuggling to Mars C: Sell 10x Counterfeit Credsticks"
 		conversation "Smuggling: Sell 10x Counterfeit Credsticks"
 	on accept
 		outfit "Counterfeit Credsticks" -10
-		payment 1137000000
+		payment 1150
 		fail
 	on complete
-		payment 1137000000
+		payment 1150
 
 
 mission "Smuggling to Mars A: Sell 100x Jailbroken AI Cores"
@@ -1194,10 +1194,10 @@ mission "Smuggling to Mars A: Sell 100x Jailbroken AI Cores"
 		conversation "Smuggling: Sell 100x Jailbroken AI Cores"
 	on accept
 		outfit "Jailbroken AI Core" -100
-		payment 11370000000
+		payment 20721100
 		fail
 	on complete
-		payment 11370000000
+		payment 20721100
 
 mission "Smuggling to Mars B: Sell 50x Jailbroken AI Cores"
 	invisible
@@ -1209,10 +1209,10 @@ mission "Smuggling to Mars B: Sell 50x Jailbroken AI Cores"
 		conversation "Smuggling: Sell 50x Jailbroken AI Cores"
 	on accept
 		outfit "Jailbroken AI Core" -50
-		payment 5685000000
+		payment 10360550
 		fail
 	on complete
-		payment 5685000000
+		payment 10360550
 
 mission "Smuggling to Mars C: Sell 10x Jailbroken AI Cores"
 	invisible
@@ -1224,10 +1224,10 @@ mission "Smuggling to Mars C: Sell 10x Jailbroken AI Cores"
 		conversation "Smuggling: Sell 10x Jailbroken AI Cores"
 	on accept
 		outfit "Jailbroken AI Core" -10
-		payment 1137000000
+		payment 2072110
 		fail
 	on complete
-		payment 1137000000
+		payment 2072110
 
 
 # Smuggling - Trinket
@@ -1379,10 +1379,10 @@ mission "Smuggling to Trinket A: Sell 100x Designer Drugs"
 		conversation "Smuggling: Sell 100x Designer Drugs"
 	on accept
 		outfit "Designer Drugs" -100
-		payment 11370000000
+		payment 1179500
 		fail
 	on complete
-		payment 11370000000
+		payment 1179500
 
 mission "Smuggling to Trinket B: Sell 50x Designer Drugs"
 	invisible
@@ -1394,10 +1394,10 @@ mission "Smuggling to Trinket B: Sell 50x Designer Drugs"
 		conversation "Smuggling: Sell 50x Designer Drugs"
 	on accept
 		outfit "Designer Drugs" -50
-		payment 5685000000
+		payment 589750
 		fail
 	on complete
-		payment 5685000000
+		payment 589750
 
 mission "Smuggling to Trinket C: Sell 10x Designer Drugs"
 	invisible
@@ -1409,10 +1409,10 @@ mission "Smuggling to Trinket C: Sell 10x Designer Drugs"
 		conversation "Smuggling: Sell 10x Designer Drugs"
 	on accept
 		outfit "Designer Drugs" -10
-		payment 1137000000
+		payment 117950
 		fail
 	on complete
-		payment 1137000000
+		payment 117950
 
 
 mission "Smuggling to Trinket A: Sell 100x Stolen Ship Parts"
@@ -1425,10 +1425,10 @@ mission "Smuggling to Trinket A: Sell 100x Stolen Ship Parts"
 		conversation "Smuggling: Sell 100x Stolen Ship Parts"
 	on accept
 		outfit "Stolen Ship Parts" -100
-		payment 11370000000
+		payment 5380000
 		fail
 	on complete
-		payment 11370000000
+		payment 5380000
 
 mission "Smuggling to Trinket B: Sell 50x Stolen Ship Parts"
 	invisible
@@ -1440,10 +1440,10 @@ mission "Smuggling to Trinket B: Sell 50x Stolen Ship Parts"
 		conversation "Smuggling: Sell 50x Stolen Ship Parts"
 	on accept
 		outfit "Stolen Ship Parts" -50
-		payment 5685000000
+		payment 2690000
 		fail
 	on complete
-		payment 5685000000
+		payment 2690000
 
 mission "Smuggling to Trinket C: Sell 10x Stolen Ship Parts"
 	invisible
@@ -1455,10 +1455,10 @@ mission "Smuggling to Trinket C: Sell 10x Stolen Ship Parts"
 		conversation "Smuggling: Sell 10x Stolen Ship Parts"
 	on accept
 		outfit "Stolen Ship Parts" -10
-		payment 1137000000
+		payment 538000
 		fail
 	on complete
-		payment 1137000000
+		payment 538000
 
 
 mission "Smuggling to Trinket A: Sell 100x MANPADS"
@@ -1471,10 +1471,10 @@ mission "Smuggling to Trinket A: Sell 100x MANPADS"
 		conversation "Smuggling: Sell 100x MANPADS"
 	on accept
 		outfit "Liberator Missile System" -100
-		payment 11370000000
+		payment 2550000
 		fail
 	on complete
-		payment 11370000000
+		payment 2550000
 
 mission "Smuggling to Trinket B: Sell 50x MANPADS"
 	invisible
@@ -1486,10 +1486,10 @@ mission "Smuggling to Trinket B: Sell 50x MANPADS"
 		conversation "Smuggling: Sell 50x MANPADS"
 	on accept
 		outfit "Liberator Missile System" -50
-		payment 5685000000
+		payment 1275000
 		fail
 	on complete
-		payment 5685000000
+		payment 1275000
 
 mission "Smuggling to Trinket C: Sell 10x MANPADS"
 	invisible
@@ -1501,10 +1501,10 @@ mission "Smuggling to Trinket C: Sell 10x MANPADS"
 		conversation "Smuggling: Sell 10x MANPADS"
 	on accept
 		outfit "Liberator Missile System" -10
-		payment 1137000000
+		payment 255000
 		fail
 	on complete
-		payment 1137000000
+		payment 255000
 
 
 mission "Smuggling to Trinket A: Sell 100x Counterfeit Credsticks"
@@ -1517,10 +1517,10 @@ mission "Smuggling to Trinket A: Sell 100x Counterfeit Credsticks"
 		conversation "Smuggling: Sell 100x Counterfeit Credsticks"
 	on accept
 		outfit "Counterfeit Credsticks" -100
-		payment 11370000000
+		payment 14500
 		fail
 	on complete
-		payment 11370000000
+		payment 14500
 
 mission "Smuggling to Trinket B: Sell 50x Counterfeit Credsticks"
 	invisible
@@ -1532,10 +1532,10 @@ mission "Smuggling to Trinket B: Sell 50x Counterfeit Credsticks"
 		conversation "Smuggling: Sell 50x Counterfeit Credsticks"
 	on accept
 		outfit "Counterfeit Credsticks" -50
-		payment 5685000000
+		payment 7250
 		fail
 	on complete
-		payment 5685000000
+		payment 7250
 
 mission "Smuggling to Trinket C: Sell 10x Counterfeit Credsticks"
 	invisible
@@ -1547,10 +1547,10 @@ mission "Smuggling to Trinket C: Sell 10x Counterfeit Credsticks"
 		conversation "Smuggling: Sell 10x Counterfeit Credsticks"
 	on accept
 		outfit "Counterfeit Credsticks" -10
-		payment 1137000000
+		payment 1450
 		fail
 	on complete
-		payment 1137000000
+		payment 1450
 
 
 mission "Smuggling to Trinket A: Sell 100x Jailbroken AI Cores"
@@ -1563,10 +1563,10 @@ mission "Smuggling to Trinket A: Sell 100x Jailbroken AI Cores"
 		conversation "Smuggling: Sell 100x Jailbroken AI Cores"
 	on accept
 		outfit "Jailbroken AI Core" -100
-		payment 11370000000
+		payment 24471100
 		fail
 	on complete
-		payment 11370000000
+		payment 24471100
 
 mission "Smuggling to Trinket B: Sell 50x Jailbroken AI Cores"
 	invisible
@@ -1578,10 +1578,10 @@ mission "Smuggling to Trinket B: Sell 50x Jailbroken AI Cores"
 		conversation "Smuggling: Sell 50x Jailbroken AI Cores"
 	on accept
 		outfit "Jailbroken AI Core" -50
-		payment 5685000000
+		payment 12235550
 		fail
 	on complete
-		payment 5685000000
+		payment 12235550
 
 mission "Smuggling to Trinket C: Sell 10x Jailbroken AI Cores"
 	invisible
@@ -1593,10 +1593,10 @@ mission "Smuggling to Trinket C: Sell 10x Jailbroken AI Cores"
 		conversation "Smuggling: Sell 10x Jailbroken AI Cores"
 	on accept
 		outfit "Jailbroken AI Core" -10
-		payment 1137000000
+		payment 2447110
 		fail
 	on complete
-		payment 1137000000
+		payment 2447110
 
 
 
