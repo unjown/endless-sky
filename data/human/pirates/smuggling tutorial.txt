@@ -1,0 +1,25 @@
+
+# We can merge this into the main smuggling/jobs/what-have-you .txt when it's done. Until then I'll keep it seperate for the sake of keeping it easy to edit.
+
+# The flow is as follows:
+#	1) You meet a smuggler who's down on his luck, and he asks for your help in delivering an illegal cargo
+#	to Sleezy Ed's, as he owes Ed a great debt and is deathly afraid of winding up on the wrong side of the
+#	otherwise jovial ship salesman.
+#	While setting up for the journey (carrying a modest mission cargo), the smuggler suggests a few methods
+#	for evading scans: Stay towards the fringes and carry a good amount of legal cargo to confuse police.
+#	Ideally we'll have some code implemented that makes getting caught based on a ratio of legal:illegal
+#	cargo carried.
+
+
+#	2) Upon arriving at Sleezy Ed's you listen in on a conversation between the smuggler and Ed. He's off 
+#	the hook, but still without a ship - so he asks for a ride to Copperline Station, where he has some
+#	friends who'll get him running rum until he can afford to get his original ship restored.
+#	In return, he'll show you some secret and help you make some profit running stolen ship parts to  Cprlne.
+
+#	3) A waypoint is generated in an empty or modestly-patrolled system between your destination (Copperline)
+#	and Sleezy Ed's. It was formerly a non-landable object, but now allows you to land and refuel from a
+#	cache maintained by the smuggler's buddies. Upon landing you have a chance to talk to the smuggler and 
+#	learn something about his history, about the rumrunners at Copperline, and about Ed's scrapyard.
+
+#	4) Drop the smuggler off at Copperline and sell the stolen ship parts you picked up at Ed's. Tutorial
+#	complete!
