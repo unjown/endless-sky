@@ -23,3 +23,61 @@
 
 #	4) Drop the smuggler off at Copperline and sell the stolen ship parts you picked up at Ed's. Tutorial
 #	complete!
+
+mission "Smuggling Tutorial 1"
+	cargo "Smuggled Goods" 15
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+	destination "Sleezy Ed's Scrap and Surplus"
+	illegal 40000 `In addition to the fine, your illegal cargo is confiscated. The pirates won't be happy to hear about this.`
+	to offer
+		#random < 30
+	on offer
+		conversation
+			`Want to help me smuggle some things? It'll be illegal!`
+			choice
+				`	Yes.`
+					accept
+				`	No.`
+					decline
+
+
+
+mission "Smuggling Tutorial 2"
+	landing
+	source "Sleezy Ed's Scrap and Surplus"
+	destination "Millrace"
+	to offer
+		has "Smuggling Tutorial 1: done"
+	on offer
+		conversation
+			`Thanks for the ride! We should go to Copperline Station, but let's stop at <destination> along the way to refuel.`
+			choice
+				`	Yes.`
+					accept
+				`	No.`
+					decline
+	on accept
+		event "enable smuggling stopover"
+
+event "enable smuggling stopover"
+
+
+
+mission "Smuggling Tutorial 3"
+	landing
+	source "Millrace"
+	destination "Copperline Station"
+	to offer
+		has "Smuggling Tutorial 2: done"
+	on offer
+		conversation
+			`Let's head to <destination> now.`
+			choice
+				`	Yes.`
+					accept
+				`	No.`
+					decline
+	on complete
+		conversation
+			`Tutorial complete!`
