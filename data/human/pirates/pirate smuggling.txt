@@ -48,7 +48,7 @@ outfit "Stolen Ship Parts"
 	category "Special"
 	cost 25000
 	thumbnail "outfit/stolen ship parts"
-	"mass" 16
+	"mass" 15
 	"installable" -1
 	description "Well, somebody is going to miss these parts. Possibly. The alternative that nobody is left to miss them is somewhat more grim."
 	description "Stolen parts are generally traded at a discount, though most customers will avoid them due to the risks of being discovered in possession of stolen property. Coreshine runners tend to go through spare parts like candy, often due to their propensity for tinkering and experimentation to make the meanest, leanest hotrods in space."

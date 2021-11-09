@@ -25,7 +25,8 @@
 #	complete!
 
 mission "Smuggling Tutorial 1"
-	cargo "Smuggled Goods" 15
+	landing
+	cargo "Smuggled Goods" 5
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	destination "Sleezy Ed's Scrap and Surplus"
@@ -34,13 +35,70 @@ mission "Smuggling Tutorial 1"
 		#random < 30
 	on offer
 		conversation
-			`Want to help me smuggle some things? It'll be illegal!`
+			`The spaceport pad next to yours is a hot mess - quite literally. Smoke still billows from fractures in a shot-up ship's hull while spaceport emergency crew dump fire suppressant foam through the larger gaps; your nose stings and eyes water with the acridity of burning electronics.`
+			`	You disembark just in time to see a man shoo off medical staff, just as soon as they've finished winding bandages around his hands and face. His long coat is horribly scorched, seemingly having taken the brunt of whatever burnt his exposed skin. "And don't think I'll be paying for this! Never asked for it, you know!"` 
+			`	The figure waits until the spaceport medics are properly shooed off before surreptitiously reaching into his coat and - with great care given his clearly burnt hands - fumbles out a small pill bottle and torturously wrenches open the child-proof cap. He's in clear agony until popping a few pills from the bottle into his jaw and promptly crushing them, sending a shiver through the man's frame followed by a decidedly relaxed slouch and sigh of relief.`
+			`	"Say, friend-" You've been noticed. "- help out a spacer down on his luck?"`
 			choice
-				`	Yes.`
-					accept
-				`	No.`
-					decline
-
+				`	"Sure, what do you need?.`
+					goto pilot
+				`	"Sorry, I don't have any change".`
+			`	Despite the fellow's fairly horrible burns, he seems to be in a downright chipper mood when he corrects you. "No, no, no. I don't need charity. I need a pilot."`
+			label pilot
+			`	"Boss is gonna' have me wiped if I don't deliver this cargo and settle a debt, so I might as well be forward with you - worst case scenario, you squeal and I'm safe in jail. Best case you help me and I get my life back. I've got five tons of top shelf drugs that I need delivered. Would do it myself, but you see the state of my ship and-" The former ship-owner raises his palms, shaking them in a jazz-hands maneuver. The skin around his wrists is in a hideous staet; you can only assume that under the bandages wrapping his palms and fingers it's just as bad.`
+			`	"Will you help me move my cargo and give me a ride to Sleezy Ed's scrapyard? It's over in Naper. I'm... down on my luck at the moment, or I wouldn't be so open about this, but I'm a damn good smuggler and can teach you some tricks of the trade if you'll assist me."`
+			`	"And before you say that a damn good smuggler shouldn't be in this situation to begin with, uh, I- I don't got anything to say about that, actually. Just do me a solid?"`
+			choice
+				`	"I'm not very keen on breaking the law, but I also can't just leave you to your fate. I'll do what you need."`
+				`	"Honest trade sure doesn't pay as much as I'd like, maybe it's time for a career change. Teach me your ways, wise master."`
+					goto accept
+				`	"I'm sorry, but I can't help you."`
+					goto decline
+				`	"You're a smuggler? I'm telling spaceport security."`
+					goto snitch
+			`	"Hey man, the law breaks us all the time - it's only fair to return the favor every now and then, yeah? Besides, you never know when you need to lay low. Sometimes life ain't fair. I'll teach you some valuable skills either way."`
+			label accept
+			`	"You'll see! It'll be very worth the time and effort. Just don't get caught and land us both in the slammer, yeah buddy? Now, I ditched my cargo in a field on the way here, but..." The wounded smuggler carefully withdraws his wallet. "I think I've got just enough credits left to round up some burly boys and have the goods manhandled onto your ship. You meet me at the spaceport when you're ready to go, and I'll impart my first set'a wisdoms."`
+			choice
+				`	(Kill some time, then check in at the spaceport.)`
+			`	There he is, as promised, the smuggler's one un-bandaged eye barely focused as you're regarded through the haze of painkillers he's been downing. "Heyyyyyyyy, you showed up. Cool. Remind me what we're doing here again?"`
+			label tutorial
+			choice
+				`	"When I'm smuggling, how can I prevent spaceport security or planetary customs agents from catching me?"`
+					goto customs
+				`	"Interstellar Police. They're always scanning for smugglers, how do I avoid getting fined or boarded?"`
+					goto ISP
+				`	"What happened to your ship?"`
+					goto wrecked
+				`	"I want to know more about the person who'll have you killed if you don't make this delivery."`
+					goto Ed
+			label customs
+				`"Mix your illegal goods with legal cargo to throw off inspectors. If you choose something profitable at the destination, you can even make some honest creds on the side."`
+			goto tutorialescape
+			label ISP
+			`	"Not getting scanned in the first plcae is your best defense. A heavily loaded bulk freighter is sure to get caught, but a small courier vessel can usually - usually - outrun police interdictors. Mind, they've started packing afterburners lately, so... Good luck, pal."`
+			`	"Mixing up your cargo by transporting stuff like grain or metal or industrial equipment can sometimes throw off their scans and return false negatives. Any bulk commodity, really. Interference plating is great and makes that even more likely to happen, but it doesn't work on its own - it needs something to mix signals with."`
+			`	"If you do get scanned and stopped, there's one of three ways it can go down. First, you simply accept the fine and surrender the cargo. Please don't do this? I'd rather not get whacked. If you're on your own job, though, sometimes it's better to just eat the fine once than pay a bunch of bribes because you're getting scanned over and over. Which brings us to the second option-"`
+			`	"Good news is, most cops are just like you and me - out to make a buck and not too picky about how they do that. Paying them off is usually cheaper than whatever fine they decide to slap you with, and you'll get to keep your cargo. Just keep in mind that occasionally you'll run into an honest cop who won't take your bribe. And if you're not able or willing to bribe them, and you don't want to surrender your cargo, there's only one option left:"`
+			`	"Run for it! This is going to seriously piss off the ISP and any Navy ships in the system, and might get interceptor fleets sent after anyone matching your description. But hey, at least you get to keep your payout at the end. Just lay low for a while and the ISP will usually cool down. Unless you're been shooting them down, that does tend to piss 'em off."`
+			goto tutorialescape
+			label wrecked
+			`"I got ganked, man."`
+			goto tutorialescape
+			label ed
+			`"Slimy greaseball of a dude, don't trust him. Still, he's good to know."`
+			label tutorialescape
+			`	"Was there anything else you wanted to ask?"`
+			goto tutorial
+			label snitch
+			apply
+				set "snitch"
+			`	"Hey, well, screw you too dude. But at least I'll be safe behind bars." There's a mellow sort of smile on the smuggler's lips as he resigns himself to his fate; one watery eye, a burnt body, and a bloodstream full of narcotic painkillers have rendered him helpless, and he knows it.`
+			`	Spaceport security proves brusque but polite enough, and by the time you return to your ship there's no sign of the smuggler - save for the fact that somebody has spraypainted "Snitch" on the side of your ship. Could that really have been the smuggler's work? His hands were barely functional, and this paint has been applied quite cleanly by the standards of graffiti.`
+				decline
+			label decline
+			`	You make your apologies and step away from the burnt smuggler. He seems momentarily bothered, but the contents of the pills he'd bitten into coursing through his blood have apparently left him too mellowed out to offer any unpleasant valedictions.`
+				decline
 
 
 mission "Smuggling Tutorial 2"
