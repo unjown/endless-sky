@@ -129,7 +129,7 @@ void IllegalHailPanel::Draw()
 bool IllegalHailPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, bool isNewPress)
 {
 	if(((key == 's' || key == 'c') && !cantSurrender)
-			|| ((key == 'p' || key == 'f') && cantSurrender))
+			|| (key == 'p' && cantSurrender))
 	{
 		// Dump illegal cago. Only spare outfits are removed. Any mission cargo
 		// is automatically removed since the missions are failed.
