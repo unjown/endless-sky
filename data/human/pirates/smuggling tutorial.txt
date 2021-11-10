@@ -28,14 +28,16 @@ mission "Smuggling Tutorial 1"
 	landing
 	cargo "Smuggled Goods" 5
 	source
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		attributes smuggling
+		not "Sleezy Ed's Scrap and Surplus"
+		not "Copperline Station"
 	destination "Sleezy Ed's Scrap and Surplus"
 	illegal 40000 `In addition to the fine, your illegal cargo is confiscated. The pirates won't be happy to hear about this.`
 	to offer
 		#random < 30
 	on offer
 		conversation
-			`The spaceport pad next to yours is a hot mess - quite literally. Smoke still billows from fractures in a shot-up ship's hull while spaceport emergency crew dump fire suppressant foam through the larger gaps; your nose stings and eyes water with the acridity of burning electronics.`
+			`The landing pad next to yours is a hot mess - quite literally. Smoke still billows from fractures in a shot-up ship's hull while spaceport emergency crew dump fire suppressant foam through the larger gaps; your nose stings and eyes water with the acridity of burning electronics.`
 			`	You disembark just in time to see a man shoo off medical staff, just as soon as they've finished winding bandages around his hands and face. His long coat is horribly scorched, seemingly having taken the brunt of whatever burnt his exposed skin. "And don't think I'll be paying for this! Never asked for it, you know!"` 
 			`	The figure waits until the spaceport medics are properly shooed off before surreptitiously reaching into his coat and - with great care given his clearly burnt hands - fumbles out a small pill bottle and torturously wrenches open the child-proof cap. He's in clear agony until popping a few pills from the bottle into his jaw and promptly crushing them, sending a shiver through the man's frame followed by a decidedly relaxed slouch and sigh of relief.`
 			`	"Say, friend-" You've been noticed. "- help out a spacer down on his luck?"`
