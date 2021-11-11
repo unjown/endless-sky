@@ -134,7 +134,8 @@ shipyard "Luxury Ships"
 	"Flivver"
 
 shipyard "Junkyard"
-	#junker ships go here
+	"Shuttle"
+	#placeholder until junk ships are added
 
 outfitter "Basic Outfits"
 	"Energy Blaster"
@@ -488,7 +489,7 @@ outfitter "Smuggling Basic"
 	
 outfitter "Smuggling Advanced"
 	"Smuggler's Closet"
-	"Larger Radar Jammer"
+	"Large Radar Jammer"
 	"Heavy Anti-Missile Turret"
 	"A120 Atomic Thruster"
 	"A125 Atomic Steering"
@@ -501,7 +502,8 @@ outfitter "Smuggling Advanced"
 	"Ramscoop"
 
 outfitter "Junkyard"
-	#discount outfits go here
+	"Small Radar Jammer"
+	#placeholder to avoid build errors until junk outfits are added
 
 outfitter "Stack Core"
 	"Stack Core"
