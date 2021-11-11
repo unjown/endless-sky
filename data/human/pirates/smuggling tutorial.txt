@@ -27,9 +27,10 @@
 mission "Smuggling Tutorial 1"
 	cargo "Smuggled Goods" 5
 	source
-		attributes smuggling
-		not "Sleezy Ed's Scrap and Surplus"
-		not "Copperline Station"
+		and
+			attributes smuggling
+			not "Sleezy Ed's Scrap and Surplus"
+			not "Copperline Station"
 	destination "Sleezy Ed's Scrap and Surplus"
 	illegal 40000 `In addition to the fine, your illegal cargo is confiscated. The pirates won't be happy to hear about this.`
 	to offer
