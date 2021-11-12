@@ -564,6 +564,8 @@ int64_t CargoHold::IllegalCargoFine() const
 	for(const auto &it : outfits)
 	{
 		int fine = it.first->Get("illegal");
+		if(it.first->Get("atrocity") > 0.)
+			return -1;
 		if(fine < 0)
 			return fine;
 		totalFine += fine / 2;
