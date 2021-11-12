@@ -26894,8 +26894,10 @@ planet "Cool Forest"
 planet "Copperline Station"
 	attributes pirate station frontier "core pirate" smuggling
 	landscape land/distillery1
-	description `C2H5OH. Ethyl alcohol, the nectar of the Gods spilled upon the heavens themselves; the Great Molecular Cloud has long been a mythical promised land to spacers, from the early days when humanity yearned to journey beyond their star, even until recently - the only thing that actually put an end to the myths was finally encountering them. As it turns out, harvesting pure vodka from clouds of loose molecules - even though this region be comparatively rich in such substances - is still taxing work.`
-	description `Here on the very edge of human space, the Coreshiners have managed to remain low enough on the Republic's priority list that the taxman can't bring enough guns to bear to settle accounts with the rumrummers and smugglers who call this remote corner of the galaxy home.`
+	description `C2H5OH: Sweet, sweet ethyl alcohol, the nectar of the Gods spilled upon the heavens themselves. The great molecular cloud which protrudes into this star system had long been a mythical promised land to spacers from the early days when humanity first turned their spectroscopes towards the stars.`
+	description `Myth no more, the harvesting of interstellar gas to be processed into drinking alcohol is now a fairly lucrative industry - if one that the inhabitants of Copperline Station refuse to pay taxes on.`
+	spaceport `Bootleggers are notorious for their hotrodded star ships, but most of the vessels parked here look decidedly mundane. Stock hull configuration, stock paint jobs, nothing that would call attention to them as anything but another interstellar traveler. It's only when you see a shuttle that's undergoing maintenance that the oversized engines and custom afterburner arrangement become visible.`
+	government Independent
 	outfitter "Smuggling: Coreshine"
 	outfitter "Smuggling Basic"
 	outfitter "Smuggling Advanced"
