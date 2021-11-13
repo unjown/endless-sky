@@ -682,11 +682,11 @@ mission "Smuggling to Haven C: Sell 10x Dragon's Teeth"
 
 
 # Smuggling - Lightspeed Warehouse
-mission "Smuggling to Antipode A: Sell 100x Chemical Warheads"
+mission "Smuggling to Warehouse 0x16A A: Sell 100x Chemical Warheads"
 	invisible
 	landing
 	repeat
-	source "Antipode"
+	source "Warehouse 0x16A"
 	on offer
 		require "Chemical Warhead" 100
 		conversation "Smuggling: Sell 100x Chemical Warheads"
@@ -697,11 +697,11 @@ mission "Smuggling to Antipode A: Sell 100x Chemical Warheads"
 	on complete
 		payment 92740000
 
-mission "Smuggling to Antipode B: Sell 50x Chemical Warheads"
+mission "Smuggling to Warehouse 0x16A B: Sell 50x Chemical Warheads"
 	invisible
 	landing
 	repeat
-	source "Antipode"
+	source "Warehouse 0x16A"
 	on offer
 		require "Chemical Warhead" 50
 		conversation "Smuggling: Sell 50x Chemical Warheads"
@@ -712,11 +712,11 @@ mission "Smuggling to Antipode B: Sell 50x Chemical Warheads"
 	on complete
 		payment 46370000
 
-mission "Smuggling to Antipode C: Sell 10x Chemical Warheads"
+mission "Smuggling to Warehouse 0x16A C: Sell 10x Chemical Warheads"
 	invisible
 	landing
 	repeat
-	source "Antipode"
+	source "Warehouse 0x16A"
 	on offer
 		require "Chemical Warhead" 10
 		conversation "Smuggling: Sell 10x Chemical Warheads"
@@ -728,11 +728,11 @@ mission "Smuggling to Antipode C: Sell 10x Chemical Warheads"
 		payment 9274000
 
 
-mission "Smuggling to Antipode A: Sell 100x Jailbroken AI Cores"
+mission "Smuggling to Warehouse 0x16A A: Sell 100x Jailbroken AI Cores"
 	invisible
 	landing
 	repeat
-	source "Antipode"
+	source "Warehouse 0x16A"
 	on offer
 		require "Jailbroken AI Core" 100
 		conversation "Smuggling: Sell 100x Jailbroken AI Cores"
@@ -743,11 +743,11 @@ mission "Smuggling to Antipode A: Sell 100x Jailbroken AI Cores"
 	on complete
 		payment 18871100
 
-mission "Smuggling to Antipode B: Sell 50x Jailbroken AI Cores"
+mission "Smuggling to Warehouse 0x16A B: Sell 50x Jailbroken AI Cores"
 	invisible
 	landing
 	repeat
-	source "Antipode"
+	source "Warehouse 0x16A"
 	on offer
 		require "Jailbroken AI Core" 50
 		conversation "Smuggling: Sell 50x Jailbroken AI Cores"
@@ -758,11 +758,11 @@ mission "Smuggling to Antipode B: Sell 50x Jailbroken AI Cores"
 	on complete
 		payment 9435550
 
-mission "Smuggling to Antipode C: Sell 10x Jailbroken AI Cores"
+mission "Smuggling to Warehouse 0x16A C: Sell 10x Jailbroken AI Cores"
 	invisible
 	landing
 	repeat
-	source "Antipode"
+	source "Warehouse 0x16A"
 	on offer
 		require "Jailbroken AI Core" 10
 		conversation "Smuggling: Sell 10x Jailbroken AI Cores"

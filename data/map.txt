@@ -15908,6 +15908,10 @@ system Matar
 			sprite planet/rock14
 			distance 131
 			period 17.1091
+	object "Warehouse 0x16A"
+		sprite planet/station15
+		distance 606.63
+		period 0
 	object
 		sprite planet/tethys-b
 		distance 1400.52
@@ -30124,6 +30128,14 @@ planet Violetwake
 	government Uninhabited
 	bribe 0
 	security 0
+
+planet "Warehouse 0x16A"
+	attributes station smuggling
+	#government LLS
+	landscape land/sivael7
+	description `When Lightspeed Logistics was split off by the Syndicate in the early 2900s the once-organic logistics organization inherited most of the Syndicate's orbital shipping infrastructure. This warehouse is much like any of their shipping and sorting centers - particularly in that the staff are uniformly underpaid. Unusually, they don't seem particularly overworked: the occasional cluster of workers can be spotted loitering in front of certain areas, almost as if they're standing guard.`
+	spaceport `Unlike most of Lightspeed's sorting centers, 16A boasts a sinister reputation as a meeting spot for smugglers and even slavers and pirates. To be sure, nobody here seems particularly happy to see you, be you here on legitimate business or otherwise. You're flatly denied entrance to the dingy workers' bar by a surly bouncer in a hard hat. Similarly, most of the landing bays you're turned away from. The station isn't open to visitors.`
+	outfitter "Smuggling: Counterfeit Credsticks"
 
 planet Warfeed
 	attributes unfettered
