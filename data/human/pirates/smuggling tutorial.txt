@@ -138,10 +138,9 @@ mission "Smuggling Tutorial 2"
 
 
 
-
 mission "Smuggling Tutorial 3"
 	landing
-	source "Millrace"
+	source "Stopover"
 	destination "Copperline Station"
 	to offer
 		has "Smuggling Tutorial 2: done"
