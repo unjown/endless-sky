@@ -79,7 +79,7 @@ mission "Smuggling Tutorial 1"
 			`	"Mix your illegal goods with legal cargo to throw off inspectors. If you choose something profitable at the destination, you can even make some honest creds on the side."`
 				goto tutorialreturn
 			label ISP
-			`	"Not getting scanned in the first plcae is your best defense. A heavily loaded bulk freighter is sure to get caught, but a small courier vessel can usually - usually - outrun police interdictors. Mind, they've started packing afterburners lately, so... Good luck, pal."`
+			`	"Not getting scanned in the first place is your best defense. A heavily loaded bulk freighter is sure to get caught, but a small courier vessel can usually - usually - outrun police interdictors. Mind, they've started packing afterburners lately, so... Good luck, pal."`
 			`	"Mixing up your cargo by transporting stuff like grain or metal or industrial equipment can sometimes throw off their scans and return false negatives. Any bulk commodity, really. Interference plating is great and makes that even more likely to happen, but it doesn't work on its own - it needs something to mix signals with."`
 			`	"If you do get scanned and stopped, there's one of three ways it can go down. First, you simply accept the fine and surrender the cargo. Please don't do this? I'd rather not get whacked. If you're on your own job, though, sometimes it's better to just eat the fine once than pay a bunch of bribes because you're getting scanned over and over. Which brings us to the second option-"`
 			`	"Good news is, most cops are just like you and me - out to make a buck and not too picky about how they do that. Paying them off is usually cheaper than whatever fine they decide to slap you with, and you'll get to keep your cargo. Just keep in mind that occasionally you'll run into an honest cop who won't take your bribe. And if you're not able or willing to bribe them, and you don't want to surrender your cargo, there's only one option left:"`
@@ -106,12 +106,25 @@ mission "Smuggling Tutorial 1"
 			`	As promised, there's a gang of longshoremen waiting by your ship to load a few crates. They're looking a bit dented - probably from being shoved out an airlock at high speed - but the smuggler assures you that the contents are intact. "They have to be, because if they're not I'm screwed, yeah?" Certainly spotless logic.`
 			`	"Let's get out of here. Next stop should be Sleezy Ed's, you'll find it in the east end of the Dirt Belt arm. Just make sure you don't end up in the Core by accident, totally different part of the galaxy. But hey! You're a space captain, you know this sort of thing. And, uh... Do be expedient. It's not like the delivery is time sensitive, but every moment you're out there is a moment you might get scanned by police, and every time you land customs might come calling. Try to make it in as few stops as possible."`
 				accept
+	on accept
+		event "enable smuggling stopover"
+
+event "enable smuggling stopover"
+	system "Fomalhaut"
+		add object "Stopover"
+			sprite "planet/asteroid base"
+
+planet "Stopover"
+	government "Independent"
+	description `Hi.`
+	spaceport `Hello there.`
+
 
 
 mission "Smuggling Tutorial 2"
 	landing
 	source "Sleezy Ed's Scrap and Surplus"
-	destination "Millrace"
+	destination "Stopover"
 	to offer
 		has "Smuggling Tutorial 1: done"
 	on offer
@@ -122,10 +135,7 @@ mission "Smuggling Tutorial 2"
 					accept
 				`	No.`
 					decline
-	on accept
-		event "enable smuggling stopover"
 
-event "enable smuggling stopover"
 
 
 
