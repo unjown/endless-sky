@@ -25,20 +25,18 @@
 #	complete!
 
 mission "Smuggling Tutorial 1"
-	cargo "Smuggled Goods" 5
+	#cargo "Smuggled Goods" 5
 	source
 		attributes smuggling
 		not planet "Sleezy Ed's Scrap and Surplus"
-		not planet "Copperline Station"
-	destination "Sleezy Ed's Scrap and Surplus"
-	illegal 40000 `In addition to the fine, your illegal cargo is confiscated. The pirates won't be happy to hear about this.`
+		not planet "Warehouse 0x16A"
+	destination "Warehouse 0x16A"
+	#illegal 40000 `In addition to the fine, your illegal cargo is confiscated. The pirates won't be happy to hear about this.`
 	to offer
 		#random < 30
 	on offer
 		conversation
-			`The landing pad next to yours is a hot mess - quite literally. Smoke still billows from fractures in a shot-up ship's hull while spaceport emergency crew dump fire suppressant foam through the larger gaps; your nose stings and eyes water with the acridity of burning electronics.`
-			`	You disembark just in time to see a man shoo off medical staff, just as soon as they've finished winding bandages around his hands and face. His long coat is horribly scorched, seemingly having taken the brunt of whatever burnt his exposed skin. "And don't think I'll be paying for this! Never asked for it, you know!"` 
-			`	The figure waits until the spaceport medics are properly shooed off before surreptitiously reaching into his coat and - with great care given his clearly burnt hands - fumbles out a small pill bottle and torturously wrenches open the child-proof cap. He's in clear agony until popping a few pills from the bottle into his jaw and promptly crushing them, sending a shiver through the man's frame followed by a decidedly relaxed slouch and sigh of relief.`
+			`No spaceport is complete without somebody in dire straits asking passerby for help. This time the beggar is - from what you can see that isn't concealed by bandages - a young man, what of his skin remains visible marked by a painful looking pattern of burns. Both hands and the entire right half of his head are wound in bandages, and his entire body carries a strong odor of disinfectants and salve; not strictly unpleasant, but still bordering on the overpowering.`
 			`	"Say, friend-" You've been noticed. "- help out a spacer down on his luck?"`
 			choice
 				`	"Sure, what do you need?.`
@@ -46,9 +44,12 @@ mission "Smuggling Tutorial 1"
 				`	"Sorry, I don't have any change".`
 			`	Despite the fellow's fairly horrible burns, he seems to be in a downright chipper mood when he corrects you. "No, no, no. I don't need charity. I need a pilot."`
 			label pilot
-			`	"Boss is gonna' have me wiped if I don't deliver this cargo and settle a debt, so I might as well be forward with you - worst case scenario, you squeal and I'm safe in jail. Best case you help me and I get my life back. I've got five tons of top shelf drugs that I need delivered. Would do it myself, but you see the state of my ship and-" The former ship-owner raises his palms, shaking them in a jazz-hands maneuver. The skin around his wrists is in a hideous staet; you can only assume that under the bandages wrapping his palms and fingers it's just as bad.`
-			`	"Will you help me move my cargo and give me a ride to Sleezy Ed's scrapyard? It's over in Naper. I'm... down on my luck at the moment, or I wouldn't be so open about this, but I'm a damn good smuggler and can teach you some tricks of the trade if you'll assist me."`
-			`	"And before you say that a damn good smuggler shouldn't be in this situation to begin with, uh, I- I don't got anything to say about that, actually. Just do me a solid?"`
+			`	"Boss is going to have me whacked if I don't deliver this cargo and settle my debt, so I might as well be forward with you - worst case scenario, you squeal and I'm safe in jail. Best case you help me and I get my life back. I've got five tons of top shelf drugs that I need delivered. Would do it myself, but I'm not in any state to fly, and my ship is - if you'll believe it - in even worse shape." The former ship-owner raises carefully raises an open pill bottle to his mouth, shakes a few capsules onto his tongue, and grinds them to powder with his teeth. There's a shiver and a grunt and a wheeze, and then he's back to relaxed.`
+			`	"Will you help me? I need you to give me a ride to a warehouse in Matar, where we'll pick up my cargo to be moved to Sleezy Ed's scrapyard, over in Naper.` 
+			choice
+				`	"What's in it for me?"`
+			`	"I'm down on my luck at the moment, or I wouldn't be so open about this, but I'm a damn good smuggler and can teach you some tricks of the trade if you'll assist me."`
+			`	"And before you say that a damn good smuggler shouldn't be in this situation to begin with, uh, I- I don't got anything to say about that, actually. Just do me a solid? I'll even show you my secret stash once my debt's settled."`
 			choice
 				`	"I'm not very keen on breaking the law, but I also can't just leave you to your fate. I'll do what you need."`
 				`	"Honest trade sure doesn't pay as much as I'd like, maybe it's time for a career change. Teach me your ways, wise master."`
@@ -59,10 +60,37 @@ mission "Smuggling Tutorial 1"
 					goto snitch
 			`	"Hey man, the law breaks us all the time - it's only fair to return the favor every now and then, yeah? Besides, you never know when you need to lay low. Sometimes life ain't fair. I'll teach you some valuable skills either way."`
 			label accept
-			`	"You'll see! It'll be very worth the time and effort. Just don't get caught and land us both in the slammer, yeah buddy? Now, I ditched my cargo in a field on the way here, but..." The wounded smuggler carefully withdraws his wallet. "I think I've got just enough credits left to round up some burly boys and have the goods manhandled onto your ship. You meet me at the spaceport when you're ready to go, and I'll impart my first set'a wisdoms."`
+			`	"You'll see! It'll be very worth the time and effort. Just don't get caught and land us both in the slammer, yeah buddy? Now, let's head to Matar. We need to land at Warehouse 16A."`
+			`	"You can call me Junior, by the way. Now let's get onto your ship so I can properly pass out. Wake me up when we're in Matar."`
+				accept
+			label snitch
+			apply
+				set "snitch"
+			`	"Hey, well, screw you too dude. But at least I'll be safe behind bars." There's a mellow sort of smile on the smuggler's lips as he resigns himself to his fate; one watery eye, a burnt body, and a bloodstream full of narcotic painkillers have rendered him helpless, and he knows it.`
+			`	Spaceport security proves brusque but polite enough, and by the time you return to your ship there's no sign of the smuggler - save for the fact that somebody has spraypainted "Snitch" on the side of your ship. Could that really have been the smuggler's work? His hands were barely functional, and this paint has been applied quite cleanly by the standards of graffiti.`
+				decline
+			label decline
+			`	You make your apologies and step away from the burnt smuggler. He seems momentarily bothered, but the contents of the pills he'd bitten into coursing through his blood have apparently left him too mellowed out to offer any unpleasant valedictions.`
+				decline
+				
+
+mission "Smuggling Tutorial 2"
+	cargo "Smuggled Goods" 5
+	source
+		attributes smuggling
+		not planet "Sleezy Ed's Scrap and Surplus"
+		not planet "Warehouse 0x16A"
+	destination "Warehouse 0x16A"
+	illegal 40000 `In addition to the fine, your illegal cargo is confiscated. The pirates won't be happy to hear about this.`
+	to offer
+		has "Smuggling Tutorial 1: Done"
+	on offer
+		conversation
+			`Junior - the smuggler you've brought on board - has become increasingly surly with every day you spend in space. He'd burnt through his supply of pills, and then finally whatever painkillers he was able to scrounge from your first aid cabinets. When you land at the warehouse he stomps down the gangway, grunts something incoherent towards you - a farewell? - and then brushes past some dangerous-looking workers. You try to follow, only to be rebuffed by the Lightspeed employees guarding the exit to your spacedock.`
+			`	"We know him. We don't know you. You wait there." Any attempts at getting information from the tight-lipped guards prove fruitless.`
 			choice
-				`	(Kill some time, then check in at the spaceport.)`
-			`	There he is, as promised, the smuggler's one un-bandaged eye barely focused as you're regarded through the haze of painkillers he's been downing. "Heyyyyyyyy, you showed up. Cool. Remind me what we're doing here again?"`
+				`	(You have little choice but to wait.)`
+			`	Junior's return is heralded by the stomping of mechanical feet. He walks in behind a pair of longshoremen piloting power loaders, each one bearing a pallet loaded with lashed crates upon their hydraulic claws. The smuggler, apparently in a much brighter mood - and with pupils as wide as saucers - beckons you over. "My boys here will load the goods, in the mean time, you got any questions about how this whole smuggling business works? I can teach you how now to get caught. Which is, y'know, something I'd very much prefer not happen."`
 			label tutorial
 			choice
 				`	"When I'm smuggling, how can I prevent spaceport security or planetary customs agents from catching me?"`
@@ -89,23 +117,15 @@ mission "Smuggling Tutorial 1"
 			`	"It was the damn ISP, man. Really hate those guys - just my luck to run into the one honest cop in the whole region. He wouldn't take my bribe, and dumping cargo wasn't an option, so I ran- straight into a Navy blockade. Made it through, but landing got a bit fiery. And now here I am." Cracked lips attempt a smile.`
 				goto tutorialreturn
 			label ed
-			`	"What, Sleezy Ed? Ugh. I don't want to talk about that greaseball. Ask me again when I'm in a better mood." Considering the smuggler is currently sattelite-high on painkillers, you might doubt your chances of finding him feeling any better than this - especially once the drugs wear off and he starts to feel his burns again.`
+			`	"What, you talking about Sleezy Ed? Ugh. I don't want to talk about that greaseball. Ask me again when I'm in a better mood." Considering the smuggler is currently sattelite-high on painkillers, your chances of finding him feeling any better than this are slim indeed - especially once the drugs wear off and he starts to feel his wounds again.`
 			label tutorialreturn
 			`	"Was there anything else you wanted to ask?"`
 				goto tutorial
-			label snitch
-			apply
-				set "snitch"
-			`	"Hey, well, screw you too dude. But at least I'll be safe behind bars." There's a mellow sort of smile on the smuggler's lips as he resigns himself to his fate; one watery eye, a burnt body, and a bloodstream full of narcotic painkillers have rendered him helpless, and he knows it.`
-			`	Spaceport security proves brusque but polite enough, and by the time you return to your ship there's no sign of the smuggler - save for the fact that somebody has spraypainted "Snitch" on the side of your ship. Could that really have been the smuggler's work? His hands were barely functional, and this paint has been applied quite cleanly by the standards of graffiti.`
-				decline
-			label decline
-			`	You make your apologies and step away from the burnt smuggler. He seems momentarily bothered, but the contents of the pills he'd bitten into coursing through his blood have apparently left him too mellowed out to offer any unpleasant valedictions.`
-				decline
 			label depart
-			`	As promised, there's a gang of longshoremen waiting by your ship to load a few crates. They're looking a bit dented - probably from being shoved out an airlock at high speed - but the smuggler assures you that the contents are intact. "They have to be, because if they're not I'm screwed, yeah?" Certainly spotless logic.`
-			`	"Let's get out of here. Next stop should be Sleezy Ed's, you'll find it in the east end of the Dirt Belt arm. Just make sure you don't end up in the Core by accident, totally different part of the galaxy. But hey! You're a space captain, you know this sort of thing. And, uh... Do be expedient. It's not like the delivery is time sensitive, but every moment you're out there is a moment you might get scanned by police, and every time you land customs might come calling. Try to make it in as few stops as possible."`
+			`	The longshoremen load the last of the crates into your cargo hold - they've been carefully positioned so that any additional cargo you take on can be safely stacked over and around them, masking the contraband from incoming scans or visiting customs inspectors.`
+			`	"Alright, friend. We're ready to leave. But while we're here... Why don't you visit the outfitter? If you've got the space, they can set you up with some interference plating. It'll help stretch out the signal of any masking cargo we're carrying. Or, if you're feeling gutsy, just ask for 'tickets to the season playoffs', they'll set you up with some boxes of counterfit creds. Ed always wants more of those, he'll pay a good sum. Just remember, the more legal cargo we carry the safer we'll be, so try to keep things balanced."`
 				accept
+	
 	on accept
 		event "enable smuggling stopover"
 
@@ -119,14 +139,12 @@ planet "Stopover"
 	description `Hi.`
 	spaceport `Hello there.`
 
-
-
-mission "Smuggling Tutorial 2"
+mission "Smuggling Tutorial 3"
 	landing
 	source "Sleezy Ed's Scrap and Surplus"
 	destination "Stopover"
 	to offer
-		has "Smuggling Tutorial 1: done"
+		has "Smuggling Tutorial 2: done"
 	on offer
 		conversation
 			`Thanks for the ride! We should go to Copperline Station, but let's stop at <destination> along the way to refuel.`
@@ -138,12 +156,12 @@ mission "Smuggling Tutorial 2"
 
 
 
-mission "Smuggling Tutorial 3"
+mission "Smuggling Tutorial 4"
 	landing
 	source "Stopover"
 	destination "Copperline Station"
 	to offer
-		has "Smuggling Tutorial 2: done"
+		has "Smuggling Tutorial 3: done"
 	on offer
 		conversation
 			`Let's head to <destination> now.`
