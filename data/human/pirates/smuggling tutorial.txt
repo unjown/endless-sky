@@ -67,7 +67,7 @@ mission "Smuggling Tutorial 1"
 			apply
 				set "snitch"
 			`	"Hey, well, screw you too dude. But at least I'll be safe behind bars." There's a mellow sort of smile on the smuggler's lips as he resigns himself to his fate; one watery eye, a burnt body, and a bloodstream full of narcotic painkillers have rendered him helpless, and he knows it.`
-			`	Spaceport security proves brusque but polite enough, and by the time you return to your ship there's no sign of the smuggler - save for the fact that somebody has spraypainted "Snitch" on the side of your ship. Could that really have been the smuggler's work? His hands were barely functional, and this paint has been applied quite cleanly by the standards of graffiti.`
+			`	Spaceport security proves brusque but polite enough, but by the time you return to your ship somebody has spraypainted "Snitch" across the hull. Could that really have been the smuggler's work? His hands were barely functional, and this paint has been applied quite cleanly by the standards of graffiti.`
 				decline
 			label decline
 			`	You make your apologies and step away from the burnt smuggler. He seems momentarily bothered, but the contents of the pills he'd bitten into coursing through his blood have apparently left him too mellowed out to offer any unpleasant valedictions.`
