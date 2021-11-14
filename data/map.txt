@@ -17656,7 +17656,7 @@ system Naper
 		sprite planet/gas13-b
 		distance 967.73
 		period 290.776
-		object "Sleezy Ed's Scrap and Surplus"
+		object "Sleezy Ed's Scrapyard"
 			sprite planet/ganymede
 			distance 301
 			period 14.0112
@@ -29472,7 +29472,7 @@ planet Skymoot
 	outfitter "Smuggling: Dragon's Teeth"
 	outfitter "Smuggling Basic"
 
-planet "Sleezy Ed's Scrap and Surplus"
+planet "Sleezy Ed's Scrapyard"
 	attributes moon smuggling
 	landscape land/badlands0
 	description `This is a scrapyard in space.`

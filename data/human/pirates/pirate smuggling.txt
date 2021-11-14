@@ -496,11 +496,11 @@ mission "Smuggling to Glory C: Sell 10x Jailbroken AI Cores"
 
 
 # Smuggling - Sleezy Ed's
-mission "Smuggling to Sleezy Ed's Scrap and Surplus A: Sell 100x Coreshine"
+mission "Smuggling to Sleezy Ed's Scrapyard A: Sell 100x Coreshine"
 	invisible
 	landing
 	repeat
-	source "Sleezy Ed's Scrap and Surplus"
+	source "Sleezy Ed's Scrapyard"
 	on offer
 		require "Coreshine" 100
 		conversation "Smuggling: Sell 100x Coreshine"
@@ -511,11 +511,11 @@ mission "Smuggling to Sleezy Ed's Scrap and Surplus A: Sell 100x Coreshine"
 	on complete
 		payment 640000
 
-mission "Smuggling to Sleezy Ed's Scrap and Surplus B: Sell 50x Coreshine"
+mission "Smuggling to Sleezy Ed's Scrapyard B: Sell 50x Coreshine"
 	invisible
 	landing
 	repeat
-	source "Sleezy Ed's Scrap and Surplus"
+	source "Sleezy Ed's Scrapyard"
 	on offer
 		require "Coreshine" 50
 		conversation "Smuggling: Sell 50x Coreshine"
@@ -526,11 +526,11 @@ mission "Smuggling to Sleezy Ed's Scrap and Surplus B: Sell 50x Coreshine"
 	on complete
 		payment 320000
 
-mission "Smuggling to Sleezy Ed's Scrap and Surplus C: Sell 10x Coreshine"
+mission "Smuggling to Sleezy Ed's Scrapyard C: Sell 10x Coreshine"
 	invisible
 	landing
 	repeat
-	source "Sleezy Ed's Scrap and Surplus"
+	source "Sleezy Ed's Scrapyard"
 	on offer
 		require "Coreshine" 10
 		conversation "Smuggling: Sell 10x Coreshine"
@@ -542,11 +542,11 @@ mission "Smuggling to Sleezy Ed's Scrap and Surplus C: Sell 10x Coreshine"
 		payment 64000
 
 
-mission "Smuggling to Sleezy Ed's Scrap and Surplus A: Sell 100x Counterfeit Credsticks"
+mission "Smuggling to Sleezy Ed's Scrapyard A: Sell 100x Counterfeit Credsticks"
 	invisible
 	landing
 	repeat
-	source "Sleezy Ed's Scrap and Surplus"
+	source "Sleezy Ed's Scrapyard"
 	on offer
 		require "Counterfeit Credsticks" 100
 		conversation "Smuggling: Sell 100x Counterfeit Credsticks"
@@ -557,11 +557,11 @@ mission "Smuggling to Sleezy Ed's Scrap and Surplus A: Sell 100x Counterfeit Cre
 	on complete
 		payment 15000
 
-mission "Smuggling to Sleezy Ed's Scrap and Surplus B: Sell 50x Counterfeit Credsticks"
+mission "Smuggling to Sleezy Ed's Scrapyard B: Sell 50x Counterfeit Credsticks"
 	invisible
 	landing
 	repeat
-	source "Sleezy Ed's Scrap and Surplus"
+	source "Sleezy Ed's Scrapyard"
 	on offer
 		require "Counterfeit Credsticks" 50
 		conversation "Smuggling: Sell 50x Counterfeit Credsticks"
@@ -572,11 +572,11 @@ mission "Smuggling to Sleezy Ed's Scrap and Surplus B: Sell 50x Counterfeit Cred
 	on complete
 		payment 7500
 
-mission "Smuggling to Sleezy Ed's Scrap and Surplus C: Sell 10x Counterfeit Credsticks"
+mission "Smuggling to Sleezy Ed's Scrapyard C: Sell 10x Counterfeit Credsticks"
 	invisible
 	landing
 	repeat
-	source "Sleezy Ed's Scrap and Surplus"
+	source "Sleezy Ed's Scrapyard"
 	on offer
 		require "Counterfeit Credsticks" 10
 		conversation "Smuggling: Sell 10x Counterfeit Credsticks"
@@ -1960,7 +1960,7 @@ mission "Legal Code: Designer Drugs"
 mission "Legal Code: Stolen Ship Parts"
 	invisible
 	landing
-	source "Sleezy Ed's Scrap and Surplus"
+	source "Sleezy Ed's Scrapyard"
 	on offer
 		log "Republic Law" "Stolen Ship Parts" `Excerpted from Republic customs code, Section C: Objects of Illegal Provenance`
 		log "Republic Law" "Stolen Ship Parts" `The fruit of PIRACY and GRAND THEFT STARSHIP shall warrant a fine of NOT LESS THAN 2000 CREDITS per TON OF ILLICIT CARGO. Ignorance of the source of one's ship parts is NO DEFENSE, and it is the DUTY OF ALL CAPTAINS to maintain a LOGBOOK of all their purchases extending back to the FIFTH MOST RECENT OWNER.`
