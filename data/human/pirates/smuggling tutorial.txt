@@ -147,7 +147,7 @@ planet "Matar Cache"
 mission "Smuggling Tutorial 3"
 	landing
 	source "Sleezy Ed's Scrapyard"
-	destination "Stopover"
+	destination "Matar Cache"
 	to offer
 		has "Smuggling Tutorial 2: done"
 	on offer
