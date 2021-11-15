@@ -136,11 +136,10 @@ event "enable smuggling stopover"
 			sprite "planet/asteroid base"
 
 planet "Matar Cache"
-	attributes stopover uninhabited
+	attributes stopover uninhabited "fuel cache"
 	landscape land/asteroid0
 	government "Independent"
 	description `This is a fairly small asteroid, but it's nonetheless been diligently hollowed out just enough that you can nuzzle a ship up inside of it, kill the engines, and pretend nobody is home. Within the hollow a capacious tank of hyperspace fuel rests, waiting to replenish a thirsty traveler in need. Next to it is a case, its glass face emblazoned with "Remember The Code" in bright red paint. Within lies some ration packs, credsticks, a first aid kit, pistol, and last - but certainly not least - a hefty bottle of whiskey.`
-	spaceport `Hello! This is a placeholder until we have fuel caches implemented. Enjoy your fuel, you dastardly smuggler you.`
 
 
 
