@@ -132,10 +132,10 @@ mission "Smuggling Tutorial 2"
 
 event "enable smuggling stopover"
 	system "Fomalhaut"
-		add object "Matar Cache"
+		add object "Unassuming Asteroid"
 			sprite "planet/asteroid base"
 
-planet "Matar Cache"
+planet "Unassuming Asteroid"
 	attributes stopover uninhabited "fuel cache"
 	landscape land/asteroid0
 	government "Independent"
@@ -146,7 +146,7 @@ planet "Matar Cache"
 mission "Smuggling Tutorial 3"
 	landing
 	source "Sleezy Ed's Scrapyard"
-	destination "Matar Cache"
+	destination "Unassuming Asteroid"
 	to offer
 		has "Smuggling Tutorial 2: done"
 	on offer
@@ -162,7 +162,7 @@ mission "Smuggling Tutorial 3"
 
 mission "Smuggling Tutorial 4"
 	landing
-	source "Matar Cache"
+	source "Unassuming Asteroid"
 	destination "Copperline Station"
 	to offer
 		has "Smuggling Tutorial 3: done"
