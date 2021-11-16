@@ -190,7 +190,8 @@ mission "Smuggling Tutorial 3"
 			label lastfavor
 			`	After some minutes, you and Junior are together once again at your landing pad.`
 			`	"Well, I said I'd share some of my secrets if you took me this far, and you did. Here." A small radio is pressed into your hands. "There's an asteroid in Fomalhaut I've turned into a little stash. This'll help you find it. But, hey, you up for one last adventure?"`
-			`	"I could use a ride up to Durax. I... need to get out of this place. I can't handle associationg with that guy any longer. But Copperline Station is a land of opportunity, and I've got some friends there. Besides, they're always in the market for ship parts - you buy some here, sell them there, you'll make a great profit! I can show you my hideout along the way."`
+			`	"I could use a ride up to Durax. I... need to get out of this place. I can't handle associationg with that guy any longer. But Copperline Station is a land of opportunity, and I've got some friends there.`
+			`	"Besides, they're always in the market for 'discount' ship parts - you buy some here, sell them there, you'll make a great profit! I can show you my hideout along the way."`
 			branch privy
 				and
 					has sonswishes
@@ -204,7 +205,7 @@ mission "Smuggling Tutorial 3"
 				`	"Sure, let's go"`
 					accept
 				`	"I think you need to sort things out with your father. He seems to want the best for you.`
-			`	"I don't want anything to do with that gangster. Do you know what he does to people who can't pay him back? He let me off easy because I'm his son, I- I can't handle that. The violence. I used to love running through this scrapyard when I was a kid, but now being here just makes me sick. I need to be somewhere else."`
+			`	"I don't want anything to do with that gangster. Do you know what he does to people who can't pay him back? He let me off easy because I'm his son, I- I can't handle that. The violence, the threats, always wondering when he'll go too far and anger one of the Families... I used to love running through this scrapyard when I was a kid, but now being here just makes me sick. I need to be somewhere else."`
 			choice
 				`	"I hadn't realized. Let's get you to Copperline Station."`
 					accept
