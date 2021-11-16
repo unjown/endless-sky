@@ -36,7 +36,7 @@ mission "Smuggling Tutorial 1"
 		#random < 30
 	on offer
 		conversation
-			`No spaceport is complete without somebody in dire straits asking passerby for help. This time the beggar is - from what you can see that isn't concealed by bandages - a young man, what of his skin remains visible marked by a painful looking pattern of burns. Both hands and the entire right half of his head are wound in bandages, and his entire body carries a strong odor of disinfectants and salve; not strictly unpleasant, but still bordering on the overpowering.`
+			`No spaceport is complete without somebody in dire straits asking passerby for help. This time the beggar is - from what you can see that isn't concealed by bandages - a young man scarcely beyond his teens, what of his skin remains visible marked by a painful looking pattern of burns. Both hands and the entire right half of his head are wound in bandages, and his entire body carries a strong odor of disinfectants and salve; not strictly unpleasant, but still bordering on the overpowering.`
 			`	"Say, friend-" You've been noticed. "- help out a spacer down on his luck?"`
 			choice
 				`	"Sure, what do you need?.`
@@ -151,14 +151,71 @@ mission "Smuggling Tutorial 3"
 		has "Smuggling Tutorial 2: done"
 	on offer
 		conversation
-			`Thanks for the ride! We should go to Copperline Station, but let's stop at <destination> along the way to refuel.`
+			`Having spent most of his time aboard your ship in his bunk, asleep and absolutely slathered in medical gel, Junior's looking and feeling quite a bit better by the time you finally land at the small moon he's directed you towards. The landing pad is surrounded by ships in various states of repair, most of which have a price painted across their hull.`
+			`	"Forklift, there. Can you drive it? Ed never takes the keys out, it should turn right on."`
 			choice
-				`	Yes.`
+				`	(Fork some pallets and get the goods delivered.)`
+					goto gabelstaplerfahrer 
+				`	"I don't actually know how to drive one of these things."`
+			`	"Eh, whatever. We're in a junkyard. It's not like boss'll know if you hit anything. Just push the pedals and move the levers, you'll figure it out."`
+			choice
+				`	(Push the pedals and move the levers.)`
+				`	(Move the pedals and push the levers.)`
+				`	(Lever the pedals and pedal the levers.)`
+			label gabelstaplerfahrer 
+			`	The rusted old forklift roars to life, but not without more than a few loud protests and a distincly unsettling rattle from the engine. You suspect it's been here longer than some of these ships have. Nonetheless, it serves admirably in transporting your contraband to a scrap-roofed warehouse that Junior points out. Even with the thicket of derelicts blanketing the place, he seems to know his way around and between every chassis as if it were second nature.`
+			`	The warehouse door trundles open. There, in a loud red-and-orange striped suit, stands a somewhat heavyset man festooned with golden necklaces, significant stubble, oiled-back hair, and the scent of cigars.`
+			`	This is the (in)famous Sleezy Ed.`
+			`	The fellow's smile is, somehow, even wider than his waistline. "My boy!", he roars, as jolly as can be.`
+			choice
+				`	(Step out, let Junior handle things.)`
+					goto lastfavor
+				`	(Stick around. Maybe you'll get paid, or at least learn something.)`
+			`	Junior's grimace as as deep as the older man's smile. "Dad, I- come on. I'm just here to pay off the ship you lent me, then I'm out of here."`
+			`	The scent of roasting meat wafts in from the back of the warehouse, succulent and rich. Visible through an ajar door is a table set for two. Junior notices this, and his scowl only deepens.`
+			`	"And I'm not a kid anymore! You can't just buy me off with offerings of..." Words falter, fading into a disgruntled muttering. "I can't handle the life you made for me. And now I don't owe you anything else." With that, Junior turns and marches back to your ship, leaving you alone with the scraypard's proprietor.`
+			`	Gone is the jolly demeanor. The smile faded, held thinly only as memory as his facial muscles fail to react. Heartbreak is etched across the man's mien.`
+			`	"Come on, <First>." Junior's calling you from outside. The words are enough to rouse the father from his thoughts. "Captain, wait", he implores.`
+			apply
+				set sonswishes
+			choice
+				`	(Turn your back on Ed and join his son at your ship.)`
+					goto lastfavor
+				`	(Hear him out.)`
+			`	"Take care of my son. He doesn't know what a fool he's being, thinking he can just run off into the galaxy alone, at that age, and chase some dream of living free from oath or obligation. Nothing in this galaxy is free, he'll learn that one day. I can only hope the lesson is a gentle one when it comes."`
+			`	"But so long as he travels with you, I trust you'll keep him out of too much trouble. I hope to be called Eddigus the First one of these days, you know." A wide smile's visible again, the scrayard king's walls are once again back up, vulnerability safely concealed behind a bastion of jollity.`
+			`	"You'd better run along, yes?"`
+			apply
+				set fatherstrust
+			label lastfavor
+			`	After some minutes, you and Junior are together once again at your landing pad.`
+			`	"Well, I said I'd share some of my secrets if you took me this far, and you did. Here." A small radio is pressed into your hands. "There's an asteroid in Fomalhaut I've turned into a little stash. This'll help you find it. But, hey, you up for one last adventure?"`
+			`	"I could use a ride up to Durax. I... need to get out of this place. I can't handle associationg with that guy any longer. But Copperline Station is a land of opportunity, and I've got some friends there. Besides, they're always in the market for ship parts - you buy some here, sell them there, you'll make a great profit! I can show you my hideout along the way."`
+			branch privy
+				and
+					has sonswishes
+					has fatherstrust
+			choice
+				`	"Sure, let's go."`
 					accept
-				`	No.`
+				`	"Sorry, I've got other plans."`
 					decline
-
-
+			label privy
+				`	"Sure, let's go"`
+					accept
+				`	"I think you need to sort things out with your father. He seems to want the best for you.`
+			`	"I don't want anything to do with that gangster. Do you know what he does to people who can't pay him back? He let me off easy because I'm his son, I- I can't handle that. The violence. I used to love running through this scrapyard when I was a kid, but now being here just makes me sick. I need to be somewhere else."`
+			choice
+				`	"I hadn't realized. Let's get you to Copperline Station."`
+					accept
+				`	"That doesn't sound like my problem, but you've been useful enough. Let's head out."`
+					accept
+				`	"Oh. Well. That's... terrifically awkward. Bye!"`
+					decline
+				`	"I see. Unfortunately, I can't head that way for the forseeable future. I can only wish you the best of luck."`
+					decline
+				`	"Ha, tough shit kid."`
+					decline
 
 mission "Smuggling Tutorial 4"
 	landing
