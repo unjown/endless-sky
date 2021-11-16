@@ -226,12 +226,27 @@ mission "Smuggling Tutorial 4"
 		has "Smuggling Tutorial 3: done"
 	on offer
 		conversation
-			`Let's head to <destination> now.`
-			choice
-				`	Yes.`
-					accept
-				`	No.`
-					decline
+			`	This asteroid is utterly forgettable. If it hadn't been pointed out to you, you're certain that only an exhaustive search of the solar sytem could have possibly led you here. Landing proves a tricky maneuver, but with some helpful pointers from Eddigus Junior - who has clearly done this more than a few times - you're able to get your ship parked within a hollow-out cavity within the asteroid itself.`
+			`	"Here it is, <First>. My little home away from home. It's not much to speak of, but being able to refuel here instead of planetside can spare you a customs inspection."`
+			`	"You'll find little caches like this all over the place, but for obvious reasons we tend to only share the locations with those we trust. We being, y'know, smugglers. Just remember the code: anything you take, you replenish later." Ed II allows himself a moment to inspect the cache before returning to your vessel and doffing his pressure suit.`
+			`	"Let's head to <destination> now. I'm a bit of a rookie so they'll hardly trust you on my word alone, but I think if you just keep plying the trade of the smuggler you'll find folks across the galaxy ready to share their secrets, just like I am now."`
+				accept
 	on complete
 		conversation
-			`Tutorial complete!`
+			`	You've arrived at Copperline Station. Eddigus Junior's bags are packed and left by the airlock, but the fellow himself is running late on departing.`
+			choice
+				`	(Check Ed's quarters.)`
+			`	You find the young man standing sans shirt and bandages, thoughtfully inspecting himself in a hand mirror. Though burn scars mar his face and arms, he takes it in stride. "It's a new life for me, so the less likely people are to recognize me the better. Besides, I heard in the Paradise Worlds you can get a whole new face if your credits are good enough." A thin smile is attempted.`
+			`	"Seriously though, I can't thank you enough. You've been pretty generous in getting me this far. My hands have finally healed, so I think I can go the rest of the way on my own power. Been a pleasure knowing you, captain, and... Look me up if you're ever on Copperline, yeah? Chances are I'll be out doing a run, but hey. You never know."`
+			choice
+				`	"I'll be sure to. It's been nice flying with you."`
+					goto fondfarewell
+				`	"I was just in it for those secrets you'd promised and delivered. Sorry, kid. But best of luck out there."`
+				`	"Of course I will." (You won't.)`
+			label finalfarewell
+			`	After some final farewells, the smuggler strolls down your ramp and into his new life. Space is a big place - who knows if you'll see him again?`
+				decline
+			label fondfarewell
+				apply
+					set "Friend of Eddigus II"
+				goto finalfarewell
