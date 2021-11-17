@@ -14,7 +14,6 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #define SPACEPORT_PANEL_H_
 
 #include "Panel.h"
-#include "Planet.h"
 
 #include "Information.h"
 #include "text/WrappedText.h"
@@ -43,7 +42,6 @@ private:
 private:
 	PlayerInfo &player;
 	WrappedText text;
-	const Planet::Port &port;
 	
 	// Current news item (if any):
 	bool hasNews = false;
