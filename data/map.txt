@@ -26432,7 +26432,7 @@ planet Antigone
 	attributes uninhabited ruined
 	landscape land/antigone
 	description `Once covered in lush jungles, Antigone was a guerilla's dream: the perfect base of operations to conceal ships and operations centers under boundless canopy.`
-	description `That came to an end during the twilight of the Alpha Wars. Sustained bombardment with chemical defoliants and upper atmosphere shaders simultaneously cooled the planet and poisoned all living upon it; nothing survived the ensuing toxic blizzards. Centuries later, thaw allowed a few mutant seeds to thrive and spread a vibrantly fuschia-flowered grass across the world's surface.`
+	description `That came to an end during the twilight of the Alpha Wars. Sustained bombardment with chemical defoliants and upper atmosphere shaders simultaneously cooled the planet and poisoned all living upon it; nothing survived the ensuing toxic blizzards. Centuries later, thaw allowed a few toxin-tolerant seeds to take root and spread a vibrantly fuschia-flowered grass across the world's surface.`
 	description `For all its beauty, Antigone is a deadly world. The soil and snow is utterly poisonous, as are the scant few species of vegetation which manage to thrive in such conditions.`
 	port Memorial
 		"description" `Hewn monoliths, their flanks glass-glossen from the plasma used to cut them from the surrounding mountains, extend skyward in the center of a field. Carvings creep upwards from the vegetation-concealed base of the cairn, but only the very tops of each inscription are visible due to the overgrowth - whatever was depicted has been lost to time and nature.`
