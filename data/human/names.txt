@@ -1963,7 +1963,7 @@ phrase "law enforcement subphrase 1"
 	phrase
 		"legendary lawmen"
 		"standalone law enforcement names"
-		"standalnoe law enforcement names composed of elements"
+		"standalone law enforcement names composed of elements"
 
 phrase "law enforcement subphrase 2"
 	phrase
