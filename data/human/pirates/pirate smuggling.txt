@@ -61,7 +61,7 @@ outfit "Liberator Missile System"
 	plural "Liberators"
 	category "Special"
 	cost 3500
-	thumbnail "outfit/MANPADS"
+	thumbnail "outfit/manpads"
 	"mass" 2
 	"illegal" 20000
 	"installable" -1
