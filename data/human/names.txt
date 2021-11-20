@@ -1950,38 +1950,40 @@ phrase "ISP"
 		
 
 phrase "law enforcement"
-	"law enforcement subphrase 1"	#	[standalone name]
-	"law enforcement subphrase 2"	#	[adjective] [noun]
-	"law enforcement subphrase 3"	#	[name]'s [noun]
-	"law enforcement subphrase 4"	#	[verb/conceptual noun] and [verb/conceptual noun]
-	"law enforcement subphrase 5"	#	[tangible noun/positive role noun] of [conceptual noun]
-	"law enforcement subphrase 6"	#	[negative role noun] of [plural police nemesis]
-	"law enforcement subphrase 7"	#	[police nemesis]'s [negative role noun]
+	phrase
+		"law enforcement subphrase 1"	#	[standalone name]
+		"law enforcement subphrase 2"	#	[adjective] [noun]
+		"law enforcement subphrase 3"	#	[name]'s [noun]
+		"law enforcement subphrase 4"	#	[verb/conceptual noun] and [verb/conceptual noun]
+		"law enforcement subphrase 5"	#	[tangible noun/positive role noun] of [conceptual noun]
+		"law enforcement subphrase 6"	#	[negative role noun] of [plural police nemesis]
+		"law enforcement subphrase 7"	#	[police nemesis]'s [negative role noun]
 
 phrase "law enforcement subphrase 1"
 	phrase
 		"legendary lawmen"
 		"standalone law enforcement names"
+		"standalnoe law enforcement names composed of elements"
 
 phrase "law enforcement subphrase 2"
 	phrase
-		"law enforcement adjectives"
+		"law enforcement adjective"
 	word
 		" "
 	phrase
-		"law enforcement tangible nouns"
-		"law enforcement conceptual nouns"
+		"law enforcement tangible noun"
+		"law enforcement conceptual noun"
 		"legendary lawmen"
 
 phrase "law enforcement subphrase 3"
 	phrase
-		"law enforcement conceptual nouns"
+		"law enforcement conceptual noun"
 		"legendary lawmen"
 		"law enforcement positive role"
 	word
 		"'s "
 	phrase
-		"law enforcement conceptual nouns"
+		"law enforcement conceptual noun"
 		
 phrase "law enforcement subphrase 4"
 	phrase
@@ -2034,8 +2036,6 @@ phrase "law enforcement subphrase 8.1"
 		"'s"
 		
 phrase "standalone law enforcement names"
-	"days until retirement"
-	"dirty who"
 	word
 		"Big Iron"
 		"Long Arm of the Law"
@@ -2045,6 +2045,11 @@ phrase "standalone law enforcement names"
 		"Highway Harold"
 		"Ever-Vigilant"
 		"Hangman"
+
+phrase "standalone law enforcement names composed of elements"
+	phrase
+		"days until retirement"
+		"dirty who"
 
 phrase "days until retirement"
 	phrase
@@ -2087,7 +2092,7 @@ phrase "legendary lawmen"
 		"Dreyfus"
 		"Wattson"
 	
-phrase "law enforcement adjectives"
+phrase "law enforcement adjective"
 	word
 		"Big"
 		"Alert"
