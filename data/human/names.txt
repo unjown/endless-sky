@@ -1930,6 +1930,56 @@ phrase "civilian subphrase 15"
 
 # Law enforcement names:
 
+phrase "ISP"
+	word
+		"PC-"
+	phrase
+		"digit"
+	phrase
+		"digit"
+	phrase
+		"digit"
+	phrase
+		"letter"
+	word
+		` "`
+	phrase
+		"law enforcement"
+	word
+		`"`
+		
+
+phrase "law enforcement"
+	"law enforcement subphrase 1"	#	[standalone name]
+	"law enforcement subphrase 2"	#	[adjective] [noun]
+	"law enforcement subphrase 3"	#	[name]'s [noun]
+	"law enforcement subphrase 4"	#	[verb] and [verb]
+	"law enforcement subphrase 5"	#	[conceptual noun] and [conceptual noun]
+	"law enforcement subphrase 6"	#	[tangible noun] of [conceptual noun]
+	"law enforcement subphrase 7"	#	[role noun] of [plural police nemesis]
+	"law enforcement subphrase 8"	#	[police nemesis]'s [role noun]
+
+phrase "law enforcement subphrase 1"
+	phrase
+		"legendary lawmen"
+		"standalone law enforcement names"
+
+phrase "law enforcement subphrase 2"
+	phrase
+		"law enforcement adjectives"
+	phrase
+		"law enforcement tangible nouns"
+		"law enforcement conceptual nouns"
+
+phrase "law enforcement subphrase 3"
+	phrase
+		"law enforcement conceptual nouns"
+		"legendary lawmen"
+	word
+		"'s "
+	phrase
+		"law enforcement conceptual nouns"
+
 phrase "republic capital"
 	word
 		"R.N.S. "
