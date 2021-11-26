@@ -6,6 +6,7 @@ mission "Smuggling Tutorial 1"
 		not planet "Sleezy Ed's Scrapyard"
 		not planet "Warehouse 0x16A"
 	destination "Warehouse 0x16A"
+	description "You've met a young smuggler who's offered to teach you the ropes of his trade in return for assistance. The first stop is <destination>, where you'll pick up five tons of contraband."
 	to offer
 		#random < 30
 	on offer
@@ -54,6 +55,7 @@ mission "Smuggling Tutorial 2"
 	cargo "Smuggled Goods" 5
 	source "Warehouse 0x16A"
 	destination "Sleezy Ed's Scrapyard"
+	description `Deliver five tons of contraband to <destination>. Your new friend has some advice regarding moving the goods, the most oft repeated being "if you can't do anything else, cover the swag in cheap cargo. Or just go fast. Whatever."`
 	illegal 40000 `In addition to the fine, your illegal cargo is confiscated. The pirates won't be happy to hear about this.`
 	to offer
 		has "Smuggling Tutorial 1: done"
@@ -123,6 +125,7 @@ mission "Smuggling Tutorial 3"
 	landing
 	source "Sleezy Ed's Scrapyard"
 	destination "Unassuming Asteroid"
+	description "Edward II's debts are settled, and he'd appreciate transport to Copperline Station in Durax. But first, gratitude is owed - you've been informed there's a small asteroid in <system> that conceals a useful cache, and Ed's going to show you were it is. He's also suggested that you could make a tidy profit carrying Stolen Ship Parts up to Copperline..."
 	to offer
 		has "Smuggling Tutorial 2: done"
 	on offer
@@ -181,7 +184,7 @@ mission "Smuggling Tutorial 3"
 				`	"Sure, let's go"`
 					accept
 				`	"I think you need to sort things out with your father. He seems to want the best for you.`
-			`	"I don't want anything to do with that gangster. Do you know what he does to people who can't pay him back? He let me off easy because I'm his son, I- I can't handle that. The violence, the threats, always wondering when he'll go too far and anger one of the Families... I used to love running through this scrapyard when I was a kid, but now being here just makes me sick. I need to be somewhere else."`
+			`	"Hell no. I don't want anything to do with that gangster. D'you know what he does to people who can't pay him back? He let me off easy because I'm his son, I- I can't handle that. The violence, the threats, always wondering when he'll go too far and anger one of the Families... I used to love running through this scrapyard when I was a kid, but now being here just makes me sick. I need to be somewhere else. Or someone else. Preferably both."`
 			choice
 				`	"I hadn't realized. Let's get you to Copperline Station."`
 					accept
@@ -201,11 +204,15 @@ mission "Smuggling Tutorial 4"
 	landing
 	source "Unassuming Asteroid"
 	destination "Copperline Station"
+	description "The home stretch. Take Edward Junior to <destination>, where they shall embrace the life of a smuggler. Perhaps you will as well."
 	to offer
 		has "Smuggling Tutorial 3: done"
 	on offer
 		conversation
 			`	This asteroid is utterly forgettable. If it hadn't been pointed out to you, you're certain that only an exhaustive search of the solar sytem could have possibly led you here. Landing proves a tricky maneuver, but with some helpful pointers from Eddigus Junior - who has clearly done this more than a few times - you're able to get your ship parked within a hollow-out cavity within the asteroid itself.`
+			choice
+				`	(Suit up and inspect the cache.)`
+			`	A fuel tank the size of a shuttle lurks within the asteroid's artificial cavern. It's promptly smacked on the flank by Ed. A few moments later you hear a clang through your helmet radio. Ed speaks, his lips moving silently. With the same delay, the words arrive in your earpiece.`
 			`	"Here it is, <first>. My little home away from home. It's not much to speak of, but being able to refuel here instead of planetside can spare you a customs inspection."`
 			`	"You'll find little caches like this all over the place, but for obvious reasons we tend to only share the locations with those we trust. We being, y'know, smugglers. Just remember the code: anything you take, you replenish later." Ed II allows himself a moment to inspect the cache before returning to your vessel and doffing his pressure suit.`
 			`	"Let's head to <destination> now. I'm a bit of a rookie so they'll hardly trust you on my word alone, but I think if you just keep plying the trade of the smuggler you'll find folks across the galaxy ready to share their secrets, just like I am now."`
