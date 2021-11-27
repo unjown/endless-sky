@@ -125,7 +125,7 @@ mission "Smuggling Tutorial 3"
 	landing
 	source "Sleezy Ed's Scrapyard"
 	destination "Unassuming Asteroid"
-	description "Edward II's debts are settled, and he'd appreciate transport to Copperline Station in Durax. But first, gratitude is owed - you've been informed there's a small asteroid in <system> that conceals a useful cache, and Ed's going to show you were it is. He's also suggested that you could make a tidy profit carrying Stolen Ship Parts up to Copperline..."
+	description "Ed Junior desires transport to Copperline Station in Durax. But first, gratitude is owed - you've been informed there's an asteroid in <system> that conceals a useful cache, and Ed's going to show you were it is. He's also suggested that you could profit carrying Stolen Ship Parts up to Copperline..."
 	to offer
 		has "Smuggling Tutorial 2: done"
 	on offer
