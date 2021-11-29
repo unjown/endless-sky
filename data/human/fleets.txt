@@ -1290,7 +1290,7 @@ fleet "Southern Police"
 	personality
 		disables plunders opportunistic harvests
 	variant 1
-		"Gunboat"
+		"Gunboat (Police)"
 	variant 1
 		"Splinter (Police)"
 
@@ -1301,7 +1301,7 @@ fleet "Northern Police"
 	personality
 		disables plunders opportunistic harvests
 	variant 1
-		"Gunboat"
+		"Gunboat (Police)"
 	variant 1
 		"Splinter (Police)"
 
@@ -1312,7 +1312,7 @@ fleet "Core Police"
 	personality
 		disables plunders opportunistic harvests
 	variant 1
-		"Gunboat"
+		"Gunboat (Police)"
 	variant 1
 		"Splinter (Police)"
 
@@ -1323,7 +1323,7 @@ fleet "Paradise Police"
 	personality
 		disables plunders opportunistic harvests
 	variant 1
-		"Gunboat"
+		"Gunboat (Police)"
 	variant 1
 		"Flivver (Police)" 2
 
