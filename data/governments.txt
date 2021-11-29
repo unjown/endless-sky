@@ -238,6 +238,8 @@ government "ISP"
 	color .91 .42 .09
 	
 	"player reputation" 2
+	"bribe" .1
+	"bribe factor" .8
 	"attitude toward"
 		"Alpha" -.3
 		"Merchant" .25
