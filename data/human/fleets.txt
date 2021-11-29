@@ -1285,55 +1285,47 @@ fleet "Large Militia"
 
 fleet "Southern Police"
 	government "ISP"
-	names "republic small"
+	names "ISP"
 	cargo 0
 	personality
 		disables plunders opportunistic harvests
 	variant 1
 		"Gunboat"
-	variant 1
-		"Raven (Police)"
 	variant 1
 		"Splinter (Police)"
 
 fleet "Northern Police"
 	government "ISP"
-	names "republic small"
+	names "ISP"
 	cargo 0
 	personality
 		disables plunders opportunistic harvests
 	variant 1
 		"Gunboat"
-	variant 1
-		"Raven (Police)"
 	variant 1
 		"Splinter (Police)"
 
 fleet "Core Police"
 	government "ISP"
-	names "republic small"
+	names "ISP"
 	cargo 0
 	personality
 		disables plunders opportunistic harvests
 	variant 1
 		"Gunboat"
-	variant 1
-		"Raven (Police)"
 	variant 1
 		"Splinter (Police)"
 
 fleet "Paradise Police"
 	government "ISP"
-	names "republic small"
+	names "ISP"
 	cargo 0
 	personality
 		disables plunders opportunistic harvests
 	variant 1
 		"Gunboat"
 	variant 1
-		"Raven (Police)"
-	variant 1
-		"Splinter (Police)"
+		"Flivver (Police)" 2
 
 fleet "Small Republic"
 	government "Republic"

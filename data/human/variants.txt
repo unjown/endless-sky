@@ -989,6 +989,19 @@ ship "Flivver" "Flivver (Luxury)"
 		"Hyperdrive"
 
 
+ship "Flivver" "Flivver (Police)"
+	outfits
+		"Energy Blaster" 2
+		"nGVF-BB Fuel Cell"
+		"LP036a Battery Pack"
+		"Cargo Scanner"
+		"Outfit Scanner"
+		"D14-RN Shield Generator"
+		"X2700 Ion Thruster"
+		"X1200 Ion Steering"
+		"Hyperdrive"
+
+
 ship "Flivver" "Flivver (Racing)"
 	outfits
 		"RT-I Radiothermal"
