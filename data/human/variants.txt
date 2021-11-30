@@ -989,6 +989,19 @@ ship "Flivver" "Flivver (Luxury)"
 		"Hyperdrive"
 
 
+ship "Flivver" "Flivver (Police)"
+	outfits
+		"Energy Blaster" 2
+		"nGVF-BB Fuel Cell"
+		"LP036a Battery Pack"
+		"Cargo Scanner"
+		"Outfit Scanner"
+		"D14-RN Shield Generator"
+		"X2700 Ion Thruster"
+		"X1200 Ion Steering"
+		"Hyperdrive"
+
+
 ship "Flivver" "Flivver (Racing)"
 	outfits
 		"RT-I Radiothermal"
@@ -1197,6 +1210,24 @@ ship "Gunboat" "Gunboat (Mark II)"
 		"Brig"
 		"A250 Atomic Thruster"
 		"A255 Atomic Steering"
+		"Hyperdrive"
+
+
+
+ship "Gunboat" "Gunboat (Police)"
+	outfits
+		"Heavy Laser" 2
+		"Heavy Laser Turret"
+		"RT-I Radiothermal"
+		"LP144a Battery Pack"
+		"D14-RN Shield Generator"
+		"Small Radar Jammer"
+		"Cargo Scanner"
+		"Outfit Scanner"
+		"Tactical Scanner"
+		"Brig"
+		"X3700 Ion Thruster"
+		"X2200 Ion Steering"
 		"Hyperdrive"
 
 

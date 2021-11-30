@@ -568,7 +568,7 @@ int64_t CargoHold::IllegalCargoFine() const
 			return -1;
 		if(fine < 0)
 			return fine;
-		totalFine += fine / 2;
+		totalFine += (fine / 2) * it.second;
 	}
 	
 	// Fines for illegal mission cargo and passengers are added together to
@@ -605,13 +605,10 @@ int64_t CargoHold::IllegalCargoAmount() const
 	// Find any illegal outfits inside the cargo hold.
 	for(const auto &it : outfits)
 		if(it.first->Get("illegal") > 0. || it.first->Get("atrocity") > 0.)
-			count += it.second;
+			count += it.second * it.first->Mass();
 
-	// Find any illegal mission cargo and passengers.
+	// Find any illegal mission cargo.
 	for(const auto &it : missionCargo)
-		if(it.first->IllegalCargoFine())
-			count += it.second;
-	for(const auto &it : passengers)
 		if(it.first->IllegalCargoFine())
 			count += it.second;
 
