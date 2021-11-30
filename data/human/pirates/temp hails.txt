@@ -85,7 +85,7 @@ phrase "musing"
 
 phrase "police thoughts"
 	word
-		"we aren't well enough equipped to deal with pirates."
+		"we aren't well enough equipped to deal with pirates"
 		"donuts are actually as good as they're cracked up to be"
 		"there are enough of us to keep the Republic safe"
 		"how life might have turned out if I weren't kicked out of the Navy"
