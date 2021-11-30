@@ -1,6 +1,6 @@
 #	These need to be migrated into the proper hails.txt before PR
 
-phrase "friendly police"
+phrase "friendly police" 5
 	word
 		"The Interstellar Police exist"
 		"It is the sworn duty of the Interstellar Police"
@@ -22,7 +22,7 @@ phrase "friendly police"
 		"catch dangerous criminals and nefarious smugglers." 5
 		"turn down bribes, unless they're extra generous."
 		
-phrase "friendly police"
+phrase "friendly police" 4
 	word
 		"Those"
 		"Citizens"
@@ -78,10 +78,6 @@ phrase "friendly police"
 		"police thoughts"
 	word
 		"."
-
-phrase "musing"
-	word
-
 
 phrase "police thoughts"
 	word
