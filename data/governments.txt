@@ -247,8 +247,8 @@ government "ISP"
 		"Navy (Oathkeeper)" 1
 		"Neutral" .1
 		"Republic" 1
-	"friendly hail" "friendly navy"
-	"hostile hail" "hostile navy"
+	"friendly hail" "friendly police"
+	"hostile hail" "hostile police"
 
 government "Ka'het"
 	swizzle 0
