@@ -27542,8 +27542,8 @@ planet Galatea
 	government Uninhabited
 	attributes uninhabited
 	landscape land/desolate5
-	description "Galatea is a smooth, glistening pearl from orbit, a sphere of polished marble covered in shimmering liquid. The surface is scarcely any less magnificent. Your nostrils burn with the sheer amount of salt in the atmosphere, your boots crunch through white crystal wherever you step within the uniformly ankle-deep sea which covered this perfectly polished sphere of a world."
-	description "Strange, crystalline crabs amble lazily through the everpresent shallows, preying upon sail-backed fish which skim and speed along, skipping across the surface and sending rainbow-refracting sprays of water wherever they pass. All is white, all is hard-edged, all shines with unrelenting harshness. For all the alien beauty of Galatea, it's dubious whether anything from Earth could thrive here."
+	description "Galatea is a smooth, glistening pearl from orbit, a sphere of polished marble covered in shimmering liquid; the surface is scarcely any less magnificent. Your nostrils burn with the sheer amount of salt in the atmosphere, your boots crunch through white crystal wherever you step within the uniformly ankle-deep sea which covered this perfectly polished sphere of a world."
+	description "Strange crystalline crabs amble lazily through the everpresent shallows, preying upon sail-backed fish which skim and speed along, skipping across the surface and sending rainbow-refracting sprays of water wherever they pass. All is white, all is hard-edged, all shines with unrelenting harshness. For all the alien beauty of Galatea, it's dubious whether anything from Earth could thrive here."
 
 planet Geminus
 	attributes paradise factory mining
