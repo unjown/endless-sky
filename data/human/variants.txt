@@ -990,6 +990,8 @@ ship "Flivver" "Flivver (Luxury)"
 
 
 ship "Flivver" "Flivver (Police)"
+	sprite "ship/police flivver"
+	thumbnail "thumbnail/police flivver"
 	outfits
 		"Energy Blaster" 2
 		"nGVF-BB Fuel Cell"
@@ -1215,6 +1217,8 @@ ship "Gunboat" "Gunboat (Mark II)"
 
 
 ship "Gunboat" "Gunboat (Police)"
+	sprite "ship/police gunboat"
+	thumbnail "thumbnail/police gunboat"
 	outfits
 		"Heavy Laser" 2
 		"Heavy Laser Turret"
@@ -2020,6 +2024,8 @@ ship "Raven" "Raven (Heavy)"
 
 
 ship "Raven" "Raven (Police)"
+#	sprite "ship/police raven"
+#	thumbnail "thumbnail/police raven"
 	outfits
 		"Afterburner"
 		"Brig"
@@ -2155,6 +2161,8 @@ ship "Splinter" "Splinter (Mark II)"
 
 
 ship "Splinter" "Splinter (Police)"
+	sprite "ship/police splinter"
+	thumbnail "thumbnail/police splinter"
 	outfits
 		"Afterburner"
 		"Brig" 2
