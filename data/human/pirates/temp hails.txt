@@ -1,5 +1,93 @@
 #	These need to be migrated into the proper hails.txt before PR
 
+phrase "color"
+	word
+		"Red" 10
+		"Orange" 10
+		"Yellow" 10
+		"Green" 10
+		"Blue" 10
+		"Indigo" 3
+		"Violet" 3
+		"Black" 5
+		"White" 5
+		"Purple" 5
+		"Octarine"
+		"Beige" 2
+		"Puce" 2
+		"Fuchsia" 2
+		"Lavender" 2
+		"Salmon" 2
+		"Periwinkle" 2
+		"Burgundy" 2
+		"Chartreuse" 2
+		"Mustard" 2
+		"Lime" 3
+		"Olive" 2
+		"Cyan" 3
+		"Rose" 2
+		"Magenta" 2
+		"Tangerine" 2
+		"Livid"
+		"Vermillion" 2
+		"Blurple"
+		"Maroon" 3
+		"Aqua" 3
+		"Turquoise" 3
+		"Cerulean" 2
+		"Navy" 2
+
+		
+phrase "two digits, then a digit or letter"
+	phrase
+		"digit"
+	phrase
+		"digit"
+	phrase
+		"digit"
+		"letter"
+
+phrase "friendly police"
+	word
+		"We've got a"
+		"There's a"
+		"Radio says there's a"
+		"Looks like a"
+		"Let's move it boys, there's a"
+	word
+		" Code "
+	phrase
+		"two digits, then a digit or letter"
+		"color"
+	word
+		" "
+	word
+		"in progress"
+		"reported"
+		"going down"
+	word
+		" "
+	word
+		"in-system"
+		"near Earth"
+		"planetside"
+		"out in the belts"
+		"stationside"
+		"near precint HQ"
+	word
+		", "
+	word
+		"let's get going."
+		"copy."
+		"backup requested."
+		"we've got it handled."
+		"but we can probably put that off until later."
+		"I hate it when that happens."
+		"looks like smuggler activity again."
+		"looks like pirate activity again."
+		"like hell that's happening on my watch!"
+		"not my problem, luckily."
+
 phrase "friendly police" 5
 	word
 		"The Interstellar Police exist"
@@ -130,6 +218,7 @@ phrase "police grumblers"
 		"Foolish"
 		"Subversive"
 		"The next generation of"
+		"Particular"
 	word
 		" "
 	word
@@ -174,7 +263,45 @@ phrase "friendly police"
 
 phrase "friendly bootlegger"
 	word
-		"Hello, I'm not implemented yet!"
+		"Boy, I sure do love me some good ol'"
+		"Ain't nothing in life better than"
+		"Where would we be without"
+		"I owe my life to"
+	phrase
+		"things bootleggers love"
+	word
+		"and"
+		"n'"
+	phrase
+		"things bootleggers love"
+		"things bootleggers love that only sound good in the second part of a phrase"
+	word
+		"."
+	
+phrase "things bootleggers love"	
+	word
+		"filthy lucre"
+		"loads of money"
+		"cheap beer"
+		"duty-free rum"
+		"loyal clients"
+		"tax evasion"
+		"freedom"
+		"free market economics"
+		"liberty"
+		"life on the frontier"
+		
+phrase "things bootleggers love that only sound good in the second half of a phrase"
+	word
+		"staying on my toes"
+		"always being ahead of the competition"
+		"tuning up my ship"
+		"going fast"
+		"being my own boss"
+		"running from the cops"
+		`"quality-checking" my wares`
+		"the girls of Buccaneer Bay"
+		"the vast beauty of the cosmos"
 
 phrase "hostile police"
 	word
@@ -184,6 +311,48 @@ phrase "hostile police"
 		"Allo allo allo allo"
 	word
 		" what's all this then?"
+		
+phrase "hostile police"
+	word
+		"I am"
+	word
+		" "
+		"... "
+	word
+		"the law."
+		"the law!"
+
+phrase "hostile police"
+	word
+		"Yield to"
+		"Respect"
+		"Surrender to"
+		"Stop in the name of"
+	word
+		" "
+	word
+		"my authority"
+		"the law"
+		"the badge"
+		"my boot"
+		"the might of the ISP"
+	word
+		", "
+	word
+		"evildoer"
+		"criminal scum"
+		"perp"
+		"you little shit"
+		"miscreant"
+		"punk"
+		"vermin"
+		"scum"
+		"villain"
+		"nogoodnik"
+		"peasant"
+	word
+		"!"
+		"."
 
 phrase "hostile bootlegger"
 	word
@@ -192,6 +361,21 @@ phrase "hostile bootlegger"
 phrase "hostile police disabled"
 	word
 		"Officer down!"
+
+phrase "hostile police disabled"
+	word
+		"Officer"
+		"Peace officer"
+		"ISP member"
+		"Patroller"
+	word
+		" "
+	word
+		"in distress!"
+		"down!"
+		"taking fire!"
+		"disabled!"
+		"in need of aid!"
 
 phrase "hostile bootlegger disabled"
 	word
