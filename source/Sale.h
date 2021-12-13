@@ -14,6 +14,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #define SALE_H_
 
 #include "DataNode.h"
+#include "OutfitSale.h"
 #include "Set.h"
 
 #include <set>
@@ -29,6 +30,8 @@ public:
 	void Load(const DataNode &node, const Set<Item> &items);
 	
 	void Add(const Sale<Item> &other);
+	
+	void Add(const OutfitSale &other);
 	
 	bool Has(const Item *item) const;
 };
@@ -64,11 +67,18 @@ void Sale<Item>::Add(const Sale<Item> &other)
 
 
 template <class Item>
+void Sale<Item>::Add(const OutfitSale &other)
+{
+	for(const auto& it : other)
+		this->insert(it.first);
+}
+
+
+
+template <class Item>
 bool Sale<Item>::Has(const Item *item) const
 {
 	return this->count(item);
 }
-
-
 
 #endif
