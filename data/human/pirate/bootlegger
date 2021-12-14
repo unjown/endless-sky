@@ -1,0 +1,49 @@
+phrase "friendly bootlegger"
+	word
+		"Boy, I sure do love me some good ol'"
+		"Ain't nothing in life better than"
+		"Where would we be without"
+		"I owe my life to"
+	phrase
+		"things bootleggers love"
+	word
+		"and"
+		"n'"
+	phrase
+		"things bootleggers love"
+		"things bootleggers love that only sound good in the second part of a phrase"
+	word
+		"."
+	
+phrase "things bootleggers love"	
+	word
+		"filthy lucre"
+		"loads of money"
+		"cheap beer"
+		"duty-free rum"
+		"loyal clients"
+		"tax evasion"
+		"freedom"
+		"free market economics"
+		"liberty"
+		"life on the frontier"
+		
+phrase "things bootleggers love that only sound good in the second half of a phrase"
+	word
+		"staying on my toes"
+		"always being ahead of the competition"
+		"tuning up my ship"
+		"going fast"
+		"being my own boss"
+		"running from the cops"
+		`"quality-checking" my wares`
+		"the girls of Buccaneer Bay"
+		"the vast beauty of the cosmos"
+		
+phrase "hostile bootlegger"
+	word
+		"Fuck you, I'm not implemented yet!"
+		
+phrase "hostile bootlegger disabled"
+	word
+		"Oh no, I'm not implemented yet!"
