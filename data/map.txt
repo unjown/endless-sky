@@ -8515,7 +8515,7 @@ system "Due Yoot"
 
 system Durax
 	pos -59 -90
-	government Pirate
+	government Independent
 	attributes "core"
 	habitable 1080
 	belt 1287
