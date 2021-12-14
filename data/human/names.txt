@@ -1954,10 +1954,11 @@ phrase "law enforcement"
 		"law enforcement subphrase 1"	#	[standalone name]
 		"law enforcement subphrase 2"	#	[adjective] [noun]
 		"law enforcement subphrase 3"	#	[name]'s [noun]
-		"law enforcement subphrase 4"	#	[verb/conceptual noun] and [verb/conceptual noun]
-		"law enforcement subphrase 5"	#	[tangible noun/positive role noun] of [conceptual noun]
-		"law enforcement subphrase 6"	#	[negative role noun] of [plural police nemesis]
-		"law enforcement subphrase 7"	#	[police nemesis]'s [negative role noun]
+		"law enforcement subphrase 4"	#	[verb] and [verb]
+		"law enforcement subphrase 5"	#	[concept] and [concept]
+		"law enforcement subphrase 6"	#	[tangible noun/positive role noun] of [conceptual noun]
+		"law enforcement subphrase 7"	#	[negative role noun] of [plural police nemesis]
+		"law enforcement subphrase 8"	#	[police nemesis]'s [negative role noun]
 
 phrase "law enforcement subphrase 1"
 	phrase
@@ -2022,7 +2023,7 @@ phrase "law enforcement subphrase 7"
 
 phrase "law enforcement subphrase 8"
 	phrase
-		"law enforcement subphrase 8.1"
+		"law enforcement subphrase 8.1" 20
 		"law enforcement nemesis with integrated plural"
 	word
 		" "
@@ -2220,8 +2221,7 @@ phrase "law enforcement nemesis"
 
 phrase "law enforcement nemesis with integrated plural"
 	word
-		"Thieves"
-		"Spies"
+		"Thieves`"
 
 phrase "republic capital"
 	word
