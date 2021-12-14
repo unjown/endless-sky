@@ -65,7 +65,7 @@ outfit "Liberator Missile System"
 	"mass" 2
 	"illegal" 20000
 	"installable" -1
-	description "These man-portable missile launchers were instrumental in bringing about the collapse of an early political rival of the Republic, when decades of stalemate were finally brought to an end by Republic Intelligence operatives smuggling tens of thousands of missile launchers into the hands of freedom fighters behind enemy lines."
+	description "These man-portable missile launchers were instrumental in bringing about the collapse of an early political rival of the Republic, when decades of stalemate were finally brought to an end by Republic Intelligence operatives smuggling thousands of missile launchers into the hands of freedom fighters behind enemy lines."
 	description "Of course, those freedom fighters are now brutal warlords wanted dead or alive by the very same organization that once armed them. No longer needing to resort to ambush or hit-and-run tactics, the northern warlords are content to sell off their stocks of Liberators in order to fund other activities."
 	description "Besides guerillas, the Liberator is much beloved by poachers on Skymoot, as a compact anti-air missile is a great boon during the cross-country treks that dragon slaying oft requires."
 
