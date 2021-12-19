@@ -116,6 +116,65 @@ outfitter "Smuggling: Counterfeit Credsticks"
 outfitter "Smuggling: Jailbroken AI Cores"
 	"Jailbroken AI Core"
 
+outfitter "Smuggling: Smuggler's Den"
+	"Chemical Warhead"
+	"Coreshine" #11500
+	"Stolen Ship Parts" #89000
+	
+outfitter "Smuggling: Copperline Station"
+	"Coreshine"
+	"Stolen Ship Parts" #125800
+	"Liberator Missile System" #17900
+
+outfitter "Smuggling: Skymoot"
+	"Dragon's Teeth"
+	"Liberator Missile System" #43500
+	"Designer Drugs" #12000
+
+outfitter "Smuggling: Glory"
+	"Designer Drugs"
+	"Dragon's Teeth" #90188
+	"Jailbroken AI Core" #160711
+	
+outfitter "Smuggling: Sleezy Ed's"
+	"Stolen Ship Parts"
+	"Counterfeit Credsticks" #150
+	"Coreshine" #6400
+
+outfitter "Smuggling: Haven"
+	"Liberator Missile System"
+	"Chemical Warhead" #1137000
+	"Dragon's Teeth" #98250
+
+outfitter "Smuggling: Warehouse 0x16A"
+	"Counterfeit Credsticks"
+	"Jailbroken AI Core" #188711
+	"Chemical Warhead" #927400
+
+outfitter "Smuggling: Bivrost"
+	"Jailbroken AI Core"
+	"Designer Drugs" #11635
+	"Counterfeit Credsticks" #180
+	
+outfitter "Smuggling: Mars"
+	"Chemical Warhead" #873000
+	"Coreshine" #3900
+	"Dragon's Teeth" #89000
+	"Designer Drugs" #11415
+	"Stolen Ship Parts" #53800
+	"Liberator Missile System" #15500
+	"Counterfeit Credsticks" #115
+	"Jailbroken AI Core" #157711
+
+outfitter "Smuggling: Trinket"
+	"Chemical Warhead" #852200
+	"Coreshine" #6700
+	"Dragon's Teeth" #87750
+	"Designer Drugs" #11795
+	"Stolen Ship Parts" #53800
+	"Liberator Missile System" #25500
+	"Counterfeit Credsticks" #145
+	"Jailbroken AI Core" #172711
 
 
 # TODO - When auto-generated conditions that can check outfits are implemented, replace
