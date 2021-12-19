@@ -27711,14 +27711,9 @@ planet Greycurse
 		"description" `All that remains to signify what might have been going on here is a handwritten note. It reads, simply, "It's not worth it."`
 	government Uninhabited
 
-planet Greymoon
-	attributes hai station
-	landscape land/space6
-	description `This station is owned and operated by the Far Loo Bah fuel collection corporation. Their logo is emblazoned on nearly every possible surface and sign, indicating their sponsorship of all manner of services and features on the station. Interestingly, this includes a "History of Spaceflight" museum which takes up an entire wing of the facility. Naturally, the museum focuses very heavily on the Far Loo Bah corporation's role in that history.`
-	spaceport `The spaceport consists of a wide, two-level promenade encircling the interior of the station, with the docking access opening directly onto the mezzanine. The upper level is mostly devoted to amenities, light commercial businesses, a medical center, and a bank. The lower level has all of the real businesses: multiple manufacturers, which are supplied by the heavier elements filtered out from the supply of fuel stock from the planet below, have store frontage here. A virtual outfitter provides sale options for locally-manufactured outfits that can be installed on your ship without you ever leaving the comfort of the promenade.`
-	outfitter "Hai Basics"
-	bribe 0.1
-	security 0.5
+planet "Graveyard Wormhole (Unstable)"
+	attributes "requires: quantum keystone"
+	description ``
 
 planet Greenbloom
 	attributes hai "hai tourism" "human tourism"
@@ -30242,7 +30237,7 @@ planet Wayfarer
 	attributes factory south
 	landscape land/nasa1
 	description `Wayfarer was initially settled by a team of scientists and diplomats seeking to build a relationship with the Quarg worlds to the galactic southeast of here. Partly through the aid of the Quarg and partly through a desire to emulate them, it has grown into a very technologically advanced world.`
-	description `	Tarazed corporation, a maker of alien-inspired ships and outfits, is one of the largest industries on Wayfarer, and they draw raw materials from throughout this region of space.`
+	description `	The Tarazed Corporation, a maker of alien-inspired ships and outfits, is one of the largest industries on Wayfarer, and they draw raw materials from throughout this region of space.`
 	spaceport `The spaceport is clearly the artifact of an architect who was as familiar with alien architecture as with human. Instead of square angles it has many curved walls and domes. The landing pads jut out from the building at various heights. Some of the landing pads are designed with docking tubes specifically for Quarg visitors, and the ceilings are unusually high to accommodate the Quarg, several of whom are walking around and mingling with the humans here.`
 	shipyard "Basic Ships"
 	shipyard "Tarazed Basics"
