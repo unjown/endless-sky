@@ -28374,13 +28374,13 @@ planet Mars
 	landscape land/desert0
 	description `Mars was humanity's first attempt at terraforming. Although it remains a dry, cold desert, the air is now breathable without an oxygen tank, and there are sections of the planet where a fair number of plants can grow.`
 	description `	Because far more hospitable planets are available to those with enough money to pay for interstellar travel, the farms and ranches of Mars are run mostly by poorer Earth families who want to escape the pollution and congestion, along with some young adults who do farm work to help finance their once-in-a-lifetime opportunity to stand on another world.`
+	description `	The combination of poverty and proximity to the cradle of humanity has given rise to, among other things, a flourishing black market upon this once-barren world.`
 	spaceport `The spaceport on Mars is situated next to the northern Polar Basin, one of the few places where, post-terraforming, a natural lake exists. Here, far more trees grow than elsewhere on the planet, and in the few warm months when the lake is not frozen, Mars almost looks like a friendly place.`
 	security 0.2
 	tribute 1800
 		threshold 4500
 		fleet "Small Republic" 64
 	outfitter "Smuggling Basic"
-	outfitter "Smuggling: Mars"
 
 planet Martini
 	attributes paradise rich
@@ -29889,7 +29889,6 @@ planet Trinket
 	outfitter "Ammo North"
 	outfitter "Ammo South"
 	outfitter "Pirate Outfits"
-	outfitter "Smuggling: Trinket"
 	outfitter "Smuggling Basic"
 	bribe 0.02
 	security 0.4

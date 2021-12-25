@@ -92,8 +92,6 @@ outfit "Jailbroken AI Core"
 
 outfitter "Smuggling: Smuggler's Den"
 	"Chemical Warhead"
-	"Coreshine"
-	"Stolen Ship Parts"
 	
 pricing "Smuggling: Smuggler's Den"
 	import
@@ -104,8 +102,6 @@ pricing "Smuggling: Smuggler's Den"
 	
 outfitter "Smuggling: Copperline Station"
 	"Coreshine"
-	"Stolen Ship Parts"
-	"Liberator Missile System"
 
 pricing "Smuggling: Copperline Station"
 	import
@@ -116,8 +112,6 @@ pricing "Smuggling: Copperline Station"
 
 outfitter "Smuggling: Skymoot"
 	"Dragon's Teeth"
-	"Liberator Missile System"
-	"Designer Drugs"
 	
 pricing "Smuggling: Skymoot"
 	import
@@ -128,8 +122,6 @@ pricing "Smuggling: Skymoot"
 
 outfitter "Smuggling: Glory"
 	"Designer Drugs"
-	"Dragon's Teeth"
-	"Jailbroken AI Core"
 	
 pricing "Smuggling: Glory"
 	import
@@ -140,8 +132,6 @@ pricing "Smuggling: Glory"
 	
 outfitter "Smuggling: Sleezy Ed's"
 	"Stolen Ship Parts"
-	"Counterfeit Credsticks"
-	"Coreshine"
 
 pricing "Smuggling: Sleezy Ed's"
 	import
@@ -152,8 +142,6 @@ pricing "Smuggling: Sleezy Ed's"
 
 outfitter "Smuggling: Haven"
 	"Liberator Missile System"
-	"Chemical Warhead"
-	"Dragon's Teeth"
 
 pricing "Smuggling: Haven"
 	import
@@ -164,8 +152,6 @@ pricing "Smuggling: Haven"
 
 outfitter "Smuggling: Warehouse 0x16A"
 	"Counterfeit Credsticks"
-	"Jailbroken AI Core"
-	"Chemical Warhead"
 
 pricing "Smuggling: Warehouse 0x16A"
 	import
@@ -176,8 +162,6 @@ pricing "Smuggling: Warehouse 0x16A"
 
 outfitter "Smuggling: Bivrost"
 	"Jailbroken AI Core"
-	"Designer Drugs"
-	"Counterfeit Credsticks"
 
 pricing "Smuggling: Bivrost"
 	import
@@ -185,16 +169,6 @@ pricing "Smuggling: Bivrost"
 		planet "Bivrost"
 	outfit "Jailbroken AI Core" value 11635
 	outfit "Counterfeit Credsticks" value 180
-	
-outfitter "Smuggling: Mars"
-	"Chemical Warhead"
-	"Coreshine"
-	"Dragon's Teeth"
-	"Designer Drugs"
-	"Stolen Ship Parts"
-	"Liberator Missile System"
-	"Counterfeit Credsticks"
-	"Jailbroken AI Core"
 	
 pricing "Smuggling: Mars"
 	import
@@ -208,16 +182,6 @@ pricing "Smuggling: Mars"
 	outfit "Liberator Missile System" value 15500
 	outfit "Counterfeit Credsticks" value 115
 	outfit "Jailbroken AI Core" value 157711
-
-outfitter "Smuggling: Trinket"
-	"Chemical Warhead"
-	"Coreshine"
-	"Dragon's Teeth"
-	"Designer Drugs"
-	"Stolen Ship Parts" 
-	"Liberator Missile System"
-	"Counterfeit Credsticks"
-	"Jailbroken AI Core"
 
 pricing "Smuggling: Trinket"
 	import
