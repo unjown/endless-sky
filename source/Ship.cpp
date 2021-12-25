@@ -1079,6 +1079,21 @@ int64_t Ship::ChassisCost() const
 
 
 
+// Get the full cost of this ship on the planet, depending on the outfit prices.
+int64_t Ship::LocalCost(const Planet *planet) const
+{
+	int64_t localCost = ChassisCost();
+	int64_t localPrice;
+	for(const auto &it : Outfits())
+	{
+		localPrice = planet ? planet->GetLocalRelativePrice(it.first) * it.first->Cost() : -1;
+		localCost += (localPrice >= 0 ? localPrice : it.first->Cost()) * it.second;
+	}
+	return localCost;
+}
+
+
+
 // Check if this ship is configured in such a way that it would be difficult
 // or impossible to fly.
 vector<string> Ship::FlightCheck() const

@@ -13,6 +13,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #ifndef PLANET_H_
 #define PLANET_H_
 
+#include "CustomSale.h"
 #include "Sale.h"
 
 #include <list>
@@ -116,8 +117,12 @@ public:
 	const Sale<Ship> &Shipyard() const;
 	// Check if this planet has an outfitter.
 	bool HasOutfitter() const;
-	// Get the list of outfits available from the outfitter.
+	// Get the list of outfits available from the outfitter with their custom elements.
 	const Sale<Outfit> &Outfitter() const;
+	// Get the local price of this outfit.
+	double GetLocalRelativePrice(const Outfit *outfit) const;
+	// Get the availability of this outfit.
+	CustomSale::SellType GetAvailability(const Outfit *outfit) const;
 	
 	// Get this planet's government. If not set, returns the system's government.
 	const Government *GetGovernment() const;
@@ -181,6 +186,7 @@ private:
 	std::set<const Sale<Outfit> *> outfitSales;
 	// The lists above will be converted into actual ship lists when they are
 	// first asked for:
+	mutable CustomSale customSale;
 	mutable Sale<Ship> shipyard;
 	mutable Sale<Outfit> outfitter;
 	

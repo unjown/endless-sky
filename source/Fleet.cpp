@@ -79,10 +79,10 @@ namespace {
 			
 			if(!choices.empty())
 			{
-				for(const auto outfit : choices)
+				for(const auto &outfit : choices)
 				{
 					double mass = outfit->Mass();
-					// Avoid free outfits, massless outfits, and those too large to fit.
+					// Avoid free outfits, massless outfits, and those too large to fit, and the hidden ones.
 					if(mass > 0. && mass < maxSize && outfit->Cost() > 0)
 					{
 						// Also avoid outfits that add space (such as Outfits / Cargo Expansions)

@@ -141,10 +141,28 @@ double MapOutfitterPanel::SystemValue(const System *system) const
 	for(const StellarObject &object : system->Objects())
 		if(object.HasSprite() && object.HasValidPlanet())
 		{
-			const auto &outfitter = object.GetPlanet()->Outfitter();
-			if(outfitter.Has(selected))
-				return 1.;
-			if(!outfitter.empty())
+			double cost = object.GetPlanet()->GetLocalRelativePrice(selected);
+			CustomSale::SellType sellType = object.GetPlanet()->GetAvailability(selected);
+			const auto &storage = player.PlanetaryStorage();
+			bool storedInSystem = (storage.find(object.GetPlanet()) != storage.cend());
+			
+			if(cost != -1)
+			{
+				const auto &storage = player.PlanetaryStorage();
+				bool storedInSystem = (storage.find(object.GetPlanet()) != storage.cend());
+				
+				if(sellType != CustomSale::SellType::HIDDEN || storedInSystem)
+				{
+					if(cost > MapPanel::maxColor)
+						MapPanel::maxColor = cost;
+					else if(cost < MapPanel::minColor)
+						MapPanel::minColor = cost;
+					return cost;
+				}
+			}
+			if(sellType != CustomSale::SellType::NONE && (sellType != CustomSale::SellType::HIDDEN || storedInSystem))
+				value = 1.;
+			else if(object.GetPlanet()->HasOutfitter())
 				value = 0.;
 		}
 	return value;
@@ -220,13 +238,19 @@ void MapOutfitterPanel::DrawItems()
 						continue;
 
 					const Planet &planet = *object.GetPlanet();
+					CustomSale::SellType sold = planet.GetAvailability(outfit);
 					const auto pit = storage.find(&planet);
 					if(pit != storage.end())
 						storedInSystem += pit->second.Get(outfit);
-					if(planet.Outfitter().Has(outfit))
+						
+					isForSale = (sold != CustomSale::SellType::NONE && (sold != CustomSale::SellType::HIDDEN || storedInSystem));
+
+					if(isForSale)
 					{
-						isForSale = true;
-						break;
+  						price = Format::Credits(planet.GetLocalRelativePrice(outfit) * outfit->Cost()) + " credits";
+  						if(sold != CustomSale::SellType::VISIBLE)
+							price += " (" + (CustomSale::GetShown(sold)) + ")";
+  						break;
 					}
 				}
 			}
@@ -257,7 +281,7 @@ void MapOutfitterPanel::Init()
 	// Add all outfits sold by outfitters of visited planets.
 	for(auto &&it : GameData::Planets())
 		if(it.second.IsValid() && player.HasVisited(*it.second.GetSystem()))
-			for(const Outfit *outfit : it.second.Outfitter())
+			for(const auto& outfit : it.second.Outfitter())
 				if(!seen.count(outfit))
 				{
 					catalog[outfit->Category()].push_back(outfit);

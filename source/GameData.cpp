@@ -17,6 +17,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "Color.h"
 #include "Command.h"
 #include "Conversation.h"
+#include "CustomSale.h"
 #include "DataFile.h"
 #include "DataNode.h"
 #include "DataWriter.h"
@@ -72,6 +73,7 @@ using namespace std;
 namespace {
 	Set<Color> colors;
 	Set<Conversation> conversations;
+	Set<CustomSale> customSales;
 	Set<Effect> effects;
 	Set<GameEvent> events;
 	Set<Fleet> fleets;
@@ -720,6 +722,13 @@ const Set<Conversation> &GameData::Conversations()
 
 
 
+const Set<CustomSale> &GameData::CustomSales()
+{
+	return customSales;
+}
+
+
+
 const Set<Effect> &GameData::Effects()
 {
 	return effects;
@@ -1116,6 +1125,8 @@ void GameData::LoadFile(const string &path, bool debugMode)
 			phrases.Get(node.Token(1))->Load(node);
 		else if(key == "planet" && node.Size() >= 2)
 			planets.Get(node.Token(1))->Load(node);
+		else if(key == "pricing" && node.Size() >= 2)
+			customSales.Get(node.Token(1))->Load(node, outfitSales, outfits);
 		else if(key == "ship" && node.Size() >= 2)
 		{
 			// Allow multiple named variants of the same ship model.

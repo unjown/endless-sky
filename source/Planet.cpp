@@ -19,6 +19,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "PlayerInfo.h"
 #include "Politics.h"
 #include "Random.h"
+#include "Sale.h"
 #include "Ship.h"
 #include "ShipEvent.h"
 #include "SpriteSet.h"
@@ -418,8 +419,34 @@ const Sale<Outfit> &Planet::Outfitter() const
 	outfitter.clear();
 	for(const Sale<Outfit> *sale : outfitSales)
 		outfitter.Add(*sale);
-	
+
 	return outfitter;
+}
+
+
+
+// Get the local price of this outfit.
+double Planet::GetLocalRelativePrice(const Outfit *outfit) const
+{
+	customSale.clear();
+	CustomSale::SellType sellType = GetAvailability(outfit);
+	for(const auto& sale : GameData::CustomSales())
+		if(sale.second.HasPlanet(this) && sale.second.GetSellType() == sellType)
+			customSale.Add(sale.second);
+	return customSale.GetRelativeCost(outfit);
+}
+
+
+
+// Get the availability of this outfit.
+CustomSale::SellType Planet::GetAvailability(const Outfit *outfit) const
+{
+	customSale.clear();
+	CustomSale::SellType sellType = Outfitter().Has(outfit) ? CustomSale::SellType::VISIBLE : CustomSale::SellType::NONE;
+	for(const auto& sale : GameData::CustomSales())
+		if(sale.second.HasPlanet(this) && sale.second.Has(outfit) && sale.second.GetSellType() > sellType)
+			sellType = sale.second.GetSellType();
+	return sellType;
 }
 
 

@@ -130,7 +130,15 @@ double MapShipyardPanel::SystemValue(const System *system) const
 		{
 			const auto &shipyard = object.GetPlanet()->Shipyard();
 			if(shipyard.Has(selected))
-				return 1.;
+			{
+				int64_t relativeCost = selected->LocalCost(object.GetPlanet());
+				
+				if(relativeCost > MapPanel::maxColor)
+					MapPanel::maxColor = relativeCost;
+				else if(relativeCost < MapPanel::minColor)
+					MapPanel::minColor = relativeCost;
+				return relativeCost;
+			}
 			if(!shipyard.empty())
 				value = 0.;
 		}
@@ -189,6 +197,11 @@ void MapShipyardPanel::DrawItems()
 				for(const StellarObject &object : selectedSystem->Objects())
 					if(object.HasSprite() && object.HasValidPlanet() && object.GetPlanet()->Shipyard().Has(ship))
 					{
+						double outfitValue = 0.;
+						for(const auto &it : ship->Outfits())
+							outfitValue += object.GetPlanet()->GetLocalRelativePrice(it.first) * it.first->Cost() * it.second;
+						
+						price = Format::Credits(ship->ChassisCost() + outfitValue) + " credits";
 						isForSale = true;
 						break;
 					}
