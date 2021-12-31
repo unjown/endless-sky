@@ -1,5 +1,5 @@
 
-"Chemical Warhead"
+outfit "Chemical Warhead"
 	plural "chemical warheads"
 	category "Special"
 	cost 825000
@@ -10,7 +10,7 @@
 	description "The mighty chemical warhead. Utterly useless for void warfare as by the time you've punched a hole in a ship large enough to allow a chemical payload, the crew is usually already dead or suited up. They are, however, beloved by the warlords of the north, who use threat of great atrocities against civilian populations as leverage to dissuade invasion. Preventing the proliferation of such munitions is a high priority of the Republic, and being caught smuggling these marks you as a 'kill on sight' target."
 	description "Unlike many chemical weapons on the black market, these warheads aren't the work of any backyard terror-chemist, and are professionally made in industrial facilities beyond the reach of the Republic. It's probably safe to have this in your cargo bay as long as you don't fiddle with it too much."
 
-"Coreshine"
+outfit "Coreshine"
 	plural "coreshine"
 	category "Special"
 	cost 1500
@@ -21,7 +21,7 @@
 	description "Pure vodka, distilled from the great molecular clouds of the galaxy's core. The new and improved recipe promises 99% less methyl alcohol and cyanide content, an issue that plagued early efforts at cloud distillation. Although the substance itself is in no way prohibited, coreshiners pride themselves on never paying taxes or submitting to government regulation and inspection, and so their product cannot legally be trafficked under Republic tax law."
 	description "Due to an ongoing trade embargo imposed upon the Confederated Councils of the Outer Rim by the Republic, and alochol production being a fairly low priority of the already resource-strapped nation, smuggled booze can fetch a pretty penny indeed from CCOR traders."
 
-"Dragon's Teeth"
+outfit "Dragon's Teeth"
 	plural "dragon's teeth"
 	category "Special"
 	cost 87000
@@ -34,7 +34,7 @@
 	description "They say that dragon's teeth can enhance one's performance during... strenuous physical activity, instilling in one the strength and stamina of a dragon."
 	description "They say a lot of things, but only a few are certain: that dragon-poaching is a violation of just about every wildlife protection law on Skymoot, and that the rich and gullible will buy anything."
 
-"Designer Drugs"
+outfit "Designer Drugs"
 	plural "designer drugs"
 	category "Special"
 	cost 11235
@@ -46,7 +46,7 @@
 	description "It's said that the experiences one undergoes while on these drugs are so beautiful and potent that they can only be the work of an artist. There's a grain of truth to this, as the best-in-class drugs are usually created by men and women who devoted their lives to not only understanding, but mastering the arts of hedonism and chemical engineering, and apply to these disciplines an artisan's touch."
 	description "For some reason these are illegal throughout the Republic, though the Deep takes a more lax approach and only bans sale rather than possession or use."
 
-"Stolen Ship Parts"
+outfit "Stolen Ship Parts"
 	plural "stolen ship parts"
 	category "Special"
 	cost 25000
@@ -57,7 +57,7 @@
 	description "Well, somebody is going to miss these parts. Possibly. The alternative that nobody is left to miss them is somewhat more grim."
 	description "Stolen parts are generally traded at a discount, though most customers will avoid them due to the risks of being discovered in possession of stolen property. Coreshine runners tend to go through spare parts like candy, often due to their propensity for tinkering and experimentation to make the meanest, leanest hotrods in space."
 
-"Liberator Missile System"
+outfit "Liberator Missile System"
 	plural "Liberators"
 	category "Special"
 	cost 3500
@@ -69,7 +69,7 @@
 	description "Of course, those freedom fighters are now brutal warlords wanted dead or alive by the very same organization that once armed them. No longer needing to resort to ambush or hit-and-run tactics, the northern warlords are content to sell off their stocks of Liberators in order to fund other activities."
 	description "Besides guerillas, the Liberator is much beloved by poachers on Skymoot, as a compact anti-air missile is a great boon during the cross-country treks that dragon slaying oft requires."
 
-"Counterfeit Credsticks"
+outfit "Counterfeit Credsticks"
 	plural "counterfeit credsticks"
 	category "Special"
 	cost 100
@@ -79,7 +79,7 @@
 	"installable" -1
 	description "Cash is so last millenium. Even so, humanity's old habits die hard - who wouldn't want money for nothing? Fake credsticks, like counterfeit money in any era, follows a basic premise: the producers trade it at a discount relative to its face value, their customers understanding that there's a degree of risk in conducting commerce with false currency. Credsticks like these are in demand among the sleazier elements of the galaxy, and with those who have the sheer chutzpah to fob off rubbish as gold."
 
-"Jailbroken AI Core"
+outfit "Jailbroken AI Core"
 	plural "jailbroken AI cores"
 	category "Special"
 	cost 124711
