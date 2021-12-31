@@ -1094,6 +1094,7 @@ event "fw gets catalytic ramscoop"
 
 event "fw safe passage starts"
 	"reputation: Republic" = 5
+	"reputation: ISP" = 5
 
 
 
@@ -2637,6 +2638,7 @@ event "fwc navy retakes cebalrai"
 
 event "fwc peace with the navy"
 	"reputation: Republic" = 1
+	"reputation: ISP" = 1
 	government "Republic"
 		"attitude toward"
 			"Free Worlds" 0

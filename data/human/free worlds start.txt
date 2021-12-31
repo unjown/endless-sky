@@ -197,6 +197,7 @@ mission "FW Prisoner Parole"
 			`	"If you can, return here without engaging them. No point in losing more lives."`
 				accept
 		"reputation: Republic" = 1
+		"reputation: ISP" = 1
 		event "temporary ceasefire"
 		event "start of hostilities" 8
 	
