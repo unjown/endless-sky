@@ -3568,7 +3568,7 @@ phrase "color"
 		"Magenta" 2
 		"Tangerine" 2
 		"Livid"
-		"Vermillion" 2
+		"Vermilion" 2
 		"Blurple"
 		"Maroon" 3
 		"Aqua" 3

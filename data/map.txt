@@ -27582,7 +27582,7 @@ planet "Graveyard Wormhole (Unstable)"
 planet Greycurse
 	attributes uninhabited haunted
 	landscape land/desolate1
-	description `There's something wrong with this moon. The sky is grey. The trees are grey. The grass is grey. Hold out your hand, look at your skin; not a hint of color is evident. Your ship's paint, devoid of hue. It can't be attributed to dim light, as even when the sun filters down through the ever-present cloud cover the effect persists. Every moment on this world is marked by an inexplicable buzzing sensation behind the eyes, and an unsettling sensation of being watched that your primate brain simply can't dismiss.`
+	description `There's something wrong with this moon. The sky is gray. The trees are gray. The grass is gray. Hold out your hand, look at your skin; not a hint of color is evident. Your ship's paint, devoid of hue. It can't be attributed to dim light, as even when the sun filters down through the ever-present cloud cover the effect persists. Every moment on this world is marked by an inexplicable buzzing sensation behind the eyes, and an unsettling sensation of being watched that your primate brain simply can't dismiss.`
 	description `There's a reason nobody comes here.`
 	port "Deserted Camp"
 		"description" "Some distance from your landing site lies a cluster of tents surrounding a prefabricated building. Nothing but the wind touches the structures, and a cursory examination of the interiors shows a heavy coating of dust, but no sign of overgrowth or animal droppings. In fact, you haven't seen - or heard - a single creature on this planet."

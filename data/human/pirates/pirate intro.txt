@@ -118,7 +118,7 @@ conversation "I Want To Be A Pirate"
 	`	"Now-" the Corsair begins. "I know a juicy prize is going to be sailing-" The other two turn to fix the Corsair with a skeptical gaze. The Capo's maw slips wide for a moment, as if he wants to interrupt, but eventually it closes silently once more. "-SAILING, I say, through Umbral. In fact, any buccaneer worth their salt knows she'll be there, so you're liable to have more than a little competition. Board her, plunder her, keep what ye like - but should ye find an antique wood lockbox, yer' to bring it back to me without peeking within. That'll be my price for spreading the word of yer' glorious ascent to piratehood.`
 	`	"As for me?" The Devil's Due member takes her turn to speak. "Take a million credits to Smuggler's Den in Men. I don't care where you get the money. In fact, I don't want to know. Just drop by with that million, complete a little transaction I'll have arranged by then, and I'll get you what you want. Prestige. Respect. Fame. Infamy, whatever." A winning smile is flashed your way, and your hand is plucked up, shaken; a datachip is pressed into it. "Contact for an associate of mine, on the station I mentioned. Take the money there, bring the item back to me."`
 	`	Finally, the Capo takes his turn. "Have you heard of the planet Darkstone, in the system Han? Pathetic bunch of dirt-farmers, only worthy of enslavement. Impose yourself as their master, take the meager tribute they offer, and return. Know that you'll make enemies this way, but really - if you want to be a pirate, I'm sure that's not something that concerns you overmuch."`
-	`"Whichever path you take, we expect to be on Greenrock for the forseeable future. Drop by once you've got something one of us will find impressive; or all, if that's your style."`
+	`"Whichever path you take, we expect to be on Greenrock for the foreseeable future. Drop by once you've got something one of us will find impressive; or all, if that's your style."`
 		accept
 	label retreat
 	`	As your nostrils fill with the scent of stale piss, cheap alcohol, and a modest breeze carrying the metallic tang of blood upon it, you come to your senses and realize that perhaps the pirate's life isn't as romantic as you'd made it out to be.`
@@ -171,7 +171,7 @@ conversation "I Want To Be A Pirate Conclusion"
 	label slaveryspeech
 	`	"Don't be stupid. We're in the same business, you and I - the only reason we're having this conversation at all is because you saw fit to force others to pay you, render unto you the fruit of their sweat and tears, without anything in return. You're a slaver as much as I; I'm simply more honest about it. You'll grow to accept that. Pirates who think they can survive - or more amusingly, thrive - and still hold onto their precious morals; they're not long for this galaxy."`
 	`	The Corsair's lips curl into a decidedly displeased scowl, but he drowns any words in liquor before they might threaten to spill forth.`
-	`	"Now. Don't be a fool, and remember my words." The Capo relaxes, stretching back in his seat. He's regarding you cooly, contemplatively. "But I'm a man of honor; you did as you were instructed, and so I'll fulfil my end of the bargain."`
+	`	"Now. Don't be a fool, and remember my words." The Capo relaxes, stretching back in his seat. He's regarding you cooly, contemplatively. "But I'm a man of honor; you did as you were instructed, and so I'll fulfill my end of the bargain."`
 		goto tributeskip
 	label defender
 	choice
@@ -208,7 +208,7 @@ conversation "I Want To Be A Pirate Conclusion"
 		goto tributeskip
 	#label ring
 	#`	The Capo extends his palm, a shining silver ring glistening in the center. Unadorned by any manner of stone, it's a simple, subdued piece of jewelry. Upon the front a crest has been stamped. "A token of my approval. Consider it sponsorship, and my trust that you'll do what need be done. Take it to Gienah. People will know what it means, and you'll find lucrative work that lines up nicely with the skillset you've demonstrated."`
-	#`	The cyborg offers a genial smile - or at least as much as one can without lips. It's uncanny how expressive articulated artifical jaws can be these days.`
+	#`	The cyborg offers a genial smile - or at least as much as one can without lips. It's uncanny how expressive articulated artificial jaws can be these days.`
 	label tributeskip
 	branch boardingskip
 		not "Pirate Intro: Boarding: done"
