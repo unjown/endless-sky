@@ -29,22 +29,22 @@ class PlayerInfo;
 class SpaceportPanel : public Panel {
 public:
 	explicit SpaceportPanel(PlayerInfo &player);
-	
+
 	void UpdateNews();
-	
+
 	virtual void Step() override;
 	virtual void Draw() override;
-	
-	
+
+
 private:
 	const News *PickNews() const;
-	
-	
+
+
 private:
 	PlayerInfo &player;
 	WrappedText text;
 	const Planet::Port &port;
-	
+
 	// Current news item (if any):
 	bool hasNews = false;
 	bool hasPortrait = false;
