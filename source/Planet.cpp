@@ -426,7 +426,7 @@ const Sale<Outfit> &Planet::Outfitter() const
 
 
 // Get the local price of this outfit.
-double Planet::GetLocalRelativePrice(const Outfit *outfit, const ConditionSet::Conditions conditions) const
+double Planet::GetLocalRelativePrice(const Outfit *outfit, const ConditionSet::Conditions &conditions) const
 {
 	customSale.clear();
 	CustomSale::SellType sellType = GetAvailability(outfit, conditions);
@@ -440,7 +440,7 @@ double Planet::GetLocalRelativePrice(const Outfit *outfit, const ConditionSet::C
 
 
 // Get the availability of this outfit.
-CustomSale::SellType Planet::GetAvailability(const Outfit *outfit, const ConditionSet::Conditions conditions) const
+CustomSale::SellType Planet::GetAvailability(const Outfit *outfit, const ConditionSet::Conditions &conditions) const
 {
 	customSale.clear();
 	CustomSale::SellType sellType = Outfitter().Has(outfit) ? CustomSale::SellType::VISIBLE : CustomSale::SellType::NONE;
